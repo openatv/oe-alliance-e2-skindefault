@@ -244,31 +244,6 @@
 			</convert>
 		</widget>
 	</screen>
-	<screen name="LanguageSelection" position="center,center" size="560,456">
-		<panel name="MenuRed3Panel"/>
-		<panel name="MenuGreen3Panel"/>
-		<widget source="languages" render="Listbox" position="0,50" size="560,396" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand">
-			<convert type="TemplatedMultiContent">
-				{"template": [
-				MultiContentEntryText(pos = (100,0), size = (360,44), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is the language name,
-				MultiContentEntryPixmapAlphaTest(pos = (20,2), size = (60,40), png = 2), # index 2 is the pixmap
-				],
-				"fonts": [gFont("Regular",20)],
-				"itemHeight": 44
-				}
-			</convert>
-		</widget>
-	</screen>
-	<screen name="Setup" position="center,center" size="560,600">
-		<panel name="ButtonBarAuto1Panel"/>
-		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="450,540" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
-		<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="0,500" zPosition="1" size="35,25" transparent="1" alphatest="on">
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget name="footnote" position="0,50" size="300,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top"/>
-		<widget name="config" position="0,90" size="560,330" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand"/>
-		<widget name="description" position="0,e-180" size="560,75" font="Regular;18" halign="center" valign="top" transparent="0" zPosition="1"/>
-	</screen>
 
 <!-- InfoBar's -->
 	<screen name="InfoBar" flags="wfNoBorder" position="center,562" size="974,148" title="InfoBar" backgroundColor="transparent">
@@ -1062,14 +1037,6 @@
 		<widget name="ok" pixmap="buttons/green.png" position="140,e-40" size="140,40" alphatest="on"/>
 		<widget name="oktext" position="140,e-40" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1"/>
 	</screen>
-	<screen name="TimerLog" position="209,100" size="845,520" backgroundColor="window-bg">
-		<widget name="loglist" position="50,0" size="740,300" scrollbarMode="showOnDemand"/>
-		<widget name="logentry" position="50,320" size="740,150" font="Regular;20" backgroundColor="window-bg" transparent="0"/>
-		<panel name="MenuRed1Panel"/>
-		<panel name="MenuGreen1Panel"/>
-		<panel name="MenuYellow1Panel"/>
-		<panel name="MenuBlue1Panel"/>
-	</screen>
 	<screen name="TimerSanityConflict" position="center,center" size="560,550">
 		<widget name="timer1" position="0,0" size="560,50" selectionDisabled="1" scrollbarMode="showNever"/>
 		<widget name="timer2" position="10,213" size="503,50" selectionDisabled="1" scrollbarMode="showNever"/>
@@ -1784,22 +1751,10 @@ self.autoResize()
 		<widget name="text" position="10,10" size="580,30" font="Regular;24"/>
 		<widget name="input" position="10,60" size="580,25" font="Regular;22"/>
 	</screen>
-	<screen name="LocationBox" position="center,center" size="560,550">
-		<widget name="text" position="10,110" size="503,38" font="Regular;26" backgroundColor="menu-title-bkgrnd" transparent="1" noWrap="1"/>
-		<widget name="target" position="10,140" size="503,22" valign="center" font="Regular;22" transparent="0"/>
-		<widget name="filelist" position="10,165" zPosition="1" size="503,225" scrollbarMode="showOnDemand" selectionDisabled="1" transparent="0"/>
-		<widget name="textbook" position="10,405" size="503,22" font="Regular;22" transparent="0"/>
-		<widget name="booklist" position="10,435" zPosition="2" size="503,190" scrollbarMode="showOnDemand" transparent="0"/>
-		<panel name="MenuRed1Panel"/>
-		<panel name="MenuGreen1Panel"/>
-		<panel name="MenuYellow1Panel"/>
-		<panel name="MenuBlue1Panel"/>
-	</screen>
+
 	<screen name="MessageBoxTemplate">
+		<widget name="icon" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_warning.png,icons/input_error.png,icons/input_message.png" position="0,0" size="53,53" alphatest="blend" conditional="icon" scale="1" transparent="1" />
 		<widget name="text" position="65,8" size="520,0" font="Regular;22"/>
-		<widget name="ErrorPixmap" pixmap="icons/input_error.png" position="0,0" size="53,53" alphatest="on"/>
-		<widget name="QuestionPixmap" pixmap="icons/input_question.png" position="0,0" size="53,53" alphatest="on"/>
-		<widget name="InfoPixmap" pixmap="icons/input_info.png" position="0,0" size="53,53" alphatest="on"/>
 		<widget name="list" position="100,100" size="520,0"/>
 		<applet type="onLayoutFinish">
 from enigma import getDesktop, ePoint, eSize
@@ -2479,34 +2434,6 @@ except Exception as e:
 		<widget name="text" position="0,150" size="560,75" font="Regular;22" foregroundColor="window-fg" backgroundColor="window-bg" halign="center" transparent="0"/>
 	</screen>
 	<!-- Misc Screens -->
-	<screen name="JobView" position="center,center" size="520,250">
-		<widget source="job_name" render="Label" position="20,0" size="480,60" font="Regular;28"/>
-		<widget source="job_task" render="Label" position="20,30" size="480,50" font="Regular;23"/>
-		<widget source="job_progress" render="Progress" position="20,62" size="480,36" borderWidth="2" backgroundColor="#254f7497"/>
-		<widget source="job_progress" render="Label" position="120,66" size="280,32" font="Regular;28" foregroundColor="black" zPosition="2" halign="center" transparent="1">
-			<convert type="ProgressToText"/>
-		</widget>
-		<widget source="job_status" render="Label" position="20,112" size="480,26" font="Regular;23"/>
-		<widget name="config" position="20,154" size="480,20"/>
-		<widget source="cancelable" render="Pixmap" pixmap="buttons/red.png" position="20,200" size="136,25" alphatest="blend">
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="cancelable" render="FixedLabel" text="Cancel" position="50,203" size="115,25" font="Regular;20" halign="left" valign="center" transparent="1">
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="finished" render="Pixmap" pixmap="buttons/green.png" position="240,200" size="136,25" alphatest="blend">
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="finished" render="FixedLabel" text="OK" position="270,203" size="115,25" font="Regular;20" halign="left" valign="center" transparent="1">
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="backgroundable" render="Pixmap" pixmap="buttons/blue.png" position="250,200" size="136,25" alphatest="blend">
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="280,203" size="260,25" font="Regular;20" halign="left" valign="center" transparent="1">
-			<convert type="ConditionalShowHide"/>
-		</widget>
-	</screen>
 	<screen name="FileBrowser" position="0,0" size="1280,720" backgroundColor="black" flags="wfNoBorder">
 		<panel name="FullscreenTopPanel"/>
 		<panel name="FullscreenTitlePanel"/>
@@ -2614,11 +2541,6 @@ except Exception as e:
 		<widget name="testversion" position="20,505" size="250,35" font="Regular;30"/>
 		<widget name="mactext" position="320,470" size="340,35" font="Regular;30"/>
 	</screen>
-	<screen name="SoftcamSetup" position="center,center" size="560,550">
-		<panel name="ButtonBarAuto1Panel"/>
-		<widget name="config" position="0,0" size="560,180" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand" font="Regular;20"/>
-		<widget name="info" position="0,190" size="560,370" scrollbarMode="showOnDemand" halign="center" font="Fixed;20"/>
-	</screen>	
 	<screen name="CCcamInfoMain" position="center,center" size="560,550">
 		<widget name="menu" position="0,0" size="560,450" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0"/>
 	</screen>
@@ -2646,9 +2568,6 @@ except Exception as e:
 		<widget name="list" position="0,0" size="560,250" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0"/>
 		<eLabel text="" position="10,387" size="503,2" font="Regular;14" backgroundColor="white"/>
 		<widget name="info" position="10,395" size="503,165" font="Regular;16" transparent="0"/>
-	</screen>
-	<screen name="CCcamInfoConfigMenu" position="center,center" size="560,550">
-		<widget name="config" position="0,0" size="560,150" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0"/>
 	</screen>
 	<screen name="CCcamInfoRemoteBoxMenu" position="center,center" size="560,550">
 		<widget name="list" position="0,0" size="560,450" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0"/>
@@ -2682,12 +2601,6 @@ except Exception as e:
 	</screen>
 	<screen name="oscECMInfo" position="center,center" size="560,550">
 		<widget name="output" position="0,0" size="560,450" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0"/>
-	</screen>
-	<screen name="OscamInfoConfigScreen" position="center,center" size="560,550">
-		<widget name="config" position="0,0" size="560,250" foregroundColor="window-fg" backgroundColor="window-bg" scrollbarMode="showOnDemand" transparent="0"/>
-		<widget name="status" position="10,390" size="503,240" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0"/>
-		<panel name="MenuRed2Panel"/>
-		<panel name="MenuGreen2Panel"/>
 	</screen>
 	<screen name="LogManager" position="center,center" size="560,400" title="Log Manager">
 		<panel name="MenuRed3Panel"/>
@@ -2771,21 +2684,7 @@ except Exception as e:
 	<screen name="InstallWizardIpkgUpdater" position="340,335" size="600,50" title=" ">
 		<widget source="statusbar" render="Label" position="10,5" zPosition="10" size="330,30" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
 	</screen>
-	<screen name="LocationBox" position="100,75" size="540,460">
-		<widget name="text" position="0,2" size="540,22" font="Regular;22"/>
-		<widget name="target" position="0,23" size="540,22" valign="center" font="Regular;22"/>
-		<widget name="filelist" position="0,55" zPosition="1" size="540,210" scrollbarMode="showOnDemand" selectionDisabled="1"/>
-		<widget name="textbook" position="0,272" size="540,22" font="Regular;22"/>
-		<widget name="booklist" position="5,302" zPosition="2" size="535,100" scrollbarMode="showOnDemand"/>
-		<widget name="red" position="0,415" zPosition="1" size="135,40" pixmap="buttons/red.png" transparent="1" alphatest="on"/>
-		<widget name="key_red" position="0,415" zPosition="2" size="135,40" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
-		<widget name="green" position="135,415" zPosition="1" size="135,40" pixmap="buttons/green.png" transparent="1" alphatest="on"/>
-		<widget name="key_green" position="135,415" zPosition="2" size="135,40" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
-		<widget name="yellow" position="270,415" zPosition="1" size="135,40" pixmap="buttons/yellow.png" transparent="1" alphatest="on"/>
-		<widget name="key_yellow" position="270,415" zPosition="2" size="135,40" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
-		<widget name="blue" position="405,415" zPosition="1" size="135,40" pixmap="buttons/blue.png" transparent="1" alphatest="on"/>
-		<widget name="key_blue" position="405,415" zPosition="2" size="135,40" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
-	</screen>
+
 	<screen name="NetworkMountsMenu" position="center,center" size="560,400">
 		<ePixmap pixmap="buttons/red.png" position="0,0" size="140,40" alphatest="on"/>
 		<widget source="key_red" render="Label" position="0,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1"/>
@@ -3260,7 +3159,23 @@ except Exception as e:
 		</widget>
 	</screen>
 	<!-- LocaleSelection -->
-	<!-- Icons PACK_AVAILABLE, PACK_INSTALLED, PACK_IN_USE -->
+
+
+<!--  OLD screens (no longer needed because they are in the code as embedded skin)
+
+	<screen name="Setup" position="center,center" size="560,600">
+		<panel name="ButtonBarAuto1Panel"/>
+		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="450,540" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
+		<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="0,500" zPosition="1" size="35,25" transparent="1" alphatest="on">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget name="footnote" position="0,50" size="300,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top"/>
+		<widget name="config" position="0,90" size="560,330" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand"/>
+		<widget name="description" position="0,e-180" size="560,75" font="Regular;18" halign="center" valign="top" transparent="0" zPosition="1"/>
+	</screen>
+
+
+	Icons PACK_AVAILABLE, PACK_INSTALLED, PACK_IN_USE
 	<screen name="LocaleSelection" position="center,center" size="1000,560" resolution="1280,720">
 		<widget name="icons" position="0,0" size="30,27" pixmaps="icons/menu_download.png,icons/menu_off.png,icons/menu_on.png" alphatest="blend" />
 		<widget source="locales" render="Listbox" position="10,10" size="e-20,442" enableWrapAround="1" scrollbarMode="showOnDemand">
@@ -3300,4 +3215,108 @@ except Exception as e:
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
+
+	<screen name="LocationBox" position="center,center" size="560,550">
+		<widget name="text" position="10,110" size="503,38" font="Regular;26" backgroundColor="menu-title-bkgrnd" transparent="1" noWrap="1"/>
+		<widget name="target" position="10,140" size="503,22" valign="center" font="Regular;22" transparent="0"/>
+		<widget name="filelist" position="10,165" zPosition="1" size="503,225" scrollbarMode="showOnDemand" selectionDisabled="1" transparent="0"/>
+		<widget name="textbook" position="10,405" size="503,22" font="Regular;22" transparent="0"/>
+		<widget name="booklist" position="10,435" zPosition="2" size="503,190" scrollbarMode="showOnDemand" transparent="0"/>
+		<panel name="MenuRed1Panel"/>
+		<panel name="MenuGreen1Panel"/>
+		<panel name="MenuYellow1Panel"/>
+		<panel name="MenuBlue1Panel"/>
+	</screen>
+
+	<screen name="LocationBox" position="100,75" size="540,460">
+		<widget name="text" position="0,2" size="540,22" font="Regular;22"/>
+		<widget name="target" position="0,23" size="540,22" valign="center" font="Regular;22"/>
+		<widget name="filelist" position="0,55" zPosition="1" size="540,210" scrollbarMode="showOnDemand" selectionDisabled="1"/>
+		<widget name="textbook" position="0,272" size="540,22" font="Regular;22"/>
+		<widget name="booklist" position="5,302" zPosition="2" size="535,100" scrollbarMode="showOnDemand"/>
+		<widget name="red" position="0,415" zPosition="1" size="135,40" pixmap="buttons/red.png" transparent="1" alphatest="on"/>
+		<widget name="key_red" position="0,415" zPosition="2" size="135,40" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
+		<widget name="green" position="135,415" zPosition="1" size="135,40" pixmap="buttons/green.png" transparent="1" alphatest="on"/>
+		<widget name="key_green" position="135,415" zPosition="2" size="135,40" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
+		<widget name="yellow" position="270,415" zPosition="1" size="135,40" pixmap="buttons/yellow.png" transparent="1" alphatest="on"/>
+		<widget name="key_yellow" position="270,415" zPosition="2" size="135,40" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
+		<widget name="blue" position="405,415" zPosition="1" size="135,40" pixmap="buttons/blue.png" transparent="1" alphatest="on"/>
+		<widget name="key_blue" position="405,415" zPosition="2" size="135,40" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1"/>
+	</screen>
+
+	<screen name="TimerLog" position="209,100" size="845,520" backgroundColor="window-bg">
+		<widget name="loglist" position="50,0" size="740,300" scrollbarMode="showOnDemand"/>
+		<widget name="logentry" position="50,320" size="740,150" font="Regular;20" backgroundColor="window-bg" transparent="0"/>
+		<panel name="MenuRed1Panel"/>
+		<panel name="MenuGreen1Panel"/>
+		<panel name="MenuYellow1Panel"/>
+		<panel name="MenuBlue1Panel"/>
+	</screen>
+
+
+-->
+
+<!-- OLD Screens / no longer used
+
+	<screen name="LanguageSelection" position="center,center" size="560,456">
+		<panel name="MenuRed3Panel"/>
+		<panel name="MenuGreen3Panel"/>
+		<widget source="languages" render="Listbox" position="0,50" size="560,396" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+				MultiContentEntryText(pos = (100,0), size = (360,44), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is the language name,
+				MultiContentEntryPixmapAlphaTest(pos = (20,2), size = (60,40), png = 2), # index 2 is the pixmap
+				],
+				"fonts": [gFont("Regular",20)],
+				"itemHeight": 44
+				}
+			</convert>
+		</widget>
+	</screen>
+
+	<screen name="OscamInfoConfigScreen" position="center,center" size="560,550">
+		<widget name="config" position="0,0" size="560,250" foregroundColor="window-fg" backgroundColor="window-bg" scrollbarMode="showOnDemand" transparent="0"/>
+		<widget name="status" position="10,390" size="503,240" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0"/>
+		<panel name="MenuRed2Panel"/>
+		<panel name="MenuGreen2Panel"/>
+	</screen>
+	<screen name="CCcamInfoConfigMenu" position="center,center" size="560,550">
+		<widget name="config" position="0,0" size="560,150" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0"/>
+	</screen>
+	<screen name="SoftcamSetup" position="center,center" size="560,550">
+		<panel name="ButtonBarAuto1Panel"/>
+		<widget name="config" position="0,0" size="560,180" transparent="0" enableWrapAround="1" scrollbarMode="showOnDemand" font="Regular;20"/>
+		<widget name="info" position="0,190" size="560,370" scrollbarMode="showOnDemand" halign="center" font="Fixed;20"/>
+	</screen>	
+
+	<screen name="JobView" position="center,center" size="520,250">
+		<widget source="job_name" render="Label" position="20,0" size="480,60" font="Regular;28"/>
+		<widget source="job_task" render="Label" position="20,30" size="480,50" font="Regular;23"/>
+		<widget source="job_progress" render="Progress" position="20,62" size="480,36" borderWidth="2" backgroundColor="#254f7497"/>
+		<widget source="job_progress" render="Label" position="120,66" size="280,32" font="Regular;28" foregroundColor="black" zPosition="2" halign="center" transparent="1">
+			<convert type="ProgressToText"/>
+		</widget>
+		<widget source="job_status" render="Label" position="20,112" size="480,26" font="Regular;23"/>
+		<widget name="config" position="20,154" size="480,20"/>
+		<widget source="cancelable" render="Pixmap" pixmap="buttons/red.png" position="20,200" size="136,25" alphatest="blend">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="cancelable" render="FixedLabel" text="Cancel" position="50,203" size="115,25" font="Regular;20" halign="left" valign="center" transparent="1">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="finished" render="Pixmap" pixmap="buttons/green.png" position="240,200" size="136,25" alphatest="blend">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="finished" render="FixedLabel" text="OK" position="270,203" size="115,25" font="Regular;20" halign="left" valign="center" transparent="1">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="backgroundable" render="Pixmap" pixmap="buttons/blue.png" position="250,200" size="136,25" alphatest="blend">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="backgroundable" render="FixedLabel" text="Continue in background" position="280,203" size="260,25" font="Regular;20" halign="left" valign="center" transparent="1">
+			<convert type="ConditionalShowHide"/>
+		</widget>
+	</screen>
+-->
+
 </skin>
