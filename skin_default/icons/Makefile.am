@@ -130,6 +130,9 @@ dist_install_DATA =     ask.png \
     playlist.png \
     playlistquit.png \
     plugin.png \
+    plugin_vertical.png \
+    plugin_expanded.png \
+    plugin_expandable.png \
     quit.png \
     rass_logo.png \
     rass_page1.png \
