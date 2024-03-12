@@ -353,7 +353,7 @@
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="590,40" size="200,35" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" halign="right" transparent="1" noWrap="1" valign="center">
 			<convert type="EventTime">Remaining</convert>
-			<convert type="RemainingToText">InMinutes</convert>
+			<convert type="RemainingToText"></convert>
 		</widget>
 		<widget source="session.Event_Next" render="Label" position="175,75" size="70,35" font="Regular;22" foregroundColor="infobar_sunken_frgnd_dark" backgroundColor="infobar_sunken" transparent="1" noWrap="1" valign="center">
 			<convert type="EventTime">StartTime</convert>
@@ -543,7 +543,7 @@
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="590,242" size="200,35" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" halign="right" valign="center" transparent="1" noWrap="1">
 			<convert type="EventTime">Remaining</convert>
-			<convert type="RemainingToText">InMinutes</convert>
+			<convert type="RemainingToText"></convert>
 		</widget>
 		<widget source="session.Event_Next" render="Label" position="175,277" size="70,35" font="Regular;22" foregroundColor="infobar_sunken_frgnd_dark" backgroundColor="infobar_sunken" valign="center" transparent="1" noWrap="1">
 			<convert type="EventTime">StartTime</convert>
@@ -808,7 +808,7 @@
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="460,50" size="200,24" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" halign="right" transparent="1" noWrap="1">
 			<convert type="EventTime">Remaining</convert>
-			<convert type="RemainingToText">InMinutes</convert>
+			<convert type="RemainingToText"></convert>
 		</widget>
 		<widget source="session.Event_Next" render="Label" position="55,75" size="70,24" font="Regular;22" foregroundColor="infobar_sunken_frgnd_dark" backgroundColor="infobar_sunken" transparent="1" noWrap="1">
 			<convert type="EventTime">StartTime</convert>
@@ -3231,7 +3231,7 @@ except Exception as e:
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="1165,510" size="100,30" font="Regular;22" halign="right">
 			<convert type="EventTime">Remaining</convert>
-			<convert type="RemainingToText">InMinutes</convert>
+			<convert type="RemainingToText"></convert>
 		</widget>
 		<widget source="session.Event_Next" render="Label" position="770,540" size="70,30" font="Regular;22">
 			<convert type="EventTime">StartTime</convert>
