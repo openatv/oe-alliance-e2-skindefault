@@ -270,6 +270,11 @@
 		<widget name="description" position="0,e-180" size="560,75" font="Regular;18" halign="center" valign="top" transparent="0" zPosition="1"/>
 	</screen>
 
+	<screen name="SkinSelection" position="center,center" size="560,600">
+		<panel name="Setup"/>
+		<widget name="preview" position="117,0" size="280,210" alphatest="on" zPosition="0"/>
+	</screen>
+
 <!-- InfoBar's -->
 	<screen name="InfoBar" flags="wfNoBorder" position="center,562" size="974,148" title="InfoBar" backgroundColor="transparent">
 		<ePixmap position="0,0" size="974,148" pixmap="infobar/1stinfobar.png" alphatest="on" zPosition="-1"/>
@@ -2341,7 +2346,7 @@ except Exception as e:
 		<widget name="config" position="150,400" size="730,220" transparent="1" backgroundColor="black" scrollbarMode="showOnDemand"/>
 		<panel name="RcPanel"/>
 		<ePixmap pixmap="buttons/red.png" position="90,655" size="25,25" alphatest="blend" transparent="1" scale="1"/>
-		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd"/>
+		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" conditional="languagetext"/>
 		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,645" size="1280,75" alphatest="on" transparent="1" zPosition="-1"/>
 	</screen>
 	<screen name="StartWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="black">
@@ -2413,7 +2418,7 @@ except Exception as e:
 		<widget name="portpic" position="100,370" zPosition="10" size="150,150" transparent="1" alphatest="on"/>
 		<panel name="RcPanel"/>
 		<ePixmap pixmap="buttons/red.png" position="90,686" size="25,25" alphatest="blend" transparent="1" scale="1"/>
-		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd"/>
+		<widget name="languagetext" position="130,659" size="240,20" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="top" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" conditional="languagetext"/>
 		<ePixmap pixmap="screens/fs-bg-bot-wizzard.png" position="0,680" size="1280,40" zPosition="-1"/>
 	</screen>
 	<screen name="CleanupWizardConfiguration" position="209,48" size="865,623" flags="wfNoBorder" backgroundColor="black">
