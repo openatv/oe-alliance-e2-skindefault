@@ -165,39 +165,6 @@
 		<panel name="MenuBlueAuto1Panel" conditional="key_blue"/>
 	</screen>
 	<!-- END semi auto button bar -->
-
-	<screen name="MenuRed1Panel">
-		<ePixmap pixmap="buttons/red.png" position="0,e-40" size="140,40" alphatest="on"/>
-		<widget name="key_red" position="0,e-40" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1"/>
-	</screen>
-	<screen name="MenuGreen1Panel">
-		<ePixmap pixmap="buttons/green.png" position="140,e-40" size="140,40" alphatest="on"/>
-		<widget name="key_green" position="140,e-40" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1"/>
-	</screen>
-	<screen name="MenuYellow1Panel">
-		<ePixmap pixmap="buttons/yellow.png" position="280,e-40" size="140,40" alphatest="on"/>
-		<widget name="key_yellow" position="280,e-40" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" transparent="1"/>
-	</screen>
-	<screen name="MenuBlue1Panel">
-		<ePixmap pixmap="buttons/blue.png" position="420,e-40" size="140,40" alphatest="on"/>
-		<widget name="key_blue" position="420,e-40" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#141484" transparent="1"/>
-	</screen>
-	<screen name="MenuRed2Panel">
-		<ePixmap pixmap="buttons/red.png" position="0,e-40" size="140,40" alphatest="on"/>
-		<widget source="key_red" render="Label" position="0,e-40" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1"/>
-	</screen>
-	<screen name="MenuGreen2Panel">
-		<ePixmap pixmap="buttons/green.png" position="140,e-40" size="140,40" alphatest="on"/>
-		<widget source="key_green" render="Label" position="140,e-40" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1"/>
-	</screen>
-	<screen name="MenuYellow2Panel">
-		<ePixmap pixmap="buttons/yellow.png" position="280,e-40" size="140,40" alphatest="on"/>
-		<widget source="key_yellow" render="Label" position="280,e-40" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" transparent="1"/>
-	</screen>
-	<screen name="MenuBlue2Panel">
-		<ePixmap pixmap="buttons/blue.png" position="420,e-40" size="140,40" alphatest="on"/>
-		<widget source="key_blue" render="Label" position="420,e-40" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#141484" transparent="1"/>
-	</screen>
 	<screen name="MenuRed3Panel">
 		<ePixmap pixmap="buttons/red.png" position="0,0" size="140,40" alphatest="on"/>
 		<widget name="key_red" position="0,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1"/>
@@ -1039,10 +1006,7 @@
 		<widget source="list" render="Listbox" position="10,35" size="540,325" scrollbarMode="showOnDemand">
 			<convert type="StringList"/>
 		</widget>
-		<panel name="MenuRed1Panel"/>
-		<panel name="MenuGreen1Panel"/>
-		<panel name="MenuYellow1Panel"/>
-		<panel name="MenuBlue1Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="TimerEdit" position="70,130" size="590,335">
 		<widget name="description" position="10,10" size="580,40" font="Regular;25" transparent="1"/>
@@ -1070,19 +1034,13 @@
 	<screen name="TimerLog" position="209,100" size="845,520" backgroundColor="window-bg">
 		<widget name="loglist" position="50,0" size="740,300" scrollbarMode="showOnDemand"/>
 		<widget name="logentry" position="50,320" size="740,150" font="Regular;20" backgroundColor="window-bg" transparent="0"/>
-		<panel name="MenuRed1Panel"/>
-		<panel name="MenuGreen1Panel"/>
-		<panel name="MenuYellow1Panel"/>
-		<panel name="MenuBlue1Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="TimerSanityConflict" position="center,center" size="560,550">
 		<widget name="timer1" position="0,0" size="560,50" selectionDisabled="1" scrollbarMode="showNever"/>
 		<widget name="timer2" position="10,213" size="503,50" selectionDisabled="1" scrollbarMode="showNever"/>
 		<widget name="list" position="10,303" size="503,325" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand"/>
-		<panel name="MenuRed1Panel"/>
-		<panel name="MenuGreen1Panel"/>
-		<panel name="MenuYellow1Panel"/>
-		<panel name="MenuBlue1Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="TimerSelection" position="center,center" size="560,550">
 		<widget name="timerlist" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" position="0,0" size="560,533" scrollbarMode="showOnDemand"/>
@@ -1115,7 +1073,7 @@
 		<widget source="IF" render="Label" position="130,405" size="600,21" zPosition="10" font="Regular;20" halign="left" transparent="1" backgroundColor="window-bg"/>
 		<widget source="Statustext" render="Label" position="30,425" size="115,21" zPosition="10" font="Regular;20" halign="left" transparent="1" backgroundColor="window-bg"/>
 		<widget name="statuspic" pixmaps="buttons/button_green.png,buttons/button_green_off.png" position="130,430" zPosition="10" size="15,16" transparent="1" alphatest="on"/>
-		<panel name="MenuRed2Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="Devices" position="center,center" size="560,550">
 		<widget source="TunerHeader" render="Label" position="0,0" size="530,25" font="Bold;20" transparent="0" zPosition="1"/>
@@ -1144,10 +1102,7 @@
 	</screen>
 	<screen name="NetworkSetPassword" position="0,0" size="541,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="MenuPanel"/>
-		<panel name="MenuRed2Panel"/>
-		<panel name="MenuGreen2Panel"/>
-		<panel name="MenuYellow2Panel"/>
-		<panel name="MenuBlue2Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 		<widget name="passwd" position="30,107" size="458,36" font="Bold;20" transparent="0" zPosition="1"/>
 	</screen>
 	<screen name="AdapterSetup" position="center,center" size="560,550">
@@ -1173,9 +1128,7 @@
 		<widget source="VKeyIcon" render="Pixmap" pixmap="buttons/key_text.png" position="100,249" zPosition="1" size="35,25" transparent="1" alphatest="on">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<panel name="MenuRed2Panel"/>
-		<panel name="MenuGreen2Panel"/>
-		<panel name="MenuBlue2Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="AdapterSetupConfiguration" position="center,center" size="560,400">
 		<panel name="MenuRed4Panel"/>
@@ -1192,7 +1145,7 @@
 		<widget name="menulist" position="0,0" size="560,400" itemHeight="38" font="Regular;28" transparent="0" zPosition="10" scrollbarMode="showOnDemand"/>
 		<ePixmap pixmap="div-h.png" position="10,610" zPosition="1" size="503,2"/>
 		<widget source="introduction" render="Label" position="10,615" size="503,30" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1"/>
-		<panel name="MenuRed2Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<!-- Password -->
 	<screen name="NetworkPassword" position="center,center" size="560,550">
@@ -1200,9 +1153,7 @@
 		<ePixmap pixmap="div-h.png" position="10,610" zPosition="1" size="503,2"/>
 		<widget name="HelpWindow" pixmap="buttons/vkey_icon.png" position="450,360" zPosition="1" size="1,1" transparent="1" alphatest="on"/>
 		<widget name="description" position="10,615" size="503,30" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1"/>
-		<panel name="MenuRed2Panel"/>
-		<panel name="MenuGreen2Panel"/>
-		<panel name="MenuYellow2Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<!-- Nameserver -->
 	<screen name="NameserverSetup" position="center,center" size="560,400" title="Nameserver setup">
@@ -1366,10 +1317,10 @@
 			<convert type="ServiceOrbitalPosition">
 			</convert>
 		</widget>
-		<panel name="FullscreenRed1Panel"/>
-		<panel name="FullscreenGreen1Panel"/>
-		<panel name="FullscreenYellow1Panel"/>
-		<panel name="FullscreenBlue1Panel"/>
+		<panel name="FullscreenRed2Panel"/>
+		<panel name="FullscreenGreen2Panel"/>
+		<panel name="FullscreenYellow2Panel"/>
+		<panel name="FullscreenBlue2Panel"/>
 	</screen>
 	<screen name="SlimChannelSelection" position="center,center" size="560,550">
 		<widget name="list" position="0,0" size="560,420" backgroundColor="black" foregroundColorEvent="event-frgrnd" foregroundColorEventSelected="#00202020" foregroundColorServiceNotAvail="verydarkgrey" serviceItemHeight="30" serviceNumberFont="Regular;24" serviceNameFont="Regular;24" serviceInfoFont="Bold;21" transparent="1" zPosition="3" scrollbarMode="showOnDemand"/>
@@ -1385,10 +1336,7 @@
 		<widget source="ServiceEvent" render="Label" position="15,445" size="503,63" font="Regular;19" backgroundColor="black" foregroundColor="window-fg" valign="top" zPosition="2" transparent="1">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<panel name="MenuRed1Panel"/>
-		<panel name="MenuGreen1Panel"/>
-		<panel name="MenuYellow1Panel"/>
-		<panel name="MenuBlue1Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="ChannelSelectionRadio" position="center,100" size="660,400" backgroundColor="window-bg" transparent="0">
 		<widget name="list" position="0,0" size="660,324" zPosition="3" scrollbarMode="showOnDemand" foregroundColor="window-fg" backgroundColor="window-bg" foregroundColorEvent="darkgrey" foregroundColorEventSelected="menu-title-frgrnd" foregroundColorServiceNotAvail="#2c2c2c" serviceItemHeight="36" serviceNumberFont="Regular;24" serviceNameFont="Regular;24" serviceInfoFont="Regular;21" transparent="0"/>
@@ -1396,10 +1344,10 @@
 		<ePixmap pixmap="buttons/green.png" position="0,375" size="24,24" alphatest="blend" transparent="1"/>
 		<ePixmap pixmap="buttons/yellow.png" position="240,345" size="24,24" alphatest="blend" transparent="1"/>
 		<ePixmap pixmap="buttons/blue.png" position="240,375" size="24,24" alphatest="blend" transparent="1"/>
-		<widget name="key_red" position="35,351" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="0" valign="center" backgroundColor="window-bg"/>
-		<widget name="key_green" position="35,381" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="0" valign="center" backgroundColor="window-bg"/>
-		<widget name="key_yellow" position="275,351" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="0" valign="center" backgroundColor="window-bg"/>
-		<widget name="key_blue" position="275,381" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="0" valign="center" backgroundColor="window-bg"/>
+		<widget source="key_red" render="Label" position="35,351" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="0" valign="center" backgroundColor="window-bg"/>
+		<widget source="key_green" render="Label" position="35,381" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="0" valign="center" backgroundColor="window-bg"/>
+		<widget source="key_yellow" render="Label" position="275,351" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="0" valign="center" backgroundColor="window-bg"/>
+		<widget source="key_blue" render="Label" position="275,381" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="0" valign="center" backgroundColor="window-bg"/>
 	</screen>
 	<screen name="ChoiceBox" position="center,center" size="520,130" zPosition="5">
 		<widget name="text" position="0,0" size="520,0" font="Regular;22"/>
@@ -1795,10 +1743,7 @@ self.autoResize()
 		<widget name="filelist" position="10,165" zPosition="1" size="503,225" scrollbarMode="showOnDemand" selectionDisabled="1" transparent="0"/>
 		<widget name="textbook" position="10,405" size="503,22" font="Regular;22" transparent="0"/>
 		<widget name="booklist" position="10,435" zPosition="2" size="503,190" scrollbarMode="showOnDemand" transparent="0"/>
-		<panel name="MenuRed1Panel"/>
-		<panel name="MenuGreen1Panel"/>
-		<panel name="MenuYellow1Panel"/>
-		<panel name="MenuBlue1Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="MessageBoxTemplate">
 		<widget name="text" position="65,8" size="520,0" font="Regular;22"/>
@@ -1851,18 +1796,12 @@ except Exception as e:
 			</convert>
 		</widget>
 		<widget source="introduction" render="Label" position="10,585" size="503,30" zPosition="10" font="Regular;21" halign="center" valign="center"/>
-		<panel name="MenuRed2Panel"/>
-		<panel name="MenuGreen2Panel"/>
-		<panel name="MenuYellow2Panel"/>
-		<panel name="MenuBlue2Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="InputDeviceSetup" position="center,center" size="560,550">
 		<widget name="config" position="0,0" size="560,480" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
 		<widget source="introduction" render="Label" position="10,570" size="503,45" zPosition="10" font="Regular;21" halign="center" valign="center"/>
-		<panel name="MenuRed2Panel"/>
-		<panel name="MenuGreen2Panel"/>
-		<panel name="MenuYellow2Panel"/>
-		<panel name="MenuBlue2Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="MinuteInput" position="center,center" size="280,60">
 		<widget name="minutes" position="80,15" size="160,25" halign="right" font="Regular;23" transparent="1"/>
@@ -1911,10 +1850,7 @@ except Exception as e:
 		<widget name="freeDiskSpace" position="0,476" size="440,28" font="Regular;22" halign="left" transparent="1" foregroundColor="menu-title-frgrnd" backgroundColor="menu-time-bkgrnd"/>
 		<widget name="movie_sort" position="485,480" size="35,20" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png" zPosition="10" transparent="1" alphatest="on"/>
 		<widget name="movie_off" position="525,480" size="35,20" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/rep.png" zPosition="10" transparent="1" alphatest="on"/>
-		<panel name="MenuRed1Panel"/>
-		<panel name="MenuGreen1Panel"/>
-		<panel name="MenuYellow1Panel"/>
-		<panel name="MenuBlue1Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="MovieListTags" position="center,center" size="560,550">
 		<widget name="list" position="0,0" size="560,536" itemHeight="25" font="Regular;22" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
@@ -1965,15 +1901,11 @@ except Exception as e:
 				}
 			</convert>
 		</widget>
-		<panel name="MenuRed2Panel"/>
-		<panel name="MenuGreen2Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="NimSetup" position="center,center" size="560,550">
 		<widget name="config" position="0,0" size="560,526" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand"/>
-		<panel name="MenuRed1Panel"/>
-		<panel name="MenuGreen1Panel"/>
-		<panel name="MenuYellow1Panel"/>
-		<panel name="MenuBlue1Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="NumberZap" position="center,center" size="434,109" backgroundColor="transparent" flags="wfNoBorder">
 		<widget name="number" position="0,0" size="434,50" backgroundColor="transparent" transparent="1" font="Regular;48" borderColor="black" borderWidth="2" valign="center" halign="center"/>
@@ -2059,8 +1991,7 @@ except Exception as e:
 	<screen name="PluginBrowser" position="center,center" size="560,550">
 		<widget name="list" position="0,0" size="560,533" itemHeight="49" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1"/>
 		<ePixmap pixmap="buttons/key_menu.png" position="525,518" size="35,25" alphatest="blend" transparent="1"/>
-		<panel name="MenuRed1Panel"/>
-		<panel name="MenuGreen1Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="PluginDownloadBrowser" position="center,center" size="560,550">
 		<widget name="text" position="0,0" size="560,533" zPosition="1" font="Regular;20" halign="center" valign="center" transparent="0"/>
@@ -2215,10 +2146,7 @@ except Exception as e:
 	</screen>
 	<screen name="SimpleChannelSelection" position="center,center" size="560,550">
 		<widget name="list" position="0,0" size="560,533" itemHeight="30" foregroundColorEvent="darkgrey" foregroundColorEventSelected="menu-title-frgrnd" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" enableWrapAround="1"/>
-		<panel name="MenuRed1Panel"/>
-		<panel name="MenuGreen1Panel"/>
-		<panel name="MenuYellow1Panel"/>
-		<panel name="MenuBlue1Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="SkinSelector" position="center,center" size="560,450">
 		<widget name="Preview" position="117,0" size="280,210" alphatest="on" zPosition="0"/>
@@ -2236,8 +2164,7 @@ except Exception as e:
 				}
 			</convert>
 		</widget> # For ViX
-		<panel name="MenuRed2Panel"/>
-		<panel name="MenuGreen2Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 		<widget source="introduction" render="Label" position="10,604" size="503,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="window-bg"/>
 		<widget source="description" render="Label" position="10,604" size="503,24" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" backgroundColor="window-bg"/> # For ViX
 	</screen>
@@ -2520,8 +2447,7 @@ except Exception as e:
 	<screen name="CIselectMainMenu" position="center,center" size="560,550">
 		<widget name="CiList" position="0,0" size="560,450" zPosition="10" scrollbarMode="showOnDemand"/>
 		<ePixmap pixmap="div-h.png" position="10,610" zPosition="1" size="503,2"/>
-		<panel name="MenuRed2Panel"/>
-		<panel name="MenuGreen2Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="CIconfigMenu" position="center,center" size="560,550">
 		<widget source="CAidList_desc" render="Label" position="10,298" size="503,22" font="Regular;20" backgroundColor="#27d9dee2" transparent="1"/>
@@ -2530,10 +2456,7 @@ except Exception as e:
 		<widget name="ServiceList" position="10,197" size="503,360" zPosition="10" scrollbarMode="showOnDemand"/>
 		<ePixmap pixmap="div-h.png" position="10,610" zPosition="1" size="503,2"/>
 		<widget source="infotext" render="Label" position="10,615" size="503,30" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1"/>
-		<panel name="MenuRed2Panel"/>
-		<panel name="MenuGreen2Panel"/>
-		<panel name="MenuYellow2Panel"/>
-		<panel name="MenuBlue2Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="easyCIconfigMenu" position="209,48" size="865,623" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on"/>
@@ -2557,25 +2480,19 @@ except Exception as e:
 		<widget name="list" position="0,0" size="560,450" zPosition="10" scrollbarMode="showOnDemand"/>
 		<ePixmap pixmap="div-h.png" position="10,610" zPosition="1" size="503,2"/>
 		<widget source="introduction" render="Label" position="10,615" size="503,30" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1"/>
-		<panel name="MenuRed2Panel"/>
-		<panel name="MenuGreen2Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="myProviderSelection" position="center,center" size="560,550">
 		<widget name="list" position="0,0" size="560,450" zPosition="10" scrollbarMode="showOnDemand"/>
 		<ePixmap pixmap="div-h.png" position="10,610" zPosition="1" size="503,2"/>
 		<widget source="introduction" render="Label" position="10,615" size="503,30" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1"/>
-		<panel name="MenuRed2Panel"/>
-		<panel name="MenuGreen2Panel"/>
-		<panel name="MenuYellow2Panel"/>
-		<panel name="MenuBlue2Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="myChannelSelection" position="center,center" size="560,550">
 		<widget name="list" position="0,0" size="560,450" zPosition="10" scrollbarMode="showOnDemand"/>
 		<ePixmap pixmap="div-h.png" position="10,610" zPosition="1" size="503,2"/>
 		<widget source="introduction" render="Label" position="10,615" size="503,30" font="Regular;19" halign="center" valign="center" backgroundColor="window-bg" transparent="1"/>
-		<panel name="MenuRed2Panel"/>
-		<panel name="MenuGreen2Panel"/>
-		<panel name="MenuBlue2Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="DefaultServiceScan" position="150,115" size="420,390">
 		<widget source="FrontendInfo" render="Pixmap" pixmap="icons/scan-s.png" position="5,5" size="64,64" transparent="1" alphatest="blend">
@@ -2655,30 +2572,19 @@ except Exception as e:
 	</screen>
 	<screen name="CCcamInfoRemoteBoxMenu" position="center,center" size="560,550">
 		<widget name="list" position="0,0" size="560,450" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0"/>
-		<panel name="MenuRed1Panel"/>
-		<panel name="MenuGreen1Panel"/>
-		<panel name="MenuYellow1Panel"/>
-		<panel name="MenuBlue1Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="CCcamInfoShareInfo" position="center,center" size="560,550">
 		<widget name="list" position="0,0" size="560,450" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0"/>
-		<panel name="MenuRed1Panel"/>
-		<panel name="MenuGreen1Panel"/>
-		<panel name="MenuYellow1Panel"/>
-		<panel name="MenuBlue1Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="CCcamInfoConfigSwitcher" position="center,center" size="560,550">
 		<widget name="list" position="0,0" size="560,450" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0"/>
-		<panel name="MenuRed1Panel"/>
-		<panel name="MenuGreen1Panel"/>
-		<panel name="MenuYellow1Panel"/>
-		<panel name="MenuBlue1Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="CCcamInfoMenuConfig" position="center,center" size="560,550">
 		<widget name="list" position="0,0" size="560,450" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0"/>
-		<panel name="MenuRed1Panel"/>
-		<panel name="MenuGreen1Panel"/>
-		<panel name="MenuYellow1Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="OscamInfoMenu" position="center,center" size="560,550">
 		<widget name="mainmenu" position="0,0" size="560,450" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0"/>
@@ -2689,8 +2595,7 @@ except Exception as e:
 	<screen name="OscamInfoConfigScreen" position="center,center" size="560,550">
 		<widget name="config" position="0,0" size="560,250" foregroundColor="window-fg" backgroundColor="window-bg" scrollbarMode="showOnDemand" transparent="0"/>
 		<widget name="status" position="10,390" size="503,240" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0"/>
-		<panel name="MenuRed2Panel"/>
-		<panel name="MenuGreen2Panel"/>
+		<panel name="ButtonBarAuto1Panel"/>
 	</screen>
 	<screen name="LogManager" position="center,center" size="560,400" title="Log Manager">
 		<panel name="MenuRed3Panel"/>
