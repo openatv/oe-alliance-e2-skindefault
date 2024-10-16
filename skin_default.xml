@@ -198,6 +198,33 @@
 		<widget source="key_blue" render="Label" position="420,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#141484" transparent="1"/>
 	</screen>
 
+	<screen name="MenuRedAuto4Panel">
+		<ePixmap pixmap="buttons/red.png" position="0,0" size="e*0.25,40" alphatest="on"/>
+		<widget objectTypes="key_red,Button,Label" name="key_red" position="0,0" zPosition="1" size="e*0.25,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1"/>
+		<widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="0,0" zPosition="1" size="e*0.25,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1"/>
+	</screen>
+	<screen name="MenuGreenAuto4Panel">
+		<ePixmap pixmap="buttons/green.png" position="e*0.25,0" size="e*0.25,40" alphatest="on"/>
+		<widget objectTypes="key_green,Button,Label" name="key_green" position="e*0.25,0" zPosition="1" size="e*0.25,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1"/>
+		<widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="e*0.25,0" zPosition="1" size="e*0.25,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1"/>
+	</screen>
+	<screen name="MenuYellowAuto4Panel">
+		<ePixmap pixmap="buttons/yellow.png" position="e*0.5,0" size="e*0.25,40" alphatest="on"/>
+		<widget objectTypes="key_yellow,Button,Label" name="key_yellow" position="e*0.5,0" zPosition="1" size="e*0.25,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" transparent="1"/>
+		<widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="e*0.5,0" zPosition="1" size="e*0.25,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" transparent="1"/>
+	</screen>
+	<screen name="MenuBlueAuto4Panel">
+		<ePixmap pixmap="buttons/blue.png" position="e*0.75,0" size="e*0.25,40" alphatest="on"/>
+		<widget objectTypes="key_blue,Button,Label" name="key_blue" position="e*0.75,00" zPosition="1" size="e*0.25,40" font="Regular;20" halign="center" valign="center" backgroundColor="#141484" transparent="1"/>
+		<widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="e*0.75,0" zPosition="1" size="e*0.25,40" font="Regular;20" halign="center" valign="center" backgroundColor="#141484" transparent="1"/>
+	</screen>
+
+	<screen name="__DynamicColorButtonTemplate__">
+		<panel name="MenuRedAuto4Panel" conditional="key_red"/>
+		<panel name="MenuGreenAuto4Panel" conditional="key_green"/>
+		<panel name="MenuYellowAuto4Panel" conditional="key_yellow"/>
+		<panel name="MenuBlueAuto4Panel" conditional="key_blue"/>
+	</screen>
 
 
 <!-- System Menu's -->
