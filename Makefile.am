@@ -1,4 +1,4 @@
-SUBDIRS = fonts skin_default skin_fallback_1080
+SUBDIRS = fonts skin_default
 
 installdir = $(datadir)/enigma2
 install_DATA = skin_default.xml \
