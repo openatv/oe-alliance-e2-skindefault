@@ -1258,22 +1258,17 @@ self.instance.move(ePoint(int(deskwidth - newwidth)//2,int(deskheight - newheigh
 			<convert type="ClockToText">Format:, %A , %d.%m.%Y</convert>
 		</widget>
 	</screen>
-<!-- 	<screen name="Volume" position="40,40" size="390,68" title="Volume" flags="wfNoBorder" backgroundColor="transparent" zPosition="99">
-		<widget name="Volume" position="0,0" size="390,68" pixmap="menu/volume_up.png" alphatest="blend" zPosition="3" transparent="1" />
-		<ePixmap position="0,0" size="390,68" zPosition="1" pixmap="menu/volume_background.png" transparent="1" alphatest="blend" />
-		<widget font="Regular;36" foregroundColor="window-fg" backgroundColor="window-bg" halign="center" valign="center" render="VolumeText" source="global.CurrentTime" position="315,14" size="62,44" zPosition="20" transparent="1" />
-	</screen> -->
-<screen name="Volume" position="40,40" size="200,126" title="Volume" flags="wfNoBorder" backgroundColor="transparent" zPosition="99">
-  <widget name="Volume" position="20,92" size="160,18" zPosition="0" transparent="1" foregroundColor="infobar_service_frgrnd" />
-  <ePixmap position="0,0" size="200,126" zPosition="1" pixmap="menu/volume_BG.png" transparent="1" alphatest="blend" />
-  <widget font="Regular;44" foregroundColor="black" backgroundColor="darkgrey" halign="center" valign="center" render="VolumeText" source="global.CurrentTime" position="100,19" size="82,54" zPosition="20" transparent="1"   />
- <widget name="Volume" pixmap="menu/volume-up.png" position="21,93" zPosition="2" size="156,16" transparent="1" />
-</screen>
-<screen name="UnhandledKey" position="40,40" size="96,96" title="UnhandledKey" zPosition="101" backgroundColor="transparent" flags="wfNoBorder">
-  <widget name="UnhandledKeyPixmap" position="0,0" size="96,96" zPosition="2" pixmap="menu/unhandled-key.png" alphatest="blend" transparent="1" />
-</screen>
+	<screen name="Volume" position="40,40" size="200,126" title="Volume" flags="wfNoBorder" backgroundColor="transparent" zPosition="99">
+		<widget name="Volume" position="20,92" size="160,18" zPosition="0" transparent="1" foregroundColor="infobar_service_frgrnd" />
+		<ePixmap position="0,0" size="200,126" zPosition="1" pixmap="screens/volume_background.png" transparent="1" alphatest="blend" />
+		<widget font="Regular;44" foregroundColor="black" backgroundColor="darkgrey" halign="center" valign="center" render="VolumeText" source="global.CurrentTime" position="100,19" size="82,54" zPosition="20" transparent="1"   />
+		<widget name="Volume" pixmap="screens/volume_up.png" position="21,93" zPosition="2" size="156,16" transparent="1" />
+	</screen>
+	<screen name="UnhandledKey" position="40,40" size="96,96" title="UnhandledKey" zPosition="101" backgroundColor="transparent" flags="wfNoBorder">
+		<widget name="UnhandledKeyPixmap" position="0,0" size="96,96" zPosition="2" pixmap="screens/unhandled-key.png" alphatest="blend" transparent="1" />
+	</screen>
 	<screen name="Mute" position="40,40" size="96,96" title="Mute" zPosition="11" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" size="96,96" zPosition="2" pixmap="menu/mute.png" transparent="1" alphatest="blend" />
+		<ePixmap position="0,0" size="96,96" zPosition="2" pixmap="screens/mute.png" transparent="1" alphatest="blend" />
 	</screen>
 	<screen name="PictureInPictureZapping" flags="wfNoBorder" position="40,40" size="335,71" title="PiPZap" zPosition="100">
 		<eLabel position="1,1" size="333,69" backgroundColor="window-bg" zPosition="-1" transparent="0" />
@@ -3020,10 +3015,10 @@ if len(listitems.list) &gt; 2:
 				"itemHeight": 52
 				}</convert>
 		</widget>
-		<widget name="a_off" position="715,90" zPosition="1" size="36,97" pixmap="icons/aoff.png" alphatest="on" />
-		<widget name="a_red" position="715,90" zPosition="1" size="36,97" pixmap="icons/ared.png" alphatest="on" />
-		<widget name="a_yellow" position="715,90" zPosition="1" size="36,97" pixmap="icons/ayellow.png" alphatest="on" />
-		<widget name="a_green" position="715,90" zPosition="1" size="36,97" pixmap="icons/agreen.png" alphatest="on" />
+		<widget name="a_off" position="715,90" zPosition="1" size="36,97" pixmap="icons/traffic_off.png" alphatest="on" />
+		<widget name="a_red" position="715,90" zPosition="1" size="36,97" pixmap="icons/traffic_red.png" alphatest="on" />
+		<widget name="a_yellow" position="715,90" zPosition="1" size="36,97" pixmap="icons/traffic_yellow.png" alphatest="on" />
+		<widget name="a_green" position="715,90" zPosition="1" size="36,97" pixmap="icons/traffic_green.png" alphatest="on" />
 		<widget name="feedstatusOFF" position="760,123" size="180,30" zPosition="1" font="Regular; 24" halign="left" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" />
 		<widget name="feedstatusRED" position="760,91" size="180,30" zPosition="1" font="Regular; 24" halign="left" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" />
 		<widget name="feedstatusYELLOW" position="760,123" size="180,30" zPosition="1" font="Regular; 24" halign="left" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" />
@@ -3047,10 +3042,10 @@ if len(listitems.list) &gt; 2:
 				"itemHeight": 52
 				}</convert>
 		</widget>
-		<widget name="traffic_off" position="715,90" zPosition="1" size="36,97" pixmap="icons/aoff.png" alphatest="on" />
-		<widget name="traffic_red" position="715,90" zPosition="1" size="36,97" pixmap="icons/ared.png" alphatest="on" />
-		<widget name="traffic_yellow" position="715,90" zPosition="1" size="36,97" pixmap="icons/ayellow.png" alphatest="on" />
-		<widget name="traffic_green" position="715,90" zPosition="1" size="36,97" pixmap="icons/agreen.png" alphatest="on" />
+		<widget name="traffic_off" position="715,90" zPosition="1" size="36,97" pixmap="icons/traffic_off.png" alphatest="on" />
+		<widget name="traffic_red" position="715,90" zPosition="1" size="36,97" pixmap="icons/traffic_red.png" alphatest="on" />
+		<widget name="traffic_yellow" position="715,90" zPosition="1" size="36,97" pixmap="icons/traffic_yellow.png" alphatest="on" />
+		<widget name="traffic_green" position="715,90" zPosition="1" size="36,97" pixmap="icons/traffic_green.png" alphatest="on" />
 		<widget name="feedstatus_off" position="760,123" size="180,30" zPosition="1" font="Regular; 24" halign="left" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" />
 		<widget name="feedstatus_red" position="760,91" size="180,30" zPosition="1" font="Regular; 24" halign="left" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" />
 		<widget name="feedstatus_yellow" position="760,123" size="180,30" zPosition="1" font="Regular; 24" halign="left" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" />
