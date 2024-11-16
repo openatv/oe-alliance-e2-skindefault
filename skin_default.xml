@@ -1068,7 +1068,7 @@ self['config'].l.setSeperation(int(300*f))</applet>
 		<widget source="Title" render="Label" position="72,10" foregroundColor="infobar_service_frgrnd" size="618,53" noWrap="1" valign="center" font="Regular;34" backgroundColor="window-bg" transparent="1" />
 		<widget name="icon" position="10,10" size="53,53" pixmaps="icons/input_question.png,icons/input_info.png,icons/input_message.png,icons/input_warning.png,icons/input_error.png" alphatest="blend" conditional="icon" scale="1" transparent="1" />
 		<widget name="text" position="10,80" size="780,53" font="Regular;22" valign="center" halign="center" backgroundColor="window-bg" foregroundColor="window-fg" />
-		<widget name="list" position="10,150" size="780,240" textPadding="10,0" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
+		<widget name="list" position="10,150" size="780,240" padding="10,0" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
 		<eLabel name="Line_Fullscreen" position="10,70" size="780,1" zPosition="10" backgroundColor="infobar_sunken_frgnd_dark" />
 		<applet type="onLayoutFinish"># this should be factored out into some helper code,but currently demonstrates applets.
 from __future__ import division
@@ -3699,7 +3699,7 @@ if len(listitems.list) &gt; 2:
 	</screen>
 	<!-- AutoVideoModeLabel -->
 	<screen name="AutoVideoModeLabel" position="center,center" size="360,80" resolution="1280,720" flags="wfNoBorder">
-		<widget name="content" position="center,40" size="360,35" font="Regular;20" halign="center" valign="center" backgroundColor="window-bg" foregroundColor="window-fg" zPosition="1" noWrap="1" scrollbarMode="showNever" />
+		<widget name="content" position="center,40" size="360,35" font="Regular;20" halign="center" valign="center" backgroundColor="window-bg" foregroundColor="window-fg" zPosition="1" noWrap="1" />
 		<widget name="restxt" position="0,75" size="360,35" font="Regular;20" halign="center" valign="center" backgroundColor="window-bg" foregroundColor="window-fg" zPosition="1" noWrap="1" />
 	</screen>
 	<!-- Bluetooth Setup -->
