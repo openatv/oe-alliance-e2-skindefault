@@ -36,6 +36,11 @@
 		<eLabel text="MENU" position="1045,615" size="60,30" cornerRadius="5" font="Regular;20" foregroundColor="window-sel-fg" backgroundColor="window-sel-bg" halign="center" valign="center" zPosition="10" />
 		<eLabel text="EXIT" position="1115,615" size="60,30" cornerRadius="5" font="Regular;20" foregroundColor="window-sel-fg" backgroundColor="window-sel-bg" halign="center" valign="center" zPosition="10" />
 	</screen>
+	<screen name="Template_Fullcreen_Text-Button_Information">
+		<eLabel text="MENU" position="1185,615" size="60,30" cornerRadius="5" font="Regular;20" foregroundColor="window-sel-fg" backgroundColor="window-sel-bg" halign="center" valign="center" zPosition="10" />
+		<eLabel text="HELP" position="1045,615" size="60,30" cornerRadius="5" font="Regular;20" foregroundColor="window-sel-fg" backgroundColor="window-sel-bg" halign="center" valign="center" zPosition="10" />
+		<eLabel text="EXIT" position="1115,615" size="60,30" cornerRadius="5" font="Regular;20" foregroundColor="window-sel-fg" backgroundColor="window-sel-bg" halign="center" valign="center" zPosition="10" />
+	</screen>
 	<!-- SKIN-DESIGN-COLOR-BUTTONS-FULLSCREEN -->
 	<screen name="Template_Color_Buttons_Fullscreen">
 		<panel name="Template_Color_Buttons_Fullscreen_Red" />

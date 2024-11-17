@@ -94,25 +94,25 @@
 		<widget name="menulist" position="10,65" size="700,270" itemHeight="30" font="Regular;22" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
 		<widget source="description" render="Label" position="10,350" size="700,160" font="Regular;20" foregroundColor="window-fg" halign="center" backgroundColor="window-bg" valign="center" transparent="1" />
 		<panel name="Template_Color_Buttons_Setup_Menu" />
-		<panel name="Template_Text_Buttons_Setup_Menu_O_E_Network" />
+		<panel name="Template_Text_Buttons_Setup_Menu_O_E" />
 	</screen>
 	<screen name="NetworkMacSetup" position="center,center" size="950,570" resolution="1280,720" title="MAC-address settings">
 		<widget name="config" position="10,10" size="930,420" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
 		<widget source="introduction" render="Label" position="10,435" size="930,90" font="Regular;20" foregroundColor="window-fg" halign="center" backgroundColor="window-bg" valign="center" transparent="1" />
 		<panel name="Template_Color_Buttons_Setup_Menu" />
-		<panel name="Template_Text_Buttons_Setup_Menu_O_E_Network" />
+		<panel name="Template_Text_Buttons_Setup_Menu_O_E" />
 	</screen>
 	<screen name="NetworkMountsMenu" position="center,center" size="950,570" resolution="1280,720" title="Mounts Setup">
 		<widget name="menulist" position="10,10" size="930,420" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
 		<widget name="introduction" position="10,435" size="930,90" font="Regular;20" foregroundColor="window-fg" halign="center" backgroundColor="window-bg" valign="center" transparent="1" />
 		<panel name="Template_Color_Buttons_Setup_Menu" />
-		<panel name="Template_Text_Buttons_Setup_Menu_O_E_Network" />
+		<panel name="Template_Text_Buttons_Setup_Menu_O_E" />
 	</screen>
 	<screen name="NameserverSetup" position="center,center" size="950,570" resolution="1280,720" title="Nameserver Setup">
 		<widget name="config" position="10,10" size="930,450" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
 		<widget name="introduction" position="10,490" size="930,30" font="Regular;22" halign="center" backgroundColor="window-bg" transparent="1" />
 		<panel name="Template_Color_Buttons_Setup_Menu" />
-		<panel name="Template_Text_Buttons_Setup_Menu_O_E_Network" />
+		<panel name="Template_Text_Buttons_Setup_Menu_O_E" />
 	</screen>
 	<screen name="NetworkAdapterSelection" position="center,center" size="950,570" resolution="1280,720" title="Select Network Adapter">
 		<widget source="list" render="Listbox" position="10,10" size="930,460" enableWrapAround="1" scrollbarMode="showOnDemand" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1">
@@ -128,7 +128,7 @@
 		</widget>
 		<widget name="introduction" position="10,490" size="930,30" font="Regular;22" halign="center" backgroundColor="window-bg" transparent="1" />
 		<panel name="Template_Color_Buttons_Setup_Menu" />
-		<panel name="Template_Text_Buttons_Setup_Menu_O_E_Network" />
+		<panel name="Template_Text_Buttons_Setup_Menu_O_E" />
 	</screen>
 	<screen name="NetworkAdapterTest" position="center,center" size="950,570" resolution="1280,720" title="Network test...">
 		<widget name="Adaptertext" position="70,20" size="400,30" zPosition="1" font="Regular;22" backgroundColor="window-bg" transparent="1" />
@@ -165,7 +165,7 @@
 		<widget name="EditSettingsButton" position="260,430" size="300,35" pixmaps="menu/lan-seloff.png,menu/lan-sel300.png" zPosition="1" alphatest="blend" />
 		<widget name="InfoText" position="70,20" size="700,387" zPosition="25" font="Regular;22" valign="center" halign="center" />
 		<panel name="Template_Color_Buttons_Setup_Menu" />
-		<panel name="Template_Text_Buttons_Setup_Menu_O_E_Network" />
+		<panel name="Template_Text_Buttons_Setup_Menu_O_E" />
 	</screen>
 	<screen name="WlanStatus" position="center,center" size="950,570" resolution="1280,720" title="Wireless Network State">
 		<widget source="IF" render="Label" position="70,15" size="495,32" font="Regular;24" backgroundColor="window-bg" transparent="1" />
@@ -193,7 +193,7 @@
 		<widget source="enc" render="Label" position="470,400" size="280,35" valign="center" font="Regular;22" backgroundColor="window-bg" transparent="1" />
 		<widget source="encryption_type" render="Label" position="470,440" size="280,35" valign="center" font="Regular;22" backgroundColor="window-bg" transparent="1" />
 		<panel name="Template_Color_Buttons_Setup_Menu" />
-		<panel name="Template_Text_Buttons_Setup_Menu_O_E_Network" />
+		<panel name="Template_Text_Buttons_Setup_Menu_O_E" />
 	</screen>
 	<screen name="WlanScan" position="center,center" size="950,570" resolution="1280,720" title="Choose a Wireless Network">
 		<widget source="info" render="Label" position="70,10" size="700,32" font="Regular;24" backgroundColor="window-bg" transparent="1" />
@@ -212,7 +212,7 @@
 				}</convert>
 		</widget>
 		<panel name="Template_Color_Buttons_Setup_Menu" />
-		<panel name="Template_Text_Buttons_Setup_Menu_O_E_Network" />
+		<panel name="Template_Text_Buttons_Setup_Menu_O_E" />
 	</screen>
 	<screen name="WlanSelection" position="center,center" size="950,570" resolution="1280,720" title="Wireless Network Configuration...">
 		<eLabel text="Wireless Network Adapter Selection..." position="58,10" size="525,40" valign="bottom" font="Regular; 24" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" />
@@ -402,10 +402,8 @@
 		<widget name="config" position="10,5" size="930,70" font="Regular;24" itemHeight="35" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" />
 		<widget name="footnote" position="15,495" size="930,25" font="Regular;20" valign="center" foregroundColor="event-frgrnd" />
 		<widget name="description" position="15,400" size="930,90" font="Regular;22" valign="center" />
-		<widget name="Image" position="0,0" size="0,0" alphatest="blend" conditional="Image" transparent="1" />
 		<widget name="HelpWindow" position="459,418" size="486,102" zPosition="1" transparent="1" alphatest="blend" />
 		<eLabel name="Line_Setup" position="0,395" size="950,1" zPosition="10" backgroundColor="infobar_sunken_frgnd_dark" />
-		<panel name="setup_common0" />
 		<panel name="Template_Color_Buttons_Setup_Menu" />
 		<panel name="Template_Text_Buttons_Setup_Menu_O_E" />
 	</screen>
@@ -495,7 +493,7 @@
 		<widget name="config" position="10,10" size="930,385" font="Regular;24" itemHeight="35" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" />
 		<widget name="footnote" position="15,495" size="930,25" font="Regular;20" valign="center" foregroundColor="event-frgrnd" />
 		<widget name="description" position="15,400" size="930,90" font="Regular;22" valign="center" />
-		<widget name="Image" position="0,0" size="0,0" alphatest="blend" conditional="Image" transparent="1" />
+		<!-- <widget name="Image" position="0,0" size="0,0" alphatest="blend" conditional="Image" transparent="1" /> -->
 		<widget name="HelpWindow" position="459,418" size="486,102" zPosition="1" transparent="1" alphatest="blend" />
 		<eLabel name="Line_Setup" position="0,395" size="950,1" zPosition="10" backgroundColor="infobar_sunken_frgnd_dark" />
 		<panel name="Template_Color_Buttons_Setup_Menu" />
@@ -545,7 +543,7 @@ self['config'].l.setSeperation(int(300*f))</applet>
 	</screen>
 	<screen name="LED_GigaSetup" position="center,center" size="950,570" resolution="1280,720" title="Setup">
 		<widget name="config" position="10,10" size="930,420" font="Regular;24" itemHeight="35" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" />
-		<widget name="description" position="10,435" size="930,90" font="Regular;22" valign="center" />
+		<widget name="description" position="10,435" size="930,90" conditional="description" font="Regular;22" valign="center" />
 		<panel name="Template_Color_Buttons_Setup_Menu" />
 		<panel name="Template_Text_Buttons_Setup_Menu_E" />
 	</screen>
@@ -567,7 +565,7 @@ self['config'].l.setSeperation(int(300*f))</applet>
 				"itemHeight": 34
 				}</convert>
 		</widget>
-		<widget source="description" position="10,435" size="930,86" font="Regular;22" valign="center" />
+		<widget source="description" render="Label" position="10,435" size="930,86" font="Regular;22" valign="center" />
 		<panel name="Template_Color_Buttons_Setup_Menu" />
 		<panel name="Template_Text_Buttons_Setup_Menu_I_M_E" />
 	</screen>
@@ -581,7 +579,7 @@ self['config'].l.setSeperation(int(300*f))</applet>
 							"itemHeight": 70
 							}</convert>
 		</widget>
-		<widget source="description" position="10,435" size="930,86" font="Regular;22" valign="center" />
+		<widget source="introduction" render="Label" position="10,435" size="930,86" font="Regular;22" valign="center" />
 		<panel name="Template_Color_Buttons_Setup_Menu" />
 		<panel name="Template_Text_Buttons_Setup_Menu_E" />
 	</screen>
@@ -1965,7 +1963,7 @@ if len(listitems.list) &gt; 2:
 		<widget source="ServiceEvent" render="Label" position="780,125" size="460,220" font="Regular; 20" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" valign="top" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<widget source="ServiceEvent" render="SingleEpgList" position="780,365" size="460,200" font="Regular; 20" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" valign="top" zPosition="2" />
+		<widget source="ServiceEvent" render="SingleEpgList" maxEvents="10" position="780,365" size="460,200" font="Regular; 20" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" valign="top" zPosition="2" />
 		<widget source="ServiceEvent" render="Progress" position="840,99" size="200,5" foregroundColor="#eb00" transparent="1" zPosition="2">
 			<convert type="EventTime">Progress</convert>
 		</widget>
@@ -1974,7 +1972,7 @@ if len(listitems.list) &gt; 2:
 			<convert type="ServiceOrbitalPosition" />
 		</widget>
 		<widget source="ServiceEvent" render="Picon" position="780,36" size="80,48" zPosition="5" alphatest="blend" transparent="1">
-			<convert type="EventInfo">ServiceReference</convert>
+			 <convert type="ServiceName">Reference</convert>
 		</widget>
 		<widget source="ServiceEvent" render="PrimeTime" position="780,575" size="460,30" font="Regular;22" zPosition="2" backgroundColor="window-bg" foregroundColor="#eb00" noWrap="1" transparent="1" />
 		<panel name="Template_Color_Buttons_Fullscreen" />
@@ -2001,7 +1999,7 @@ if len(listitems.list) &gt; 2:
 		<widget source="ServiceEvent" render="Label" position="780,125" size="460,220" font="Regular; 20" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" valign="top" zPosition="2">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
-		<widget source="ServiceEvent" render="SingleEpgList" position="780,365" size="460,200" font="Regular; 20" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" valign="top" zPosition="2" />
+		<widget source="ServiceEvent" render="SingleEpgList" maxEvents="10" position="780,365" size="460,200" font="Regular; 20" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" valign="top" zPosition="2" />
 		<widget source="ServiceEvent" render="Progress" position="840,99" size="200,5" foregroundColor="#eb00" transparent="1" zPosition="2">
 			<convert type="EventTime">Progress</convert>
 		</widget>
@@ -2010,8 +2008,8 @@ if len(listitems.list) &gt; 2:
 			<convert type="ServiceOrbitalPosition" />
 		</widget>
 		<widget source="ServiceEvent" render="Picon" position="780,36" size="80,48" zPosition="5" alphatest="blend" transparent="1">
-			<convert type="EventInfo">ServiceReference</convert>
-		</widget>
+           	 	<convert type="ServiceName">Reference</convert>
+        	</widget>
 		<widget source="ServiceEvent" render="PrimeTime" position="780,575" size="460,30" font="Regular;22" zPosition="2" backgroundColor="window-bg" foregroundColor="#eb00" noWrap="1" transparent="1" />
 		<panel name="Template_Color_Buttons_Fullscreen" />
 		<panel name="Template_Fullcreen_Text_Button_EPG" />
@@ -2034,8 +2032,8 @@ if len(listitems.list) &gt; 2:
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget source="ServiceEvent" render="Picon" position="780,103" size="80,48" zPosition="5" alphatest="blend" transparent="1">
-			<convert type="EventInfo">ServiceReference</convert>
-		</widget>
+            		<convert type="ServiceName">Reference</convert>
+       	    	</widget>
 		<eLabel position="780,509" size="450,1" backgroundColor="infobar_sunken_frgnd_dark" zPosition="10" />
 		<eLabel position="780,580" size="450,1" backgroundColor="infobar_sunken_frgnd_dark" zPosition="10" />
 		<widget source="ServiceEvent" render="SingleEpgList" position="780,510" size="450,70" font="Regular; 20" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" valign="top" zPosition="2" />
@@ -2334,6 +2332,7 @@ if len(listitems.list) &gt; 2:
 		<widget source="Service" render="Label" position="234,92" size="480,50" valign="bottom" font="Regular; 30" halign="center" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
+		<widget name="lab1" position="68,119" size="540,100" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
 		<widget name="list" position="10,155" size="700,450" itemHeight="30" EventFontSingle="Regular;20" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" EntryForegroundColor="window-fg" EntryForegroundColorSelected="window-sel-fg" EntryForegroundColorNow="infobar_sunken_frgnd_dark" EntryForegroundColorNowSelected="window-sel-fg" EntryForegroundColorPast="window-fg" EntryForegroundColorPastSelected="window-sel-fg" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="0" />
 		<panel name="Template_Color_Buttons_Fullscreen" />
 		<panel name="Template_Fullcreen_Text_Button_EPG" />
@@ -3044,7 +3043,6 @@ if len(listitems.list) &gt; 2:
 		<widget source="description" render="Label" position="70,10" size="700,60" font="Regular;20" foregroundColor="window-fg" backgroundColor="window-bg" halign="center" valign="center" transparent="1" />
 		<eLabel position="70,70" size="700,1" zPosition="1" backgroundColor="infobar_sunken_frgnd_dark" />
 		<widget name="config" position="70,80" size="700,360" transparent="0" zPosition="1" font="Regular;20" itemHeight="36" scrollbarMode="showOnDemand" />
-		<widget source="options" render="Label" position="70,450" size="700,70" font="Regular;20" backgroundColor="window-bg" halign="center" foregroundColor="window-fg" valign="center" transparent="1" />
 		<panel name="Template_Color_Buttons_Setup_Menu" />
 		<panel name="Template_Text_Buttons_Setup_Menu_O_E" />
 	</screen>
@@ -3443,7 +3441,7 @@ if len(listitems.list) &gt; 2:
 		<widget name="config" position="10,250" size="700,270" itemHeight="30" zPosition="14" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" transparent="1" />
 		<widget name="HelpWindow" position="106,98" size="486,102" zPosition="1" transparent="1" alphatest="blend" />
 		<eLabel position="75,560" size="210,3" backgroundColor="ButtonRed" objectTypes="key_red,Button,Label" zPosition="10" />
-		<widget name="languagetext" position="70,530" size="220,30" noWrap="1" zPosition="1" valign="center" font="Regular;20" halign="left" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
+		<widget name="languagetext" position="70,530" size="220,30" conditional="languagetext" noWrap="1" zPosition="1" valign="center" font="Regular;20" halign="left" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
 		<panel name="Template_Text_Buttons_Setup_Menu_E" />
 		<panel name="Template_Color_Buttons_Setup_Menu_Yellow" />
 		<panel name="Template_Line_Setup_523" />
@@ -3531,7 +3529,7 @@ if len(listitems.list) &gt; 2:
 					"itemHeight": 30
 				}</convert>
 		</widget>
-		<widget name="buttonlist" position="70,530" size="700,34" font="Regular; 24" halign="center" zPosition="2" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" scrollbarMode="showNever" />
+		<widget name="buttonlist" position="70,530" size="700,34" font="Regular; 24" halign="center" zPosition="2" foregroundColor="window-fg" backgroundColor="window-bg" transparent="0" />
 		<panel name="wizard_rc_templateNew" />
 		<panel name="Template_Line_Setup_523" />
 		<panel name="Template_Text_Buttons_Setup_Menu_H_E" />

@@ -10,6 +10,9 @@ dist_install_DATA = \
     b_tl.png \
     b_tr.png \
     mute.png \
+    mute2.png \
     unhandled-key.png \
+    unhandled-key2.png \
     volume_background.png \
+    volume_2.png \
     volume_up.png
