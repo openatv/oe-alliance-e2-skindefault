@@ -3,16 +3,20 @@
 	<!--   skin_default_templates -->
 	<!-- ##########-Templates Fullscreen-########## -->
 	<!-- Fullscreen position="15,60"   size="1250,650" resolution="1280,720" -->
-	<screen name="FullscreenTopPanel">
-		<widget source="global.CurrentTime" render="Label" position="1140,0" size="100,25" font="Regular;24" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" halign="right" valign="top" transparent="1" zPosition="1">
+	<screen name="Fullscreen_Title_TopPanel">
+		<widget source="global.CurrentTime" render="Label" position="1090,10" size="160,40" font="Italic; 27" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" textBorderColor="black" textBorderWidth="1" halign="right" valign="center" transparent="1" zPosition="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="Label" position="780,0" size="350,25" font="Regular; 20" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" halign="left" transparent="1" zPosition="1">
+		<widget source="global.CurrentTime" render="Label" position="750,10" size="340,40" font="Italic; 20" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" textBorderColor="black" textBorderWidth="1" halign="right" valign="center" transparent="1" zPosition="1">
 			<convert type="ClockToText">Date</convert>
 		</widget>
+		<eRectangle name="title_bg" position="10,10" size="1260,40" backgroundColor="#12142434" cornerRadius="10" borderWidth="1" borderColor="darkgrey" zPosition="-9" />
+		<eLabel name="title_line" position="18,49" size="1244,1" zPosition="10" backgroundColor="infobar_sunken_frgnd_dark" />
+		<eLabel name="fullscreen_bg" position="16,56" size="1248,642" zPosition="-10" backgroundColor="background" />
+		<widget source="Title" render="Label" position="30,10" size="740,40" font="Italic; 27" halign="left" valign="center" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" textBorderColor="black" textBorderWidth="1" zPosition="1" />
 	</screen>
 	<screen name="FullscreenTitlePanel">
-		<widget source="Title" render="Label" position="20,25" size="850,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" zPosition="1" />
+		<widget source="Title" render="Label" position="30,10" size="740,40" font="Italic; 27" halign="left" valign="center" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" textBorderColor="black" textBorderWidth="1" zPosition="1" />
 	</screen>
 	<screen name="FullscreenPIGPanel">
 		<eLabel position="680,25" size="574,325" zPosition="2" backgroundColor="darkgrey" foregroundColor="window-bg" />
@@ -21,8 +25,13 @@
 			<convert type="ServiceName">Name</convert>
 		</widget>
 	</screen>
+ <screen name="Template_ChannelSelection_Text_Button">
+	<eLabel text="EPG" position="1190,660" size="60,30" cornerRadius="5" font="Regular;20" foregroundColor="window-sel-fg" backgroundColor="window-sel-bg" halign="center" valign="center" zPosition="10" />
+	<eLabel text="MENU" position="1050,660" size="60,30" cornerRadius="5" font="Regular;20" foregroundColor="window-sel-fg" backgroundColor="window-sel-bg" halign="center" valign="center" zPosition="10" />
+	<eLabel text="INFO" position="1120,660" size="60,30" cornerRadius="5" font="Regular;20" foregroundColor="window-sel-fg" backgroundColor="window-sel-bg" halign="center" valign="center" zPosition="10" />
+  </screen>
 	<screen name="Template_Fullcreen_Text_Button_EPG">
-		<eLabel text="EPG" position="1185,615" size="60,30" cornerRadius="4" font="Regular;20" foregroundColor="window-sel-fg" backgroundColor="window-sel-bg" halign="center" valign="center" zPosition="10" />
+		<eLabel text="EPG" position="1185,615" size="60,30" cornerRadius="5" font="Regular;20" foregroundColor="window-sel-fg" backgroundColor="window-sel-bg" halign="center" valign="center" zPosition="10" />
 		<eLabel text="MENU" position="1045,615" size="60,30" cornerRadius="5" font="Regular;20" foregroundColor="window-sel-fg" backgroundColor="window-sel-bg" halign="center" valign="center" zPosition="10" />
 		<eLabel text="INFO" position="1115,615" size="60,30" cornerRadius="5" font="Regular;20" foregroundColor="window-sel-fg" backgroundColor="window-sel-bg" halign="center" valign="center" zPosition="10" />
 	</screen>
@@ -41,6 +50,59 @@
 		<eLabel text="HELP" position="1045,615" size="60,30" cornerRadius="5" font="Regular;20" foregroundColor="window-sel-fg" backgroundColor="window-sel-bg" halign="center" valign="center" zPosition="10" />
 		<eLabel text="EXIT" position="1115,615" size="60,30" cornerRadius="5" font="Regular;20" foregroundColor="window-sel-fg" backgroundColor="window-sel-bg" halign="center" valign="center" zPosition="10" />
 	</screen>
+	
+		
+		<!-- SKIN-DESIGN-COLOR-BUTTONS-ChannelSelection -->
+	<screen name="Template_Color_Buttons_ChannelSelection">
+		<panel name="Template_Color_Buttons_ChannelSelection_Red" />
+		<panel name="Template_Color_Buttons_ChannelSelection_Green" />
+		<panel name="Template_Color_Buttons_ChannelSelection_Yellow" />
+		<panel name="Template_Color_Buttons_ChannelSelection_Blue" />
+		<eLabel name="Line_Fullscreen" position="16,652" size="1248,1" zPosition="10" backgroundColor="infobar_sunken_frgnd_dark" />
+	</screen>
+	<screen name="Template_Color_Buttons_ChannelSelection_Red">
+		<eLabel position="30,690" size="180,3" backgroundColor="ButtonRed" objectTypes="key_red,Button,Label" zPosition="10" />
+		<widget source="key_red" render="Label" position="30,690" size="180,3" backgroundColor="ButtonRed" foregroundColor="ButtonRed" objectTypes="key_red,StaticText" zPosition="10">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget name="key_red" position="26,660" size="190,30" backgroundColor="ButtonBack" font="Regular;20" foregroundColor="ButtonText" halign="center" noWrap="1" objectTypes="key_red,Button,Label" transparent="1" valign="center" zPosition="10" />
+		<widget source="key_red" render="Label" position="26,660" size="190,30" backgroundColor="ButtonBack" font="Regular;20" foregroundColor="ButtonText" halign="center" noWrap="1" objectTypes="key_red,StaticText" transparent="1" valign="center" zPosition="10">
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
+	<screen name="Template_Color_Buttons_ChannelSelection_Green">
+		<eLabel position="230,690" size="180,3" backgroundColor="ButtonGreen" objectTypes="key_green,Button,Label" zPosition="10" />
+		<widget source="key_green" render="Label" position="230,690" size="180,3" backgroundColor="ButtonGreen" foregroundColor="ButtonGreen" objectTypes="key_green,StaticText" zPosition="10">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget name="key_green" position="226,660" size="190,30" backgroundColor="ButtonBack" font="Regular;20" foregroundColor="ButtonText" halign="center" noWrap="1" objectTypes="key_green,Button,Label" transparent="1" valign="center" zPosition="10" />
+		<widget source="key_green" render="Label" position="226,660" size="190,30" backgroundColor="ButtonBack" font="Regular;20" foregroundColor="ButtonText" halign="center" noWrap="1" objectTypes="key_green,StaticText" transparent="1" valign="center" zPosition="10">
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
+	<screen name="Template_Color_Buttons_ChannelSelection_Yellow">
+		<eLabel position="430,690" size="180,3" backgroundColor="ButtonYellow" objectTypes="key_yellow,Button,Label" zPosition="10" />
+		<widget source="key_yellow" render="Label" position="430,690" size="180,3" backgroundColor="ButtonYellow" foregroundColor="ButtonYellow" objectTypes="key_yellow,StaticText" zPosition="10">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget name="key_yellow" position="426,660" size="190,30" backgroundColor="ButtonBack" font="Regular;20" foregroundColor="ButtonText" halign="center" noWrap="1" objectTypes="key_yellow,Button,Label" transparent="1" valign="center" zPosition="10" />
+		<widget source="key_yellow" render="Label" position="426,660" size="190,30" backgroundColor="ButtonBack" font="Regular;20" foregroundColor="ButtonText" halign="center" noWrap="1" objectTypes="key_yellow,StaticText" transparent="1" valign="center" zPosition="10">
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
+	<screen name="Template_Color_Buttons_ChannelSelection_Blue">
+		<eLabel position="630,690" size="180,3" backgroundColor="ButtonBlue" objectTypes="key_blue,Button,Label" zPosition="10" />
+		<widget source="key_blue" render="Label" position="630,690" size="180,3" backgroundColor="ButtonBlue" foregroundColor="ButtonBlue" objectTypes="key_blue,StaticText" zPosition="10">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget name="key_blue" position="626,660" size="190,30" backgroundColor="ButtonBack" font="Regular;20" foregroundColor="ButtonText" halign="center" noWrap="1" objectTypes="key_blue,Button,Label" transparent="1" valign="center" zPosition="10" />
+		<widget source="key_blue" render="Label" position="626,660" size="190,30" backgroundColor="ButtonBack" font="Regular;20" foregroundColor="ButtonText" halign="center" noWrap="1" objectTypes="key_blue,StaticText" transparent="1" valign="center" zPosition="10">
+			<convert type="ConditionalShowHide" />
+		</widget>
+	</screen>
+	
+	
+	
 	<!-- SKIN-DESIGN-COLOR-BUTTONS-FULLSCREEN -->
 	<screen name="Template_Color_Buttons_Fullscreen">
 		<panel name="Template_Color_Buttons_Fullscreen_Red" />
