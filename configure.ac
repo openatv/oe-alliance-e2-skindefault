@@ -21,4 +21,11 @@ skin_default/menu/Makefile
 skin_default/piconbg/Makefile
 skin_default/screens/Makefile
 skin_default/skin_default/Makefile
+skin_default/DefaultHD/Makefile
+skin_default/DefaultHD/buttons/Makefile
+skin_default/DefaultHD/epg/Makefile
+skin_default/DefaultHD/icons/Makefile
+skin_default/DefaultHD/infobar/Makefile
+skin_default/DefaultHD/screens/Makefile
+skin_default/DefaultHD/menu/Makefile
 ])

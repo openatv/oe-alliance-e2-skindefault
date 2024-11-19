@@ -177,4 +177,9 @@
 		<parameter name="EpgListSingle" value="60,156" />
 		<parameter name="InformationColors" value="0x00ffffff,0x00ffffff,0x00ffffff,0x00cccccc,0x00cccccc,0x00ffffff,0x0000ffff" />
 	</parameters>
+
+	<include filename="skin_templates.xml" />
+  	<include filename="skin_checked.xml" />
+  	<include filename="skin_unchecked.xml" />
+  
 </skin>

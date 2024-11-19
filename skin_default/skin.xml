@@ -1,9 +1,0 @@
-<skin>
-  <!--	Skin: Default-open ATV skin stein17 addition Vs 0.01	-->
-  <!--	This skin is part of the default open ATV skin; the same license applies.	-->
-  	<include filename="../skin_default.xml" />
-	<include filename="../skin.xml" />
-	<include filename="../skin_default_templates.xml" />
-  
-  
-</skin>
