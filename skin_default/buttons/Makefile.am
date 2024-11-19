@@ -1,23 +1,17 @@
 installdir = $(datadir)/enigma2/skin_default/buttons
 
-dist_install_DATA = \
+dist_install_DATA = blue_pressed.png \
     blue.png \
-    blue_pressed.png \
-    button_blue.png \
     button_blue_off.png \
-    button_green.png \
+    button_blue.png \
     button_green_off.png \
-    button_red.png \
+    button_green.png \
     button_red_off.png \
-    button_yellow.png \
+    button_red.png \
     button_yellow_off.png \
+    button_yellow.png \
     green-big.png \
     green.png \
-    key-blue.png \
-    key-exit.png \
-    key-green.png \
-    key-red.png \
-    key-yellow.png \
     key_0.png \
     key_1.png \
     key_2.png \
@@ -28,33 +22,24 @@ dist_install_DATA = \
     key_7.png \
     key_8.png \
     key_9.png \
-    key_audio.png \
     key_back_fill.png \
     key_blue.png \
     key_blue_fill.png \
-    key_channel.png \
-    key_exit.png \
-    key_f1.png \
-    key_f2.png \
-    key_f3.png \
     key_green.png \
     key_green_fill.png \
-    key_help.png \
     key_info.png \
-    key_left.png \
     key_menu.png \
-    key_next.png \
     key_ok.png \
-    key_prev.png \
-    key_prevnext.png \
     key_red.png \
     key_red_fill.png \
-    key_right.png \
     key_text.png \
-    key_tv.png \
-    key_video.png \
     key_yellow.png \
     key_yellow_fill.png \
+    key-blue.png \
+    key-exit.png \
+    key-green.png \
+    key-red.png \
+    key-yellow.png \
     mp_buttons.png \
     rec.png \
     red-big.png \
@@ -102,7 +87,6 @@ dist_install_DATA = \
     vkey_shift_sel.png \
     vkey_space.png \
     vkey_space_alt.png \
-    vkey_tab.png \
     vkey_text.png \
     vkey_yellow.png \
     vkey_yellow_l.png \

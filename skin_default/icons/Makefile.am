@@ -1,20 +1,17 @@
 installdir = $(datadir)/enigma2/skin_default/icons
 
-dist_install_DATA = \
-    ask.png \
+dist_install_DATA =     ask.png \
     az.png \
-    backward.png \
     backward_large.png \
+    backward.png \
     blank.png \
     bullet.png \
     clock.png \
-    dish.png \
     dish_scan.png \
+    dish.png \
     DVI.png \
-    epgclock.png \
     epgclock_add.png \
     epgclock_autotimer.png \
-    epgclock_disabled.png \
     epgclock_icetv.png \
     epgclock_post.png \
     epgclock_pre.png \
@@ -25,32 +22,17 @@ dist_install_DATA = \
     epgclock_selprepost.png \
     epgclock_zap.png \
     epgclock_zaprec.png \
+    epgclock.png \
     expandable-plugins.png \
     expandable.png \
-    expanded-plugins.png \
     expanded.png \
+    expanded-plugins.png \
     faz.png \
     folder.png \
-    forward.png \
     forward_large.png \
+    forward.png \
     fza.png \
     HDMI.png \
-    icon_crypt.png \
-    icon_crypt_off.png \
-    icon_dolby.png \
-    icon_dolby_off.png \
-    icon_event.png \
-    icon_format.png \
-    icon_format_off.png \
-    icon_hd_off.png \
-    icon_hd_on.png \
-    icon_rec.png \
-    icon_rec_off.png \
-    icon_stableupdate.png \
-    icon_txt.png \
-    icon_txt_off.png \
-    icon_unstableupdate.png \
-    icon_update_off.png \
     ico_dvb-c.png \
     ico_dvb-s.png \
     ico_dvb-t.png \
@@ -67,11 +49,30 @@ dist_install_DATA = \
     ico_player.png \
     ico_replay.png \
     ico_service_group.png \
-    ico_stream.png \
-    ico_stream_off.png \
     ico_sub_off.png \
     ico_sub_on.png \
     ico_view.png \
+    icon_crypt_off.png \
+    icon_crypt.png \
+    icon_dolby_off.png \
+    icon_dolby.png \
+    icon_event.png \
+    icon_format_off.png \
+    icon_format.png \
+    icon_hd_off.png \
+    icon_hd_on.png \
+    icon_rec_off.png \
+    icon_rec.png \
+    ico_stream.png \
+    ico_stream_off.png \
+    icon_txt_off.png \
+    icon_txt.png \
+    icon_stableupdate.png \
+    icon_unstableupdate.png \
+    icon_update_off.png \
+    update_off.png \
+    update_stable.png \
+    update_unstable.png \
     input_error.png \
     input_info.png \
     input_keyboard-configured.png \
@@ -85,28 +86,25 @@ dist_install_DATA = \
     input_rcold-configured.png \
     input_rcold.png \
     input_warning.png \
-    install.png \
-    installable.png \
-    installed.png \
     lcd_DVI.png \
     lcd_HDMI.png \
     lcd_Scart.png \
     lcd_YPbPr.png \
-    lock.png \
-    lockBouquet.png \
     lock_error.png \
     lock_off.png \
     lock_on.png \
+    lock.png \
+    lockBouquet.png \
     loop.png \
     marker.png \
-    mark_off.png \
     mark_on.png \
+    mark_off.png \
     menu_download.png \
-    menu_off.png \
     menu_on.png \
-    movielist.png \
-    movie_play.png \
+    menu_off.png \
     movie_play_rec.png \
+    movie_play.png \
+    movielist.png \
     mp_buttons.png \
     mp_wb_buttons.png \
     network_wired-active.png \
@@ -124,17 +122,17 @@ dist_install_DATA = \
     part_4_4.png \
     part_new.png \
     part_unwatched.png \
-    pause.png \
     pause_large.png \
+    pause.png \
     pic_frame.png \
+    play_large.png \
     play.png \
     playlist.png \
     playlistquit.png \
-    play_large.png \
     plugin.png \
-    plugin_expandable.png \
-    plugin_expanded.png \
     plugin_vertical.png \
+    plugin_expanded.png \
+    plugin_expandable.png \
     quit.png \
     rass_logo.png \
     rass_page1.png \
@@ -144,7 +142,6 @@ dist_install_DATA = \
     RCA.png \
     record.png \
     redx.png \
-    remove.png \
     rep.png \
     scan-c.png \
     scan-s.png \
@@ -152,12 +149,10 @@ dist_install_DATA = \
     Scart-YPbPr.png \
     Scart.png \
     shuffle.png \
-    slow.png \
     slow_large.png \
-    starsbar_empty.png \
-    starsbar_filled.png \
-    stop.png \
+    slow.png \
     stop_large.png \
+    stop.png \
     timer_autotimer.png \
     timer_done.png \
     timer_failed.png \
@@ -168,21 +163,22 @@ dist_install_DATA = \
     timer_rep.png \
     timer_wait.png \
     timer_zap.png \
-    traffic_green.png \
-    traffic_off.png \
-    traffic_red.png \
-    traffic_yellow.png \
     trashcan.png \
     unhandled-key-night.png \
     unhandled-key.png \
     unlock.png \
     unlockBouquet.png \
-    update_off.png \
-    update_stable.png \
-    update_unstable.png \
+    verticalline.png \
+    verticalline-plugins.png \
+    YPbPr.png \
+    za.png \
+    install.png \
+    installed.png \
+    installable.png \
+    remove.png \
     upgrade.png \
     upgradeable.png \
-    verticalline-plugins.png \
-    verticalline.png \
-    YPbPr.png \
-    za.png
+    traffic_off.png \
+    traffic_red.png \
+    traffic_green.png \
+    traffic_yellow.png

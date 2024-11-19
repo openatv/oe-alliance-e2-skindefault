@@ -1,254 +1,253 @@
 installdir = $(datadir)/enigma2/skin_default/countries
 
-dist_install_DATA = \
-    ad.png \
-    ae.png \
-    af.png \
-    ag.png \
-    ai.png \
-    al.png \
-    am.png \
-    ao.png \
-    ar.png \
-    ar_AE.png \
-    at.png \
-    au.png \
-    aw.png \
-    ax.png \
-    az.png \
-    ba.png \
-    bb.png \
-    bd.png \
-    be.png \
-    bf.png \
-    bg.png \
+dist_install_DATA =     ar_AE.png \
     bg_BG.png \
-    bh.png \
-    bi.png \
-    bj.png \
-    bn.png \
-    bo.png \
-    br.png \
-    bs.png \
-    bt.png \
-    bw.png \
-    by.png \
-    bz.png \
-    ca.png \
     ca_AD.png \
-    cd.png \
-    cf.png \
-    cg.png \
-    ch.png \
-    ci.png \
-    cl.png \
-    cm.png \
-    cn.png \
-    co.png \
-    cr.png \
     cs_CZ.png \
-    cu.png \
-    cv.png \
-    cy.png \
-    cz.png \
     da_DK.png \
-    de.png \
     de_DE.png \
-    dj.png \
-    dk.png \
-    dm.png \
-    do.png \
-    dz.png \
-    ec.png \
-    ee.png \
-    eg.png \
-    eh.png \
     el_GR.png \
     en_AU.png \
     en_GB.png \
     en_US.png \
-    er.png \
-    es-ga.png \
-    es.png \
     es_ES.png \
-    et.png \
+    es-ga.png \
     et_EE.png \
     fa_IR.png \
-    fi.png \
     fi_FI.png \
-    fj.png \
-    fm.png \
-    fr.png \
     fr_FR.png \
     fy_NL.png \
-    ga.png \
-    gb.png \
-    gd.png \
-    ge.png \
-    gh.png \
-    gm.png \
-    gn.png \
-    gq.png \
-    gr.png \
-    gt.png \
-    gw.png \
-    gy.png \
     he_IL.png \
-    hk.png \
-    hn.png \
-    hr.png \
+    zh_HK.png \
     hr_HR.png \
-    ht.png \
-    hu.png \
     hu_HU.png \
-    id.png \
     id_ID.png \
-    ie.png \
-    il.png \
-    in.png \
-    iq.png \
-    ir.png \
-    is.png \
     is_IS.png \
-    it.png \
     it_IT.png \
-    jm.png \
-    jo.png \
-    jp.png \
-    ke.png \
-    kg.png \
-    kh.png \
-    ki.png \
-    km.png \
-    kn.png \
-    kp.png \
-    kr.png \
-    ks.png \
-    ku.png \
     ku_KU.png \
-    kw.png \
-    kz.png \
-    la.png \
-    lb.png \
-    lc.png \
-    li.png \
-    lk.png \
-    lr.png \
-    ls.png \
-    lt.png \
     lt_LT.png \
-    lu.png \
-    lv.png \
     lv_LV.png \
-    ly.png \
-    ma.png \
-    mc.png \
-    md.png \
-    me.png \
-    mg.png \
-    mh.png \
     missing.png \
-    mk.png \
-    ml.png \
-    mm.png \
-    mn.png \
-    mq.png \
-    mr.png \
-    mt.png \
-    mu.png \
-    mv.png \
-    mw.png \
-    mx.png \
-    my.png \
-    mz.png \
-    na.png \
     nb_NO.png \
-    ne.png \
-    ng.png \
-    ni.png \
-    nl.png \
     nl_NL.png \
-    no.png \
     no_NO.png \
-    np.png \
-    nr.png \
-    nz.png \
-    om.png \
-    pa.png \
-    pe.png \
-    pg.png \
-    ph.png \
-    pk.png \
-    pl.png \
     pl_PL.png \
-    pr.png \
-    pt.png \
     pt_BR.png \
     pt_PT.png \
-    pw.png \
-    py.png \
-    qa.png \
-    ro.png \
     ro_RO.png \
-    rs.png \
-    ru.png \
     ru_RU.png \
-    rw.png \
-    sa.png \
-    sb.png \
-    sc.png \
-    sd.png \
-    se.png \
-    sg.png \
-    si.png \
-    sk.png \
     sk_SK.png \
-    sl.png \
     sl_SI.png \
-    sm.png \
-    sn.png \
-    so.png \
-    sr.png \
     sr_YU.png \
-    ss.png \
-    st.png \
-    sv.png \
     sv_SE.png \
-    sx.png \
-    sy.png \
-    sz.png \
-    td.png \
-    tg.png \
-    th.png \
     th_TH.png \
-    tj.png \
-    tl.png \
-    tm.png \
-    tn.png \
-    to.png \
-    tr.png \
     tr_TR.png \
-    tt.png \
-    tv.png \
-    tw.png \
-    tz.png \
-    ua.png \
-    ug.png \
     uk_UA.png \
-    us.png \
-    uy.png \
-    uz.png \
-    va.png \
-    vc.png \
-    ve.png \
-    vi.png \
     vi_VN.png \
-    vn.png \
-    vu.png \
-    ws.png \
-    ye.png \
-    za.png \
     zh_CN.png \
-    zh_HK.png \
-    zm.png \
-    zw.png
+	ad.png \
+	ae.png \
+	af.png \
+	ag.png \
+	ai.png \
+	al.png \
+	am.png \
+	ao.png \
+	ar.png \
+	at.png \
+	au.png \
+	aw.png \
+	ax.png \
+	az.png \
+	ba.png \
+	bb.png \
+	bd.png \
+	be.png \
+	bf.png \
+	bg.png \
+	bh.png \
+	bi.png \
+	bj.png \
+	bn.png \
+	bo.png \
+	br.png \
+	bs.png \
+	bt.png \
+	bw.png \
+	by.png \
+	bz.png \
+	ca.png \
+	cd.png \
+	cf.png \
+	cg.png \
+	ch.png \
+	ci.png \
+	cl.png \
+	cm.png \
+	cn.png \
+	co.png \
+	cr.png \
+	cu.png \
+	cv.png \
+	cy.png \
+	cz.png \
+	de.png \
+	dj.png \
+	dk.png \
+	dm.png \
+	do.png \
+	dz.png \
+	ec.png \
+	ee.png \
+	eg.png \
+	eh.png \
+	er.png \
+	es.png \
+	et.png \
+	fi.png \
+	fj.png \
+	fm.png \
+	fr.png \
+	ga.png \
+	gb.png \
+	gd.png \
+	ge.png \
+	gh.png \
+	gm.png \
+	gn.png \
+	gq.png \
+	gr.png \
+	gt.png \
+	gw.png \
+	gy.png \
+	hk.png \
+	hn.png \
+	hr.png \
+	ht.png \
+	hu.png \
+	id.png \
+	ie.png \
+	il.png \
+	in.png \
+	iq.png \
+	ir.png \
+	is.png \
+	it.png \
+	jm.png \
+	jo.png \
+	jp.png \
+	ke.png \
+	kg.png \
+	kh.png \
+	ki.png \
+	km.png \
+	kn.png \
+	kp.png \
+	kr.png \
+	ks.png \
+	ku.png \
+	kw.png \
+	kz.png \
+	la.png \
+	lb.png \
+	lc.png \
+	li.png \
+	lk.png \
+	lr.png \
+	ls.png \
+	lt.png \
+	lu.png \
+	lv.png \
+	ly.png \
+	ma.png \
+	mc.png \
+	md.png \
+	me.png \
+	mg.png \
+	mh.png \
+	mk.png \
+	ml.png \
+	mm.png \
+	mn.png \
+	mq.png \
+	mr.png \
+	mt.png \
+	mu.png \
+	mv.png \
+	mw.png \
+	mx.png \
+	my.png \
+	mz.png \
+	na.png \
+	ne.png \
+	ng.png \
+	ni.png \
+	nl.png \
+	no.png \
+	np.png \
+	nr.png \
+	nz.png \
+	om.png \
+	pa.png \
+	pe.png \
+	pg.png \
+	ph.png \
+	pk.png \
+	pl.png \
+	pr.png \
+	pt.png \
+	pw.png \
+	py.png \
+	qa.png \
+	ro.png \
+	rs.png \
+	ru.png \
+	rw.png \
+	sa.png \
+	sb.png \
+	sc.png \
+	sd.png \
+	se.png \
+	sg.png \
+	si.png \
+	sk.png \
+	sl.png \
+	sm.png \
+	sn.png \
+	so.png \
+	sr.png \
+	ss.png \
+	st.png \
+	sv.png \
+	sx.png \
+	sy.png \
+	sz.png \
+	td.png \
+	tg.png \
+	th.png \
+	tj.png \
+	tl.png \
+	tm.png \
+	tn.png \
+	to.png \
+	tr.png \
+	tt.png \
+	tv.png \
+	tw.png \
+	tz.png \
+	ua.png \
+	ug.png \
+	us.png \
+	uy.png \
+	uz.png \
+	va.png \
+	vc.png \
+	ve.png \
+	vi.png \
+	vn.png \
+	vu.png \
+	ws.png \
+	ye.png \
+	za.png \
+	zm.png \
+	zw.png
