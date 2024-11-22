@@ -34,4 +34,5 @@ dist_install_DATA = \
     key_text.png \
     key_tv.png \
     key_video.png \
+    key_updown.png \
     key_yellow.png
