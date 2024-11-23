@@ -1,4 +1,4 @@
-SUBDIRS = fonts skin_default defaultHD
+SUBDIRS = fonts skin_default DefaultHD
 
 installdir = $(datadir)/enigma2
 
