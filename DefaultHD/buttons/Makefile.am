@@ -13,7 +13,6 @@ dist_install_DATA = \
     key_8.png \
     key_9.png \
     key_audio.png \
-    key_back_fill.png \
     key_blue.png \
     key_channel.png \
     key_exit.png \
