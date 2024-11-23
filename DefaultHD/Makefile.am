@@ -5,4 +5,4 @@ dist_install_DATA = skin.xml
     skin_checked.xml \
     skin_templates.xml \
     skin_unchecked.xml \
-    prev.png \
+    prev.png
