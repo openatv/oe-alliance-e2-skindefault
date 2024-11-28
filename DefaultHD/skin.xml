@@ -180,4 +180,5 @@
 	<include filename="skin_templates.xml" />
 	<include filename="skin_checked.xml" />
 	<include filename="skin_unchecked.xml" />
+	<include filename="skin_plugins.xml" />
 </skin>
