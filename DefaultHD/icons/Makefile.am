@@ -11,4 +11,10 @@ dist_install_DATA = \
     starsbar_empty.png \
     starsbar_filled.png \
     verticalline-plugins.png \
-    verticalline.png
+    verticalline.png \
+    marker.png \
+    mark_off.png \
+    mark_on.png \
+    lock_error.png \
+    lock_on.png \
+    lock_off.png
