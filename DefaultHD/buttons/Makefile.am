@@ -20,6 +20,7 @@ dist_install_DATA = \
     key_f2.png \
     key_f3.png \
     key_green.png \
+    key_gray.png \
     key_help.png \
     key_info.png \
     key_left.png \

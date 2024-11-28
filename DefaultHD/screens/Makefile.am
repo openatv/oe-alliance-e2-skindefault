@@ -8,12 +8,4 @@ dist_install_DATA = \
     b_r.png \
     b_t.png \
     b_tl.png \
-    b_tr.png \
-    mute.png \
-    mute2.png \
-    unhandled-key.png \
-    unhandled-key2.png \
-    unhandled-key1.png \
-    volume_background.png \
-    volume_2.png \
-    volume_up.png
+    b_tr.png
