@@ -64,6 +64,7 @@ dist_install_DATA =     ask.png \
     icon_rec_off.png \
     icon_rec.png \
     ico_stream.png \
+    ico_stream_on.png \
     ico_stream_off.png \
     icon_txt_off.png \
     icon_txt.png \
