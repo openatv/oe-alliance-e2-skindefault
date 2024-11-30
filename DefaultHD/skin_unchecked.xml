@@ -301,15 +301,6 @@ self['config'].l.setSeperation(int(300*f))</applet>
 		<eLabel position="1,1" size="600,250" backgroundColor="window-bg" transparent="0" />
 		<widget name="text" position="5,6" size="590,240" halign="left" font="Regular;20" backgroundColor="window-bg" foregroundColor="window-fg" zPosition="1" transparent="1" />
 	</screen>
-	
-<!-- 	<screen name="PiPSetup" position="center,center" size="602,252" title="PiPSetup" flags="wfNoBorder" backgroundColor="layer-b-background">
-		<eLabel position="1,1" size="600,250" backgroundColor="layer-a-background" transparent="0" />
-		<eLabel text="PiPSetup" position="1,5" size="600,50" valign="bottom" font="global_title;34" foregroundColor="layer-a-title-foreground" halign="center" backgroundColor="layer-a-background" zPosition="1" transparent="1" />
-		<eLabel position="1,60" size="600,1" backgroundColor="layer-a-accent1" zPosition="1" />
-		<widget name="text" position="51,90" size="550,150" halign="left" font="screen_text;20" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" zPosition="1" transparent="1" />
-	</screen> -->
-	
-	
 	<screen name="SkinSelector" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder" title="Skin Selector">
 		<widget name="SkinList" position="18,50" size="930,374" font="Regular;24" itemHeight="34" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" />
 		<widget source="introduction" render="Label" position="16,460" size="930,90" font="Regular;22" backgroundColor="window-bg" halign="center" foregroundColor="window-fg" valign="center" transparent="1" />
@@ -1265,87 +1256,35 @@ self.instance.move(ePoint(int(deskwidth - newwidth)//2,int(deskheight - newheigh
 		<!-- This is a text version of the statusicon and speed information.  Already displayed so not needed here but must be defined to avoid skin errors!  -->
 		<widget name="state" position="0,0" size="0,0" font="Regular;20" transparent="1" />
 	</screen>
-<!-- 	<screen name="Volume" position="40,40" size="200,126" title="Volume" flags="wfNoBorder" backgroundColor="transparent" zPosition="98">
-		<widget name="Volume" position="20,92" size="160,18" zPosition="0" transparent="1" foregroundColor="infobar_service_frgrnd" />
-		<ePixmap position="0,0" size="200,126" zPosition="1" pixmap="screens/volume_background.png" transparent="1" alphatest="blend" />
-		<widget font="Regular;44" foregroundColor="black" backgroundColor="darkgrey" halign="center" valign="center" render="VolumeText" source="global.CurrentTime" position="100,18" size="82,54" zPosition="20" transparent="1" />
-		<widget name="Volume" pixmap="screens/volume_up.png" position="22,94" zPosition="2" size="156,16" transparent="1" />
-	</screen> -->
-<!-- 	<screen name="Volume" position="40,40" size="400,96" title="Volume" flags="wfNoBorder" backgroundColor="transparent" zPosition="98">
-		<widget name="Volume" position="105,38" size="205,16" zPosition="3" transparent="1" foregroundColor="infobar_service_frgrnd" />
-		<ePixmap position="5,0" size="96,96" zPosition="1" pixmap="screens/volume_2.png" transparent="1" alphatest="blend" />
-		<widget font="Regular;44" foregroundColor="darkgrey" backgroundColor="background" halign="center" valign="center" render="VolumeText" source="global.CurrentTime" position="316,18" size="82,54" zPosition="20" transparent="1" />
-		<eLabel position="105,46" size="205,1" backgroundColor="infobar_sunken_frgnd_dark" foregroundColor="infobar_sunken_frgnd_dark" />
-		<eLabel position="1,1" size="398,94" backgroundColor="background" zPosition="-1" transparent="0" />
-		<eLabel position="0,0" size="400,96" backgroundColor="infobar_sunken_frgnd_dark" zPosition="-2" transparent="0" />
-	</screen> -->
-
-	
-	
 	<screen name="Volume" position="40,40" size="256,80" title="Volume" flags="wfNoBorder" backgroundColor="background" zPosition="98">
 		<widget render="VolumeText" position="174,30" size="82,50" font="Regular;46" foregroundColor="grey" backgroundColor="background" halign="center" valign="center" source="global.CurrentTime" zPosition="11" transparent="0" />
-		<widget name="Volume" position="70,22" size="184,4" foregroundColor="grey" zPosition="14" transparent="1"  />
-		<eLabel text="V" position="10,0" size="70,80" font="Regular;80" foregroundColor="grey"  noWrap="1" valign="center"  backgroundColor="background" zPosition="10" transparent="0" />
-		<eLabel text="olume" position="50,34" size="200,40" font="Regular;40" foregroundColor="grey"  noWrap="1" valign="center"  zPosition="10" backgroundColor="background" transparent="1" />
-		<eLabel text="---------------------" position="68,18" size="190,10" font="Regular; 18"  foregroundColor="cyan" backgroundColor="window-bg" valign="center" halign="center" transparent="1" noWrap="1" />
+		<widget name="Volume" position="70,22" size="184,4" foregroundColor="grey" zPosition="14" transparent="1" />
+		<eLabel text="V" position="10,0" size="70,80" font="Regular;80" foregroundColor="grey" noWrap="1" valign="center" backgroundColor="background" zPosition="10" transparent="0" />
+		<eLabel text="olume" position="50,34" size="200,40" font="Regular;40" foregroundColor="grey" noWrap="1" valign="center" zPosition="10" backgroundColor="background" transparent="1" />
+		<eLabel text="---------------------" position="68,18" size="190,10" font="Regular; 18" foregroundColor="cyan" backgroundColor="window-bg" valign="center" halign="center" transparent="1" noWrap="1" />
 	</screen>
-	<screen name="Mute" position="40,40" size="76,76" title="Mute" zPosition="11" flags="wfNoBorder" backgroundColor="background">
-		<eLabel position="0,0" size="76,76" backgroundColor="darkgrey" zPosition="0" />
-		<eLabel position="2,2" size="72,72" backgroundColor="background" zPosition="1" />
-		<eLabel text="00" position="2,2" size="72,54" font="Regular; 50" foregroundColor="grey" noWrap="1" valign="center"  backgroundColor="background" zPosition="10" transparent="0" halign="center" />
-		<eLabel text="Volume" position="2,54" size="72,18" font="Regular; 18" foregroundColor="grey" noWrap="1" valign="center"  backgroundColor="background" zPosition="10" transparent="0" halign="center" />
-		<eLabel name="" position="2,52" size="72,1" foregroundColor="grey" backgroundColor="grey" zPosition="10"/>
+	<screen name="Mute" position="40,40" size="76,76" title="Mute" zPosition="11" flags="wfNoBorder" backgroundColor="transparent">
+		<eLabel position="0,0" size="76,76" cornerRadius="8" backgroundColor="darkgrey" zPosition="0" />
+		<eLabel position="2,2" size="72,72" cornerRadius="6" backgroundColor="background" zPosition="1" />
+		<eLabel text="00" position="3,3" size="70,50" cornerRadius="6" foregroundColor="grey" noWrap="1" valign="center" font="Regular; 50" backgroundColor="background" zPosition="10" transparent="0" halign="center" />
+		<eLabel text="MUTE" position="4,54" size="68,18" foregroundColor="grey" noWrap="1" valign="center" font="Regular; 18" backgroundColor="background" zPosition="10" transparent="0" halign="center" />
+		<eLabel name="" position="2,52" size="72,1" foregroundColor="grey" backgroundColor="grey" zPosition="10" />
 	</screen>
-	
-
-	
-	<screen name="UnhandledKey" position="40,40" size="76,76" title="UnhandledKey" zPosition="101" backgroundColor="background" flags="wfNoBorder">
-		<eLabel position="0,0" size="76,76" backgroundColor="darkgrey" zPosition="0" />
-		<eLabel position="2,2" size="72,72" backgroundColor="background" zPosition="1" />
+	<screen name="UnhandledKey" position="40,40" size="76,76" title="UnhandledKey" zPosition="101" backgroundColor="transparent" flags="wfNoBorder">
+		<eLabel position="0,0" size="76,76" cornerRadius="8" backgroundColor="darkgrey" zPosition="0" />
+		<eLabel position="2,2" size="72,72" cornerRadius="6" backgroundColor="background" zPosition="1" />
 		<eLabel position="11,11" size="54,54" cornerRadius="6" foregroundColor="grey" noWrap="1" valign="center" backgroundColor="grey" zPosition="6" transparent="1" halign="center" />
-		<eLabel text="X" position="11,11" size="54,54" font="Regular; 50" foregroundColor="red" noWrap="1" valign="center"  backgroundColor="background" zPosition="12" transparent="1" halign="center" />
-		<eLabel  position="8,8" size="60,60" cornerRadius="30"  foregroundColor="window-sel-fg" backgroundColor="window-sel-bg" halign="center" valign="center" zPosition="10" />
-		<eLabel  position="10,10" size="56,56" cornerRadius="30"  foregroundColor="window-sel-bg" backgroundColor="window-sel-fg" halign="center" valign="center" zPosition="11" />
+		<eLabel text="X" position="11,11" size="54,54" font="Regular; 50" foregroundColor="red" noWrap="1" valign="center" backgroundColor="background" zPosition="12" transparent="1" halign="center" />
+		<eLabel position="8,8" size="60,60" cornerRadius="30" foregroundColor="window-sel-fg" backgroundColor="window-sel-bg" halign="center" valign="center" zPosition="10" />
+		<eLabel position="10,10" size="56,56" cornerRadius="30" foregroundColor="window-sel-bg" backgroundColor="window-sel-fg" halign="center" valign="center" zPosition="11" />
 	</screen>
-	
-	
-	<!-- 	<screen name="UnhandledKey" position="40,40" size="96,96" title="UnhandledKey" zPosition="101" backgroundColor="transparent" flags="wfNoBorder">
-		<widget name="UnhandledKeyPixmap" position="0,0" size="96,96" zPosition="2" pixmap="screens/unhandled-key.png" alphatest="blend" transparent="1" />
-	</screen> -->
-<!-- 	<screen name="UnhandledKey" position="40,40" size="96,96" title="UnhandledKey" zPosition="101" backgroundColor="transparent" flags="wfNoBorder">
-		<widget name="UnhandledKeyPixmap" position="0,0" size="96,96" zPosition="2" pixmap="screens/unhandled-key2.png" alphatest="blend" />
-		<eLabel position="0,0" size="96,96" backgroundColor="infobar_sunken_frgnd_dark" zPosition="0" />
-		<eLabel position="1,1" size="94,94" backgroundColor="background" zPosition="1" />
-	</screen> -->
-	<!-- 	<screen name="Mute" position="40,40" size="96,96" title="Mute" zPosition="11" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" size="96,96" zPosition="2" pixmap="screens/mute.png" transparent="1" alphatest="blend" />
-	</screen> -->
-<!-- 	<screen name="Mute" position="40,40" size="96,96" title="Mute" zPosition="11" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap position="0,0" size="96,96" zPosition="2" pixmap="screens/mute2.png" transparent="1" alphatest="blend" />
-		<eLabel position="0,0" size="96,96" backgroundColor="infobar_sunken_frgnd_dark" zPosition="0" />
-		<eLabel position="1,1" size="94,94" backgroundColor="background" zPosition="1" />
-	</screen> -->
-	
 
 	<screen name="PictureInPictureZapping" flags="wfNoBorder" position="40,40" size="336,72" title="PiPZap" zPosition="100">
 		<eLabel position="1,1" size="333,68" backgroundColor="window-bg" zPosition="-1" transparent="0" />
 		<eLabel position="0,0" size="336,72" backgroundColor="window-bg" zPosition="-2" transparent="0" />
 		<eLabel text="PiP-Zap" position="1,1" zPosition="2" size="333,58" backgroundColor="window-bg" foregroundColor="window-fg" font="Regular;40" halign="center" valign="bottom" />
 	</screen>
-	
-	
-	
-<!-- 	<screen name="PictureInPictureZapping" flags="wfNoBorder" position="40,40" size="335,71" title="PiPZap" zPosition="100">
-		<eLabel position="1,1" size="333,69" backgroundColor="layer-a-background" zPosition="-1" transparent="0" />
-		<eLabel position="0,0" size="335,71" backgroundColor="layer-b-background" zPosition="-2" transparent="0" />
-		<eLabel text="PiP-Zap" position="1,1" zPosition="2" size="333,59" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" font="screen_info;40" halign="center" valign="bottom" />
-	</screen> -->
-	
-	
-	
-	
-	
-	
+
 	<screen name="ChoiceBoxBase" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder">
 		<widget source="windowtitle" render="Label" position="18,56" foregroundColor="window-fg" size="930,40" noWrap="1" valign="bottom" font="Regular; 28" backgroundColor="window-bg" transparent="1" />
 		<widget name="list" position="18,102" size="930,364" itemHeight="34" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
@@ -3022,15 +2961,15 @@ if len(listitems.list) &gt; 2:
 	</screen>
 	<!-- IMDb -->
 	<screen name="IMDB" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder" title="IMDb Details Plugin">
-		<widget name="menu" position="18,50" size="930,360" itemHeight="30" font="Regular;20" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" scrollbarMode="showNever" />
+		<widget name="menu" position="18,180" size="930,330" itemHeight="30" font="Regular;20" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" scrollbarMode="showNever" />
 		<widget name="titellabel" position="18,50" size="700,36" font="Regular;26" halign="left" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
 		<widget name="starsbg" position="730,52" size="210,22" pixmap="icons/starsbar_empty.png" zPosition="2" alphatest="blend" />
 		<widget name="stars" position="730,52" size="210,22" pixmap="icons/starsbar_filled.png" zPosition="3" transparent="1" />
 		<widget name="ratinglabel" position="640,76" size="300,28" font="Regular;20" halign="right" backgroundColor="window-bg" foregroundColor="#f0b400" transparent="1" />
 		<widget name="poster" position="18,90" size="160,230" alphatest="blend" />
 		<widget name="detailslabel" position="210,110" size="730,210" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" transparent="1" />
-		<widget name="castlabel" position="18,323" size="930,180" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" transparent="1" />
-		<widget name="extralabel" position="18,50" size="930,420" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" transparent="1" />
+		<widget name="castlabel" position="18,328" size="930,180" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" transparent="1" />
+		<widget name="extralabel" position="18,90" size="930,420" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" transparent="1" />
 		<widget name="statusbar" position="18,510" size="930,40" font="Regular;20" backgroundColor="window-bg" halign="center" foregroundColor="window-fg" valign="center" transparent="1" zPosition="10" />
 		<panel name="Template_Setup_Base" />
 		<panel name="Template_Text_Buttons_M_O_E" />
