@@ -15,7 +15,7 @@
 		<widget source="global.CurrentTime" render="Label" position="750,10" size="340,40" font="Italic; 20" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" textBorderColor="black" textBorderWidth="1" halign="right" valign="center" transparent="1" zPosition="1">
 			<convert type="ClockToText">Date</convert>
 		</widget>
-		<eLabel name="title_bg" position="20,10" size="1260,40" backgroundColor="#12142434" cornerRadius="10" borderWidth="1" borderColor="darkgrey" zPosition="-9" />
+		<eLabel name="title_bg" position="10,10" size="1260,40" backgroundColor="#12142434" cornerRadius="10" borderWidth="1" borderColor="darkgrey" zPosition="-9" />
 		<eLabel name="title_line" position="18,49" size="1244,1" zPosition="10" backgroundColor="infobar_sunken_frgnd_dark" />
 		<eLabel name="fullscreen_bg" position="16,56" size="1248,642" zPosition="-10" backgroundColor="background" />
 		<eLabel name="Line_Fullscreen" position="16,652" size="1248,1" zPosition="10" backgroundColor="infobar_sunken_frgnd_dark" />
