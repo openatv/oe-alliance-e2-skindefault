@@ -5,14 +5,11 @@
 	<!--	This skin is a Freeware. Everyone can modify and use it in other images.	-->
 	<!--	BUT DO NOT REMOVE OR CHANGE THIS HEADER !!!	-->
 	<!--	Do whatever you want with this skin,but don't tell it's yours,or your idea, and leave the credentials in the "About-box" as they are	-->
-	
-	
 	<!-- "Information" -->
 	<screen name="OPEN_SOURCE_INFO">
 		<eLabel text="OPEN SOURCE" position="640,50" size="300,36" font="Regular; 26" backgroundColor="window-bg" foregroundColor="window-fg" halign="center" valign="center" transparent="1" zPosition="1" />
 		<eLabel text="https://github.com/openatv" position="640,88" size="300,26" font="Regular; 18" backgroundColor="window-bg" foregroundColor="window-fg" halign="center" valign="center" transparent="1" zPosition="1" />
 		<eLabel text="https://github.com/oe-alliance" position="640,116" size="300,26" font="Regular; 18" backgroundColor="window-bg" foregroundColor="window-fg" halign="center" valign="center" transparent="1" zPosition="1" />
-		<!-- <panel name="Template_Color_Buttons" /> -->
 	</screen>
 	<screen name="AboutOE" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder" title="About">
 		<widget name="AboutScrollLabel" position="18,140" size="930,410" transparent="0" zPosition="1" font="Regular;20" scrollbarMode="showOnDemand" />
@@ -110,7 +107,6 @@
 		<panel name="Template_Color_Buttons" />
 		<panel name="Menu_Title_TopPanel" />
 	</screen>
-	
 	<screen name="Animmain" position="center,center" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" title="Mainmenu">
 		<eLabel position="0,530" size="1280,130" backgroundColor="window-bg" zPosition="-1" />
 		<eLabel position="0,530" size="1280,6" backgroundColor="window-bg" zPosition="-1" />
@@ -270,7 +266,6 @@ self['config'].l.setSeperation(int(300*f))</applet>
 		<panel name="Template_Setup_Base" />
 		<panel name="Template_Text_Buttons_I_M_E" />
 	</screen>
-
 	<screen name="InputDeviceSetup" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder" title="Setup">
 		<widget name="config" position="133,50" size="700,420" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" transparent="1" />
 		<widget source="introduction" render="Label" position="18,470" size="930,84" font="Regular;22" valign="center" />
@@ -389,14 +384,12 @@ self['config'].l.setSeperation(int(300*f))</applet>
 	<screen name="CCcamInfoSubMenu" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder" title="CCcamInfo SubMenu">
 		<widget name="list" position="18,50" size="930,420" enableWrapAround="1" itemHeight="60" font="Regular;20" scrollbarMode="showOnDemand" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" zPosition="1" transparent="1" />
 		<widget name="info" position="18,470" size="930,80" font="Regular;20" backgroundColor="window-bg" halign="center" foregroundColor="window-fg" valign="center" transparent="1" />
-		
 		<panel name="Template_Text_Buttons_O_E" />
 		<panel name="Setup_Title_TopPanel" />
 	</screen>
 	<screen name="CCcamInfoServerMenu" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder" title="CCcam Server Info">
 		<widget name="list" position="18,50" size="930,420" enableWrapAround="1" itemHeight="60" font="Regular;20" scrollbarMode="showOnDemand" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" zPosition="1" transparent="1" />
 		<widget name="info" position="18,470" size="930,80" font="Regular;20" backgroundColor="window-bg" halign="center" foregroundColor="window-fg" valign="center" transparent="1" />
-		
 		<panel name="Template_Text_Buttons_O_E" />
 		<panel name="Setup_Title_TopPanel" />
 	</screen>
@@ -414,7 +407,6 @@ self['config'].l.setSeperation(int(300*f))</applet>
 		<widget name="title" position="20,520" size="810,30" font="Regular;20" backgroundColor="window-bg" halign="left" foregroundColor="window-fg" valign="center" transparent="1" />
 		<panel name="Template_Text_Buttons_O_E" />
 		<panel name="Setup_Title_TopPanel" />
-		
 	</screen>
 	<screen name="CCcamInfoShareInfo" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder" title="CCcam Share Info">
 		<widget name="list" position="18,60" size="700,480" enableWrapAround="1" itemHeight="60" font="Regular;20" scrollbarMode="showOnDemand" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" zPosition="1" transparent="1" />
@@ -749,7 +741,6 @@ self['config'].l.setSeperation(int(300*f))</applet>
 		<widget name="btt_yellow" position="376,560" size="170,30" backgroundColor="ButtonBack" font="Regular;18" foregroundColor="ButtonText" halign="center" noWrap="1" transparent="1" valign="center" zPosition="10" />
 		<widget name="btt_blue" position="556,560" size="170,30" backgroundColor="ButtonBack" font="Regular;18" foregroundColor="ButtonText" halign="center" noWrap="1" transparent="1" valign="center" zPosition="10" />
 		<panel name="Template_Text_Buttons_I_O_E" />
-		
 		<panel name="Setup_Title_TopPanel" />
 		<eLabel position="16,590" size="170,3" backgroundColor="ButtonRed" objectTypes="key_red,Button,Label" zPosition="10" />
 		<eLabel position="196,590" size="170,3" backgroundColor="ButtonGreen" objectTypes="key_green,Button,Label" zPosition="10" />
@@ -1278,13 +1269,11 @@ self.instance.move(ePoint(int(deskwidth - newwidth)//2,int(deskheight - newheigh
 		<eLabel position="8,8" size="60,60" cornerRadius="30" foregroundColor="window-sel-fg" backgroundColor="window-sel-bg" halign="center" valign="center" zPosition="10" />
 		<eLabel position="10,10" size="56,56" cornerRadius="30" foregroundColor="window-sel-bg" backgroundColor="window-sel-fg" halign="center" valign="center" zPosition="11" />
 	</screen>
-
 	<screen name="PictureInPictureZapping" flags="wfNoBorder" position="40,40" size="336,72" title="PiPZap" zPosition="100">
 		<eLabel position="1,1" size="333,68" backgroundColor="window-bg" zPosition="-1" transparent="0" />
 		<eLabel position="0,0" size="336,72" backgroundColor="window-bg" zPosition="-2" transparent="0" />
 		<eLabel text="PiP-Zap" position="1,1" zPosition="2" size="333,58" backgroundColor="window-bg" foregroundColor="window-fg" font="Regular;40" halign="center" valign="bottom" />
 	</screen>
-
 	<screen name="ChoiceBoxBase" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder">
 		<widget source="windowtitle" render="Label" position="18,56" foregroundColor="window-fg" size="930,40" noWrap="1" valign="bottom" font="Regular; 28" backgroundColor="window-bg" transparent="1" />
 		<widget name="list" position="18,102" size="930,364" itemHeight="34" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
@@ -1997,7 +1986,6 @@ if len(listitems.list) &gt; 2:
 	<screen name="EPGSelectionMulti" position="center,center" size="1280,720" backgroundColor="transparent" flags="wfNoBorder" title="EPG Selection">
 		<eLabel text="&lt;" position="980,656" size="20,32" halign="center" valign="center" font="Regular;26" zPosition="10" />
 		<eLabel text="&gt;" position="1010,656" size="20,32" halign="center" valign="center" font="Regular;26" zPosition="10" />
-		<!--  <widget source="Title" render="Label" position="338,550" size="646,40" noWrap="1" halign="center" valign="center" font="Regular;26" /> -->
 		<widget name="bouquetlist" position="60,60" size="650,40" backgroundColorSelected="#1A27408B" borderColor="grey" zPosition="6" itemHeight="40" font="Regular;26" transparent="0" scrollbarMode="showNever" />
 		<widget name="now_button_sel" pixmap="epg/tab_now.png" position="60,62" size="470,34" zPosition="2" backgroundColor="green" />
 		<widget name="next_button_sel" pixmap="epg/tab_next.png" size="470,34" position="60,62" zPosition="2" />
@@ -2079,8 +2067,6 @@ if len(listitems.list) &gt; 2:
 		</panel>
 	</screen>
 	<screen name="EventView" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder" title="Eventview">
-		<!--eLabel text="Eventview" position="58,36" size="526,50" valign="bottom" font="Regular;34" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" /-->
-		<!-- cf#_#picon -->
 		<widget source="Service" render="Picon" position="670,60" size="220,132" zPosition="0" transparent="1" alphatest="blend">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -2400,7 +2386,6 @@ if len(listitems.list) &gt; 2:
 	<screen name="ServiceInfoSimple" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder" title="Choose bouquet">
 		<widget name="infolist" position="18,60" size="700,450" zPosition="3" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" transparent="1" selectionDisabled="1" />
 		<panel name="Template_Text_Buttons_O_E" />
-		
 		<panel name="Setup_Title_TopPanel" />
 	</screen>
 	<!-- Subtitle -->
@@ -2410,7 +2395,6 @@ if len(listitems.list) &gt; 2:
 		<widget name="videofps" position="center,420" size="740,50" backgroundColor="window-bg" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="center" foregroundColor="infobar_sunken_frgnd_dark" />
 		<panel name="Setup_Title_TopPanel" />
 		<panel name="Template_Text_Buttons_O_E" />
-		
 	</screen>
 	<!-- Service Scan Screens -->
 	<screen name="NimSelection" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder" title="Choose Tuner">
@@ -2429,28 +2413,28 @@ if len(listitems.list) &gt; 2:
 	<screen name="NimSetup" position="center,center" size="966,600" title="Reception Settings" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="config" position="18,56" size="930,390" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" transparent="1" />
 		<widget name="description" position="18,470" size="930,84" font="Regular;20" backgroundColor="window-bg" halign="center" foregroundColor="window-fg" valign="center" transparent="1" />
-		<panel name="Template_Line_Setup_description" />	
+		<panel name="Template_Line_Setup_description" />
 		<panel name="Template_Setup_Base" />
 		<panel name="Template_Text_Buttons_O_E" />
 	</screen>
 	<screen name="ScanSetup" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder" title="Service scan">
 		<widget name="config" position="18,56" size="930,390" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" transparent="1" />
 		<widget source="introduction" render="Label" position="470" size="930,84" font="Regular;20" backgroundColor="window-bg" halign="center" foregroundColor="window-fg" valign="center" transparent="1" />
-		<panel name="Template_Line_Setup_description" />	
+		<panel name="Template_Line_Setup_description" />
 		<panel name="Template_Setup_Base" />
 		<panel name="Template_Text_Buttons_O_E" />
 	</screen>
 	<screen name="ScanSimple" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder" title="Service scan">
 		<widget name="config" position="18,56" size="930,390" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" transparent="1" />
 		<widget name="footer" position="18,470" size="930,84" font="Regular;20" backgroundColor="window-bg" halign="center" foregroundColor="window-fg" valign="center" transparent="1" />
-		<panel name="Template_Line_Setup_description" />	
+		<panel name="Template_Line_Setup_description" />
 		<panel name="Template_Setup_Base" />
 		<panel name="Template_Text_Buttons_O_E" />
 	</screen>
 	<screen name="SelectSatsEntryScreen" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder" title="Select Sats Entry">
 		<widget name="list" position="18,56" size="930,390" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" transparent="1" />
 		<widget source="hint" render="Label" position="18,470" size="930,84" font="Regular;20" backgroundColor="window-bg" halign="center" foregroundColor="window-fg" valign="center" transparent="1" />
-		<panel name="Template_Line_Setup_description" />	
+		<panel name="Template_Line_Setup_description" />
 		<panel name="Template_Setup_Base" />
 		<panel name="Template_Text_Buttons_O_E" />
 	</screen>
@@ -2486,7 +2470,6 @@ if len(listitems.list) &gt; 2:
 	</screen>
 	<screen name="TunerScreen" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder" title="Tune">
 		<widget name="config" position="18,50" size="930,500" enableWrapAround="1" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" zPosition="1" transparent="1" />
-		
 		<panel name="Template_Text_Buttons_O_E" />
 		<panel name="Setup_Title_TopPanel" />
 	</screen>
@@ -2560,7 +2543,6 @@ if len(listitems.list) &gt; 2:
 	<screen name="CiSelection" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder" title="Common Interface">
 		<widget name="text" position="70,56" size="700,32" font="Regular;24" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
 		<eLabel position="70,96" size="700,2" backgroundColor="infobar_sunken_frgnd_dark" />
-		
 		<widget name="entries" position="70,106" size="700,450" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" transparent="1" />
 		<panel name="Template_Text_Buttons_E" />
 		<panel name="Setup_Title_TopPanel" />
@@ -2571,7 +2553,6 @@ if len(listitems.list) &gt; 2:
 		<eLabel position="70,126" size="700,2" backgroundColor="infobar_sunken_frgnd_dark" />
 		<widget name="entries" position="70,130" size="700,420" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" transparent="1" />
 		<eLabel position="70,630" size="700,2" backgroundColor="infobar_sunken_frgnd_dark" />
-		
 		<widget name="bottom" position="70,560" size="700,32" font="Regular;24" halign="center" backgroundColor="window-bg" transparent="1" />
 		<panel name="Template_Text_Buttons_E" />
 		<panel name="Setup_Title_TopPanel" />
@@ -2778,7 +2759,6 @@ if len(listitems.list) &gt; 2:
 		<panel name="Template_Text_Buttons_O_E" />
 	</screen>
 	<screen name="BackupSelection" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder" title="Select files/folders to backup...">
-		<!--eLabel text="Select files/folders to backup..." position="58,36" foregroundColor="window-fg" size="526,50" valign="bottom" font="Regular;34" backgroundColor="window-bg" transparent="1" /-->
 		<widget name="checkList" position="70,56" size="700,390" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" transparent="1" />
 		<widget source="summary_description" render="Label" position="70,460" size="700,90" font="Regular;20" backgroundColor="window-bg" halign="center" foregroundColor="window-fg" valign="center" transparent="1" />
 		<panel name="Template_Setup_Base" />
@@ -2940,17 +2920,14 @@ if len(listitems.list) &gt; 2:
 	</screen>
 	<screen name="RestartNetwork" position="center,center" size="680,140" title="Restart Network Adapter" flags="wfNoBorder" backgroundColor="window-bg">
 		<ePixmap name="InfoPixmap" pixmap="icons/input_info.png" position="8,8" size="53,53" alphatest="blend" />
-		<!--eLabel name="line1" position="0,68" size="680,1" backgroundColor="infobar_sunken_frgnd_dark" zPosition="1" /-->
 		<widget name="label" position="70,8" size="600,120" font="Regular;22" valign="center" halign="center" backgroundColor="window-bg" foregroundColor="window-fg" />
 	</screen>
 	<screen name="installedPlugins" position="center,center" size="680,140" title="Install Plugins" flags="wfNoBorder" backgroundColor="window-bg">
 		<ePixmap name="InfoPixmap" pixmap="icons/input_info.png" position="8,8" size="53,53" alphatest="blend" />
-		<!--eLabel name="line1" position="0,68" size="680,1" backgroundColor="infobar_sunken_frgnd_dark" zPosition="1" /-->
 		<widget name="label" position="70,8" size="600,120" font="Regular;22" valign="center" halign="center" backgroundColor="window-bg" foregroundColor="window-fg" />
 	</screen>
 	<screen name="RestoreMyMetrixHD" position="center,center" size="680,140" title="Restore MetrixHD Settings" flags="wfNoBorder" backgroundColor="window-bg">
 		<ePixmap name="InfoPixmap" pixmap="icons/input_info.png" position="8,8" size="53,53" alphatest="blend" />
-		<!--eLabel name="line1" position="0,68" size="680,1" backgroundColor="infobar_sunken_frgnd_dark" zPosition="1" /-->
 		<widget name="label" position="70,8" size="600,120" font="Regular;22" valign="center" halign="center" backgroundColor="window-bg" foregroundColor="window-fg" />
 	</screen>
 	<!-- OpenWebif Configuration by Maggy -->
@@ -3010,7 +2987,6 @@ if len(listitems.list) &gt; 2:
 		<eLabel text="Hotkey Setup" position="18,50" foregroundColor="window-fg" size="600,30" noWrap="1" valign="bottom" font="Regular; 22" backgroundColor="window-bg" transparent="1" />
 		<widget name="list" position="18,86" size="600,270" itemHeight="34" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" transparent="1" />
 		<eLabel position="18,360" size="600,1" zPosition="10" backgroundColor="infobar_sunken_frgnd_dark" />
-		
 		<widget name="choosen" position="18,366" size="600,180" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" transparent="1" />
 		<widget name="description" position="630,86" size="320,290" font="Regular;20" backgroundColor="window-bg" halign="center" foregroundColor="window-fg" valign="center" transparent="1" />
 		<panel name="Template_Text_Buttons_O_E" />
@@ -3115,7 +3091,6 @@ if len(listitems.list) &gt; 2:
 	<!--AutoDiseqc /-->
 	<screen name="AutoDiseqc" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder" title="AutoDiseqc">
 		<widget source="Title" render="Label" position="70,68" size="660,50" halign="center" valign="bottom" font="Regular;34" foregroundColor="window-fg" backgroundColor="window-bg" transparent="1" />
-		<!--eLabel position="300,226" size="680,1" backgroundColor="infobar_sunken_frgnd_dark" /-->
 		<widget source="statusbar" render="Label" position="70,140" zPosition="10" size="660,60" halign="center" valign="center" font="Regular;20" transparent="1" backgroundColor="window-bg" foregroundColor="window-fg" />
 		<widget source="tunerstatusbar" render="Label" position="70,210" zPosition="10" size="660,30" halign="center" valign="center" font="Regular;24" transparent="1" backgroundColor="window-bg" foregroundColor="window-fg" />
 		<eLabel position="70,260" size="660,1" backgroundColor="infobar_sunken_frgnd_dark" />
@@ -3148,7 +3123,6 @@ if len(listitems.list) &gt; 2:
 		<eLabel position="76,590" size="210,3" backgroundColor="ButtonRed" objectTypes="key_red,Button,Label" zPosition="10" />
 		<widget name="languagetext" position="70,560" size="220,30" noWrap="1" zPosition="1" valign="center" font="Regular;20" halign="left" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
 		<panel name="Template_Text_Buttons_E" />
-		
 		<panel name="Setup_Title_TopPanel" />
 	</screen>
 	<screen name="wizard_template_2">
@@ -3507,16 +3481,11 @@ if len(listitems.list) &gt; 2:
 	</screen>
 	<!-- Screensaver -->
 	<screen name="Screensaver" position="0,0" size="1280,720" flags="wfNoBorder">
-	<widget name="picture" pixmap="distro-logo.png" position="0,0" size="500,500" alphatest="blend" zPosition="1" />
+		<widget name="picture" pixmap="distro-logo.png" position="0,0" size="500,500" alphatest="blend" zPosition="1" />
 	</screen>
-	
-
-	
-	
 	<!-- dBackup -->
 	<screen name="dBackup" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder" title="Flashing">
 		<widget name="logo" position="800,400" size="100,60" zPosition="2" alphatest="blend" />
-		
 		<panel name="Template_Text_Buttons_I_M_E" />
 		<panel name="Setup_Title_TopPanel" />
 		<panel name="Template_Color_Buttons_Name" />
@@ -3524,7 +3493,6 @@ if len(listitems.list) &gt; 2:
 	<screen name="dBackupConfiguration" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder" title="dBackup Configuration">
 		<widget name="config" position="18,56" size="700,450" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" transparent="1" />
 		<widget name="logo" position="800,400" size="100,60" zPosition="2" alphatest="blend" />
-		
 		<panel name="Template_Text_Buttons_O_E" />
 		<panel name="Setup_Title_TopPanel" />
 		<panel name="Template_Color_Buttons_Name" />
@@ -3532,7 +3500,6 @@ if len(listitems.list) &gt; 2:
 	<screen name="dBackupChecking" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder" title="choose NAND Flash Check">
 		<widget name="menu" position="18,56" size="700,450" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" transparent="1" />
 		<widget name="logo" position="800,400" size="100,60" zPosition="2" alphatest="blend" />
-		
 		<panel name="Template_Text_Buttons_O_E" />
 		<panel name="Setup_Title_TopPanel" />
 		<panel name="Template_Color_Buttons_Name" />
@@ -3542,7 +3509,6 @@ if len(listitems.list) &gt; 2:
 		<eLabel name="line" position="70,130" size="700,1" backgroundColor="infobar_sunken_frgnd_dark" zPosition="2" />
 		<widget name="freefilesystem" position="100,150" size="300,300" valign="center" halign="center" font="Regular;22" />
 		<widget name="freememory" position="440,150" size="300,300" valign="center" halign="center" font="Regular;22" />
-		
 		<panel name="Template_Text_Buttons_O_E" />
 		<panel name="Setup_Title_TopPanel" />
 		<panel name="Template_Color_Buttons_Name_Red" />
@@ -3611,7 +3577,6 @@ if len(listitems.list) &gt; 2:
 		<widget source="instructions" render="Label" position="70,100" size="700,200" font="Regular;20" foregroundColor="window-fg" backgroundColor="window-bg" halign="center" valign="center" transparent="1" />
 		<eLabel position="70,320" size="700,1" zPosition="1" backgroundColor="infobar_sunken_frgnd_dark" />
 		<widget name="menu" position="70,340" size="700,100" itemHeight="34" zPosition="1" font="Regular;20" scrollbarMode="showOnDemand" />
-		
 		<panel name="Template_Text_Buttons_O_E" />
 		<panel name="Setup_Title_TopPanel" />
 	</screen>
@@ -3647,7 +3612,6 @@ if len(listitems.list) &gt; 2:
 	</screen>
 	<screen name="IceTVMain" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder">
 		<widget source="windowtitle" render="Label" position="18,50" foregroundColor="window-fg" size="526,40" noWrap="1" valign="bottom" font="Regular; 24" backgroundColor="window-bg" transparent="1" />
-		
 		<widget name="list" position="18,100" size="700,442" itemHeight="34" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
 		<widget name="text" position="724,90" size="226,456" font="Regular;20" backgroundColor="window-bg" halign="center" foregroundColor="window-fg" valign="center" transparent="1" />
 		<panel name="Template_Text_Buttons_O_E" />
@@ -3669,21 +3633,21 @@ if len(listitems.list) &gt; 2:
 	<screen name="HideVBILine" position="0,0" size="1280,2" backgroundColor="black" flags="wfNoBorder" />
 	<!-- Dish -->
 	<screen name="Dish" position="900,100" size="132,256" title="Dish" zPosition="-1" flags="wfNoBorder">
-        <panel name="DishCommon" />
-        <widget name="Dishpixmap" pixmap="skin_default/icons/dish.png" position="0,0" size="130,160" alphatest="on" />
-        <widget source="session.FrontendStatus" render="Progress" position="0,244" size="120,10" borderWidth="1" backgroundColor="infobar_sunken_frgnd_dark" zPosition="2">
-            <convert type="FrontendInfo">SNR</convert>
-        </widget>
-    </screen>
-    <screen name="Dishpip" position="900,100" size="132,256" title="" zPosition="1" flags="wfNoBorder">
-        <panel name="DishCommon" />
-        <widget source="Dishpixmap" render="Pixmap" pixmap="skin_default/icons/dish.png" zPosition="-1" position="0,0" size="130,160" alphatest="on">
-            <convert type="ConditionalShowHide">Blink,2000</convert>
-        </widget>
-        <widget source="Frontend" render="Progress" position="0,244" size="120,10" borderWidth="1" backgroundColor="infobar_sunken_frgnd_dark" zPosition="2">
-            <convert type="FrontendInfo">SNR</convert>
-        </widget>
-    </screen>
+		<panel name="DishCommon" />
+		<widget name="Dishpixmap" pixmap="skin_default/icons/dish.png" position="0,0" size="130,160" alphatest="on" />
+		<widget source="session.FrontendStatus" render="Progress" position="0,244" size="120,10" borderWidth="1" backgroundColor="infobar_sunken_frgnd_dark" zPosition="2">
+			<convert type="FrontendInfo">SNR</convert>
+		</widget>
+	</screen>
+	<screen name="Dishpip" position="900,100" size="132,256" title="" zPosition="1" flags="wfNoBorder">
+		<panel name="DishCommon" />
+		<widget source="Dishpixmap" render="Pixmap" pixmap="skin_default/icons/dish.png" zPosition="-1" position="0,0" size="130,160" alphatest="on">
+			<convert type="ConditionalShowHide">Blink,2000</convert>
+		</widget>
+		<widget source="Frontend" render="Progress" position="0,244" size="120,10" borderWidth="1" backgroundColor="infobar_sunken_frgnd_dark" zPosition="2">
+			<convert type="FrontendInfo">SNR</convert>
+		</widget>
+	</screen>
 	<screen name="Dishpip" position="900,100" size="132,256" title="" zPosition="1" flags="wfNoBorder">
 		<widget source="Dishpixmap" render="Pixmap" pixmap="skin_default/icons/dish.png" zPosition="-1" position="0,0" size="130,160" alphatest="on">
 			<convert type="ConditionalShowHide">Blink,</convert>
@@ -3701,17 +3665,15 @@ if len(listitems.list) &gt; 2:
 		</widget>
 	</screen>
 	<screen name="DishCommon">
-        <widget name="turnTime" position="18,0" size="120,20" zPosition="1" font="Regular;20" halign="right" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
-        <widget name="From" position="0,160" size="56,20" zPosition="1" font="Regular;18" halign="right" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
-        <widget name="posFrom" position="62,160" size="70,20" zPosition="1" font="Regular;20" halign="left" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
-        <widget name="Goto" position="0,182" size="56,20" zPosition="1" font="Regular;18" halign="right" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
-        <widget name="posGoto" position="62,182" size="70,20" zPosition="1" font="Regular;20" halign="left" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
-        <widget name="Tuner" position="0,204" size="56,20" zPosition="2" font="Regular;18" halign="left" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
-        <widget name="tunerName" position="62,204" size="70,20" zPosition="2" font="Regular;18" halign="left" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
-        <widget name="turnSpeed" position="0,224" size="120,20" zPosition="2" font="Regular;18" halign="left" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
-    </screen>
-	
-	
+		<widget name="turnTime" position="18,0" size="120,20" zPosition="1" font="Regular;20" halign="right" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
+		<widget name="From" position="0,160" size="56,20" zPosition="1" font="Regular;18" halign="right" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
+		<widget name="posFrom" position="62,160" size="70,20" zPosition="1" font="Regular;20" halign="left" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
+		<widget name="Goto" position="0,182" size="56,20" zPosition="1" font="Regular;18" halign="right" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
+		<widget name="posGoto" position="62,182" size="70,20" zPosition="1" font="Regular;20" halign="left" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
+		<widget name="Tuner" position="0,204" size="56,20" zPosition="2" font="Regular;18" halign="left" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
+		<widget name="tunerName" position="62,204" size="70,20" zPosition="2" font="Regular;18" halign="left" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
+		<widget name="turnSpeed" position="0,224" size="120,20" zPosition="2" font="Regular;18" halign="left" backgroundColor="window-bg" foregroundColor="window-fg" transparent="1" />
+	</screen>
 	<!-- Ecm Info -->
 	<screen name="EcmInfoScreen" position="600,150" size="600,80" zPosition="1" flags="wfNoBorder">
 		<widget name="irdeto" position="150,14" size="18,26" font="Regular;16" text="I" valign="center" halign="center" zPosition="3" transparent="1" foregroundColor="window-fg" />
@@ -3775,7 +3737,6 @@ if len(listitems.list) &gt; 2:
 		<widget name="infotext" position="18,50" zPosition="1" size="700,190" font="Regular;22" halign="center" backgroundColor="window-bg" transparent="1" />
 		<widget name="resulttext" position="18,270" zPosition="1" size="700,50" font="Regular;36" halign="center" backgroundColor="window-bg" transparent="1" />
 		<widget name="infotext2" position="18,400" zPosition="1" size="700,80" font="Regular;22" halign="center" backgroundColor="window-bg" transparent="1" />
-		
 		<panel name="Menu_Title_TopPanel" />
 		<eLabel position="12,590" size="170,3" backgroundColor="ButtonRed" objectTypes="key_red,Button,Label" zPosition="10" />
 		<eLabel position="192,590" size="170,3" backgroundColor="ButtonGreen" objectTypes="key_green,Button,Label" zPosition="10" />
@@ -3784,7 +3745,6 @@ if len(listitems.list) &gt; 2:
 	</screen>
 	<screen name="HarddiskWait" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder">
 		<widget name="wait" position="70,130" size="700,276" transparent="1" />
-		
 		<panel name="Template_Text_Buttons_O_E" />
 		<panel name="Setup_Title_TopPanel" />
 	</screen>
@@ -3823,7 +3783,6 @@ if len(listitems.list) &gt; 2:
 	<!-- AutoTimeshift -->
 	<screen name="AutoTimeshift" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder" title="Auto Timeshift Configuration">
 		<widget name="config" position="18,56" size="710,480" scrollbarMode="showOnDemand" transparent="1" />
-		
 		<panel name="Setup_Title_TopPanel" />
 		<panel name="Template_Color_Buttons_Name" />
 	</screen>
@@ -4099,7 +4058,6 @@ if len(listitems.list) &gt; 2:
 		</widget>
 		<widget source="Service" render="Cover" position="14,12" size="122,184" zPosition="10" transparent="1" alphatest="blend" />
 	</screen>
-
 	<!-- CDInfo -->
 	<screen name="CDInfo" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder" title="CDInfo">
 		<widget source="info" render="Label" position="70,60" size="700,50" font="Regular;22" transparent="1" />
@@ -4210,7 +4168,6 @@ if len(listitems.list) &gt; 2:
 	<!-- Filebrowser -->
 	<screen name="FilebrowserConfigScreen" position="center,center" size="966,600" backgroundColor="transparent" flags="wfNoBorder" title="">
 		<widget name="config" position="18,56" size="700,480" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="window-bg" transparent="1" />
-		
 		<panel name="Setup_Title_TopPanel" />
 		<panel name="Template_Color_Buttons_Name_Red" />
 		<panel name="Template_Color_Buttons_Name_Green" />
@@ -4456,7 +4413,6 @@ if len(listitems.list) &gt; 2:
 		<ePixmap pixmap="buttons/key_left.png" position="200,563" size="36,26" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="buttons/key_menu.png" position="260,563" size="36,26" alphatest="blend" transparent="1" />
 		<ePixmap pixmap="buttons/key_right.png" position="320,563" size="36,26" alphatest="blend" transparent="1" />
-		
 		<panel name="Setup_Title_TopPanel" />
 	</screen>
 	<!-- ##### screens_unchecked #####-->
