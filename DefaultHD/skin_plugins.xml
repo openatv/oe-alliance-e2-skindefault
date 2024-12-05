@@ -1619,14 +1619,6 @@
 	</screen>
 	<!-- Fast Scan -->
 	<!-- Blindscan -->
-	<screen name="Blindscan" position="center,center" size="966,600" title="Blindscan" flags="wfNoBorder" backgroundColor="transparent">
-		<widget name="config" position="18,56" size="700,390" itemHeight="30" font="Regular;20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" transparent="1" />
-		<widget name="description" position="18,450" size="700,84" font="Regular;20" backgroundColor="window-bg" halign="center" foregroundColor="window-fg" valign="center" transparent="1" />
-		<widget name="HelpWindow" position="356,432" size="600,122" zPosition="1" transparent="1" alphatest="blend" />
-		<widget name="introduction" position="18,530" size="700,24" font="Regular;16" halign="right" valign="center" backgroundColor="window-bg" foregroundColor="window-fg" backgroundColorSelected="window-sel-bg" foregroundColorSelected="window-sel-fg" transparent="1" />
-		<panel name="Template_Setup_Base" />
-		<panel name="Template_Text_Buttons_O_E" />
-	</screen>
 	<screen name="SatBlindscanState" position="0,0" size="1280,720" title="Satellite Blindscan" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="text" position="70,66" foregroundColor="fullscreen-topbar-frgrnd" size="700,50" noWrap="1" valign="bottom" font="Italic;20" backgroundColor="window-bg" transparent="1" />
 		<widget name="progress" position="70,96" foregroundColor="fullscreen-topbar-frgrnd" size="700,50" noWrap="1" valign="bottom" font="Italic;20" backgroundColor="window-bg" transparent="1" />
