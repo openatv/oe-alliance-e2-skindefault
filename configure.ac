@@ -28,4 +28,5 @@ DefaultHD/icons/Makefile
 DefaultHD/infobar/Makefile
 DefaultHD/screens/Makefile
 DefaultHD/menu/Makefile
+DefaultFHD/Makefile
 ])
