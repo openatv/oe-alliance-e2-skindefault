@@ -1384,11 +1384,78 @@
 		<widget source="key_yellow" render="Label" position="275,351" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="0" valign="center" backgroundColor="window-bg"/>
 		<widget source="key_blue" render="Label" position="275,381" size="190,24" zPosition="1" font="Regular;20" halign="left" transparent="0" valign="center" backgroundColor="window-bg"/>
 	</screen>
-	<screen name="ChoiceBox" position="center,center" size="520,130" zPosition="5">
-		<widget name="text" position="0,0" size="520,0" font="Regular;22"/>
-		<widget name="list" position="100,100" size="520,0" enableWrapAround="1"/>
+	<screen name="ChoiceBox" position="center,center" size="700,605" zPosition="5">
+		<widget name="text" position="0,0" size="700,70" font="Regular;22"/>
+		<widget name="list" position="0,80" size="700,525" enableWrapAround="1"/>
 		<applet type="onLayoutFinish">
-self.autoResize()
+def getScreenObjectSize(data, font, maxWidth, maxHeight):  # 625,525 235,140
+	from enigma import eLabel, eSize
+	if isinstance(data, str):
+		data = [((data, None), (0, 0, 0))]
+	size = eSize(maxWidth, maxHeight)
+	width = max([eLabel.calculateTextSize(font, line[0][0], size, False).width() for line in data if line[0]]) if data else 0
+	height = max([eLabel.calculateTextSize(font, line[0][0], size, False).height() for line in data if line[0]]) if data else 0
+	return (width, height)
+
+try:
+	from enigma import ePoint, eSize, getDesktop
+	from skin import parseFont
+	textWidget = self["text"]
+	listWidget = self["list"]
+	textFont = parseFont("Regular;25")
+	listFont = parseFont("Regular;20")
+	#
+	screenSize = (getDesktop(0).size().width(), getDesktop(0).size().height())
+	# windowPos = (self.instance.position().x(), self.instance.position().y())  # Not actually required other than debug logging!
+	windowSize = (self.instance.csize().width(), self.instance.csize().height())
+	textPos = (textWidget.instance.position().x(), textWidget.instance.position().y())
+	textSize = (textWidget.instance.size().width(), textWidget.instance.size().height())
+	textMargin = (textPos[0], windowSize[0] - textSize[0] - textPos[0])
+	listPos = (listWidget.instance.position().x(), listWidget.instance.position().y())
+	listSize = (listWidget.instance.size().width(), listWidget.instance.size().height())
+	listMargin = (listPos[0], windowSize[0] - listSize[0] - listPos[0])
+	textFirst = textPos[1] &lt; listPos[1]
+	if textFirst:
+		spacerTop = textPos[1]
+		spacerMiddle = listPos[1] - textPos[1] - textSize[1]
+		spacerBottom = windowSize[1] - listPos[1] - listSize[1]
+	else:
+		spacerTop = listPos[1]
+		spacerMiddle = textPos[1] - listPos[1] - listSize[1]
+		spacerBottom = windowSize[1] - textPos[1] - textSize[1]
+	scrollbarWidth = listWidget.instance.getScrollbarOffset() + listWidget.instance.getScrollbarWidth()
+	scrollbarMode = listWidget.instance.getScrollbarMode()
+	itemHeight = listWidget.l.getItemSize().height()
+	skinLines = listSize[1] // itemHeight
+	listData = listWidget.getList()
+	listLines = len(listData)
+	listWidth, listHeight = getScreenObjectSize(listData, listFont, screenSize[0] - 100, itemHeight)
+	listWidth = max(listSize[0], min(screenSize[0] - 100, listWidth + (scrollbarWidth if listLines &gt; skinLines or scrollbarMode == 1 else 0)))
+	listHeight = itemHeight * (skinLines if listLines &gt; skinLines else listLines)
+	textData = textWidget.getText()
+	if textData:
+		textWidth, textHeight = getScreenObjectSize(textData, textFont, listWidth, windowSize[1])
+		if textFirst:
+			textTop = spacerTop
+			listTop = spacerTop + textHeight + spacerMiddle
+		else:
+			listTop = spacerTop
+			textTop = spacerTop + listHeight + spacerMiddle
+	else:
+		textWidth, textHeight = (0, 0)
+		spacerMiddle = 0
+		textTop = 0
+		listTop = spacerTop
+	textWidget.instance.resize(eSize(textWidth, textHeight))
+	textWidget.instance.move(ePoint(textPos[0], textTop))
+	listWidget.instance.resize(eSize(listWidth, listHeight))
+	listWidget.instance.move(ePoint(listMargin[0], listTop))
+	width = listMargin[0] + listWidth + listMargin[1]
+	height = spacerTop + textHeight + spacerMiddle + listHeight + spacerBottom
+	self.instance.resize(eSize(width, height))
+	self.instance.move(ePoint((screenSize[0] - width) // 2, (screenSize[1] - height) // 2))
+except Exception as err:
+	print(f"[ChoiceBoxSkin] DEBUG: The skin applet 'onLayoutFinish' crashed!  ({err})")
 		</applet>
 	</screen>
 	<screen name="RecordTimerQuestion" position="center,center" size="380,70" zPosition="5" flags="wfNoBorder">
