@@ -23,6 +23,7 @@ dist_install_DATA =     ask.png \
     epgclock_zap.png \
     epgclock_zaprec.png \
     epgclock.png \
+    epgclock_disabled.png \
     expandable-plugins.png \
     expandable.png \
     expanded.png \
