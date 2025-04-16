@@ -6,6 +6,7 @@ dist_install_DATA =     ask.png \
     backward.png \
     blank.png \
     bullet.png \
+    catchup.png \
     clock.png \
     dish_scan.png \
     dish.png \
