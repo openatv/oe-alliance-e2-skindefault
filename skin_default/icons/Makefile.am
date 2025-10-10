@@ -10,6 +10,8 @@ dist_install_DATA =     ask.png \
     clock.png \
     dish_scan.png \
     dish.png \
+    dot.png \
+    dotfull.png \
     DVI.png \
     epgclock_add.png \
     epgclock_autotimer.png \
@@ -150,6 +152,10 @@ dist_install_DATA =     ask.png \
     scan-t.png \
     Scart-YPbPr.png \
     Scart.png \
+    shevrondown.png \
+    shevronleft.png \
+    shevronright.png \
+    shevronup.png \
     shuffle.png \
     slow_large.png \
     slow.png \
