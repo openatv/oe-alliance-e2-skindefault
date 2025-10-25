@@ -56,11 +56,7 @@ dist_install_DATA =     ask.png \
     ico_sub_off.png \
     ico_sub_on.png \
     ico_view.png \
-    ico_hd-fs8.png \
-    ico_sd-fs8.png \
-    ico_uhd-fs8.png \
-    ico_catchup-fs8.png \
-    ico_altref-fs8.png \
+    ico_catchup.png \
     icon_crypt_off.png \
     icon_crypt.png \
     icon_dolby_off.png \
