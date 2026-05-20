@@ -1,6 +1,7 @@
 installdir = $(datadir)/enigma2/skin_default/extensions
 
 dist_install_DATA = cfg.png \
+    current.png \
     directory.png \
     doc.png \
     file.png \
@@ -8,7 +9,8 @@ dist_install_DATA = cfg.png \
     html.png \
     ipk.png \
     iso.png \
-    link-arrow.png \
+    link_arrow.png \
+    link_error.png \
     link.png \
     lock_off.png \
     lock_on.png \
@@ -16,12 +18,14 @@ dist_install_DATA = cfg.png \
     lst.png \
     movie.png \
     music.png \
+    parent.png \
     picture.png \
     playlist.png \
     py.png \
     pyc.png \
     rar.png \
     sh.png \
+    storage.png \
     tar.png \
     txt.png \
     xml.png \

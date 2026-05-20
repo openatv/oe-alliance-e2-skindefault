@@ -1021,9 +1021,17 @@ self['config'].l.setSeperation(int(300*f))</applet>
 		</widget>
 		<panel name="Menu_Title_TopPanel" />
 	</screen>
+	<!-- TODO-->
 	<screen name="NumberZap" position="center,center" size="260,80" title="QuickZap" flags="wfNoBorder">
 		<eLabel name="a" position="5,6" size="150,70" backgroundColor="window-bg" zPosition="-10" />
 		<eLabel name="b" position="156,10" size="100,60" backgroundColor="window-bg" zPosition="-10" />
+		<!-- NEW -->
+		<widget name="number" position="0,0" size="434,50" backgroundColor="transparent" transparent="1" font="Regular;48" borderColor="black" borderWidth="2" valign="center" halign="center" conditional="number"/>
+		<widget name="serviceNumber" position="0,0" size="434,50" backgroundColor="transparent" transparent="1" font="Regular;48" borderColor="black" borderWidth="2" valign="center" halign="center" conditional="serviceNumber"/>
+		<widget name="servicename" position="0,40" size="434,60" backgroundColor="transparent" transparent="1" font="Regular;30" borderColor="black" borderWidth="2" valign="center" halign="center" conditional="servicename"/>
+		<widget name="serviceName" position="0,40" size="434,60" backgroundColor="transparent" transparent="1" font="Regular;30" borderColor="black" borderWidth="2" valign="center" halign="center" conditional="serviceName"/>
+
+		<!-- OLD -->
 		<widget name="channel" position="5,20" size="150,40" font="Regular;30" halign="center" valign="bottom" backgroundColor="window-bg" foregroundColor="infobar_sunken_frgnd_dark" />
 		<widget name="number" position="156,26" size="100,40" halign="center" valign="bottom" font="Regular;40" backgroundColor="window-bg" foregroundColor="window-fg" />
 	</screen>
@@ -1033,10 +1041,25 @@ self['config'].l.setSeperation(int(300*f))</applet>
 		<widget name="servicebouquet" position="18,110" size="396,53" font="Regular;28" halign="left" backgroundColor="window-bg" transparent="1" />
 		<eLabel position="center,center" size="550,230" backgroundColor="window-bg" zPosition="-6" />
 	</screen>
+
+	<!-- TODO-->
 	<screen name="NumberZapPicon" title="QuickZap" position="150,68" size="580,210" backgroundColor="background" flags="wfNoBorder">
+		
+		<!-- NEW -->
+		<widget name="channel" position="0,0" size="180,90" backgroundColor="transparent" transparent="1" font="Regular;39" borderColor="black" borderWidth="2" valign="center" halign="left" conditional="channel"/>
+		<widget name="serviceLabel" position="0,0" size="180,90" backgroundColor="transparent" transparent="1" font="Regular;39" borderColor="black" borderWidth="2" valign="center" halign="left" conditional="serviceLabel"/>
+		<widget name="number" position="180,0" size="150,90" backgroundColor="transparent" transparent="1" font="Regular;39" borderColor="black" borderWidth="2" valign="center" halign="left" conditional="number"/>
+		<widget name="serviceNumber" position="180,0" size="150,90" backgroundColor="transparent" transparent="1" font="Regular;39" borderColor="black" borderWidth="2" valign="center" halign="left" conditional="serviceNumber"/>
+		<widget name="servicename" position="0,67" size="651,90" backgroundColor="transparent" transparent="1" font="Regular;33" borderColor="black" borderWidth="2" valign="center" halign="left" conditional="servicename"/>
+		<widget name="serviceName" position="0,67" size="651,90" backgroundColor="transparent" transparent="1" font="Regular;33" borderColor="black" borderWidth="2" valign="center" halign="left" conditional="serviceName"/>
+		
+		
+		<!-- OLD -->
 		<widget name="channel" position="250,6" size="180,132" backgroundColor="window-bg" transparent="1" font="Regular;38" borderColor="black" borderWidth="2" valign="center" halign="right" />
 		<widget name="number" position="440,6" size="130,132" backgroundColor="window-bg" transparent="1" font="Regular;38" borderColor="black" borderWidth="2" valign="center" halign="left" />
 		<widget name="servicename" position="5,146" size="570,60" backgroundColor="window-bg" transparent="1" font="Regular;33" borderColor="black" borderWidth="2" valign="center" halign="center" />
+
+
 		<widget source="Service" render="Picon" position="5,6" size="220,132" alphatest="blend" backgroundColor="background" transparent="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>

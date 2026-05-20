@@ -6,12 +6,16 @@ dist_install_DATA =     ask.png \
     backward.png \
     blank.png \
     bullet.png \
+    catchup.png \
     clock.png \
     dish_scan.png \
     dish.png \
+    dot.png \
+    dotfull.png \
     DVI.png \
     epgclock_add.png \
     epgclock_autotimer.png \
+    epgclock_fallback.png \
     epgclock_icetv.png \
     epgclock_post.png \
     epgclock_pre.png \
@@ -23,6 +27,7 @@ dist_install_DATA =     ask.png \
     epgclock_zap.png \
     epgclock_zaprec.png \
     epgclock.png \
+    epgclock_disabled.png \
     expandable-plugins.png \
     expandable.png \
     expanded.png \
@@ -52,6 +57,7 @@ dist_install_DATA =     ask.png \
     ico_sub_off.png \
     ico_sub_on.png \
     ico_view.png \
+    ico_catchup.png \
     icon_crypt_off.png \
     icon_crypt.png \
     icon_dolby_off.png \
@@ -149,6 +155,10 @@ dist_install_DATA =     ask.png \
     scan-t.png \
     Scart-YPbPr.png \
     Scart.png \
+    shevrondown.png \
+    shevronleft.png \
+    shevronright.png \
+    shevronup.png \
     shuffle.png \
     slow_large.png \
     slow.png \
