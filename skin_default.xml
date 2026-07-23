@@ -47,9 +47,12 @@
 		<color name="blue" value="#000064c7"/>
 		<color name="dark" value="#25062748"/>
 		<color name="darkgrey" value="#279e9fa4"/>
+		<color name="darkgray" value="#279e9fa4"/>
 		<color name="verydarkgrey" value="#274e4e4e"/>
+		<color name="verydarkgray" value="#274e4e4e"/>
 		<color name="green" value="#27307e13"/>
 		<color name="grey" value="#00bbbbbb"/>
+		<color name="gray" value="#00bbbbbb"/>
 		<color name="white" value="#00ffffff"/>
 		<color name="yellow" value="#00bab329"/>
 	</colors>
