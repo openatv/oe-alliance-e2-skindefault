@@ -1882,6 +1882,10 @@ except Exception as e:
 	print("[MessageBoxTemplate] onLayoutFinish Error: %s", str(e))
 		</applet>
 	</screen>
+	<screen name="MessageBoxModal" position="fill" zPosition="+99" title="Message" flags="wfModalFull" backgroundColor="#FF000000">
+		<eLabel position="0,0" size="e,e" backgroundColor="window-bg" zPosition="-10" />
+		<panel name="MessageBox" />
+	</screen>
 	<screen name="MessageBox" position="center,center" size="520,10">
 		 <panel name= "MessageBoxTemplate"/>
 	</screen>
