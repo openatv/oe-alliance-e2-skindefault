@@ -3317,4 +3317,541 @@ except Exception as e:
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
+	<screen name="MovieColorButtons">
+		<widget objectTypes="key_red,StaticText" position="e*0,0" size="e*0.25-16,40" font="Regular;20" halign="center" valign="center" backgroundColor="key_red" foregroundColor="key_text" zPosition="5" source="key_red" render="Label">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget objectTypes="key_red,Button,Label" position="e*0,0" size="e*0.25-16,40" font="Regular;20" halign="center" valign="center" backgroundColor="key_red" foregroundColor="key_text" zPosition="5" name="key_red" />
+		<widget objectTypes="key_green,StaticText" position="e*0.25,0" size="e*0.25-16,40" font="Regular;20" halign="center" valign="center" backgroundColor="key_green" foregroundColor="key_text" zPosition="5" source="key_green" render="Label">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget objectTypes="key_green,Button,Label" position="e*0.25,0" size="e*0.25-16,40" font="Regular;20" halign="center" valign="center" backgroundColor="key_green" foregroundColor="key_text" zPosition="5" name="key_green" />
+		<widget objectTypes="key_yellow,StaticText" position="e*0.5,0" size="e*0.25-16,40" font="Regular;20" halign="center" valign="center" backgroundColor="key_yellow" foregroundColor="key_text" zPosition="5" source="key_yellow" render="Label">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget objectTypes="key_yellow,Button,Label" position="e*0.5,0" size="e*0.25-16,40" font="Regular;20" halign="center" valign="center" backgroundColor="key_yellow" foregroundColor="key_text" zPosition="5" name="key_yellow" />
+		<widget objectTypes="key_blue,StaticText" position="e*0.75,0" size="e*0.25-16,40" font="Regular;20" halign="center" valign="center" backgroundColor="key_blue" foregroundColor="key_text" zPosition="5" source="key_blue" render="Label">
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget objectTypes="key_blue,Button,Label" position="e*0.75,0" size="e*0.25-16,40" font="Regular;20" halign="center" valign="center" backgroundColor="key_blue" foregroundColor="key_text" zPosition="5" name="key_blue" />
+	</screen>
+<screen name="MovieSelectionWide" base="MovieSelection" label="Wide movie selection" resolution="1280,720" position="center,center" size="1200,700" title="Select a movie" flags="wfNoBorder" backgroundColor="#101010">
+		<widget name="waitingtext" position="20,98" size="1160,394" zPosition="4" font="Regular;24" halign="center" valign="center" />
+		<widget name="chosenletter" position="20,98" size="1160,394" zPosition="4" font="Regular;60" halign="center" valign="center" transparent="1" />
+		<widget name="list" position="20,98" size="1160,394" zPosition="2" scrollbarMode="showOnDemand" />
+		<widget name="DescriptionBorder" position="1198,652" size="1,1" zPosition="1" pixmap="skin_default/border_eventinfo.png" scale="1" alphatest="blend" />
+		<widget name="movie_sort" pixmaps="skin_default/icons/az.png,skin_default/icons/newtop.png,skin_default/icons/shuffle.png,skin_default/icons/za.png,skin_default/icons/oldtop.png,skin_default/icons/faz.png,skin_default/icons/fza.png" position="20,658" size="35,20" transparent="1" alphatest="on" />
+		<widget name="movie_off" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png" position="65,658" size="35,20" transparent="1" alphatest="on" />
+		<widget name="freeDiskSpace" position="600,656" size="580,32" font="Regular;20" valign="center" halign="right" />
+		<widget source="MovieSelectionStatus" render="Label" position="120,656" size="470,32" font="Regular;20" valign="center" />
+		<widget source="Title" render="Label" position="20,4" size="900,32" font="Regular;24" noWrap="1" />
+		<panel name="MovieColorButtons" position="20,44" size="1176,40" />
+		<eLabel position="20,508" size="1160,1" backgroundColor="#404040" />
+		<widget source="MovieTitle" render="Label" position="20,522" size="820,30" font="Regular;24" noWrap="1" />
+		<widget source="MovieDetails" render="Label" position="850,524" size="330,26" font="Regular;18" halign="right" />
+		<widget source="MovieDescription" render="Label" position="20,566" size="1160,78" font="Regular;20" backgroundColor="#101010" scrollText="direction=top, startDelay=3000, endDelay=4000, stepDelay=100, stepSize=1, mode=cached" />
+	</screen>
+<screen name="MovieDetails" resolution="1280,720" position="0,0" size="1280,720" flags="wfNoBorder" title="Advance Movie List" backgroundColor="#080b10" simpleScreen="MovieDetailsSimple">
+		<widget source="MovieBackdrop" render="Pixmap" position="0,0" size="1280,720" scale="1" alphatest="blend" zPosition="-3" />
+		<eLabel position="0,0" size="1280,720" backgroundColor="#10080b10,#e0080b10,horizontal,on" zPosition="-2" />
+		<eLabel position="0,260" size="1280,460" backgroundColor="#ff080b10,#10080b10,vertical,on" zPosition="-1" />
+		<eLabel text="Advance Movie List" position="60,32" size="1000,32" font="Regular;22" foregroundColor="#dddddd" transparent="1" />
+		<widget source="MoviePoster" render="Pixmap" position="60,314" size="204,306" scale="1" alphatest="blend" />
+		<widget source="MovieTitle" render="Label" position="300,324" size="920,84" font="Regular;36" foregroundColor="#ffffff" transparent="1" shadowColor="#000000" shadowOffset="1,1" />
+		<widget source="MovieDetails" render="Label" position="300,414" size="920,50" font="Regular;20" foregroundColor="#dddddd" transparent="1" />
+		<widget source="pageTitle" render="Label" position="300,477" size="920,28" font="Regular;18" foregroundColor="#a6bbce" transparent="1" />
+		<widget name="details" position="300,513" size="920,144" font="Regular;21" foregroundColor="#eeeeee" backgroundColor="#080b10" transparent="1" scrollbarMode="showOnDemand" scrollbarWidth="3" scrollbarOffset="14" scrollbarForegroundColor="#88ffffff" scrollbarBackgroundColor="#eeffffff" />
+		<widget source="MovieLibraryStatus" render="Label" position="60,628" size="204,36" font="Regular;16" foregroundColor="#bbbbbb" transparent="1" />
+		<panel name="MovieColorButtons" position="60,672" size="1176,40" />
+	</screen>
+<screen name="MovieSelectionAdvanced" base="MovieSelection" label="Advance Movie List" resolution="1280,720" position="center,center" size="1200,700" title="Advance Movie List" flags="wfNoBorder" backgroundColor="#101010" simpleScreen="MovieSelectionAdvancedSimple">
+		<widget name="list" position="20,96" size="770,552" scrollbarMode="showOnDemand" />
+		<widget name="waitingtext" position="20,96" size="770,552" zPosition="4" font="Regular;24" halign="center" valign="center" />
+		<widget name="chosenletter" position="20,96" size="770,552" zPosition="4" font="Regular;60" halign="center" valign="center" transparent="1" />
+		<widget name="DescriptionBorder" position="800,96" size="1,1" pixmap="skin_default/border_eventinfo.png" alphatest="blend" />
+		<widget source="MovieBackdrop" render="Pixmap" position="814,96" size="366,206" scale="1" alphatest="blend" />
+		<widget source="MoviePoster" render="Pixmap" position="822,106" size="100,150" scale="1" alphatest="blend" />
+		<widget source="MovieTitle" render="Label" position="814,316" size="366,60" font="Regular;26" />
+		<widget source="MovieDetails" render="Label" position="814,382" size="366,54" font="Regular;18" />
+		<widget source="MovieDescription" render="Label" backgroundColor="#101010" scrollText="direction=top, startDelay=3000, endDelay=4000, stepDelay=100, stepSize=1, mode=cached" position="814,448" size="366,164" font="Regular;20" />
+		<widget source="MovieLibraryStatus" render="Label" position="814,618" size="366,30" font="Regular;16" />
+		<widget name="movie_sort" pixmaps="skin_default/icons/az.png,skin_default/icons/newtop.png,skin_default/icons/shuffle.png,skin_default/icons/za.png,skin_default/icons/oldtop.png,skin_default/icons/faz.png,skin_default/icons/fza.png" position="20,662" size="35,20" transparent="1" alphatest="on" />
+		<widget name="movie_off" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png" position="65,662" size="35,20" transparent="1" alphatest="on" />
+		<widget name="freeDiskSpace" position="600,656" size="580,32" font="Regular;20" valign="center" halign="right" />
+		<widget source="MovieSelectionStatus" render="Label" position="120,656" size="470,32" font="Regular;20" valign="center" />
+		<widget source="Title" render="Label" position="20,4" size="900,32" font="Regular;24" noWrap="1" />
+		<panel name="MovieColorButtons" position="20,44" size="1176,40" />
+	</screen>
+<screen name="MovieLibrarySelection" resolution="1280,720" position="center,center" size="1200,700" title="Advance Movie List" flags="wfNoBorder" backgroundColor="#101010">
+		<widget name="list" position="20,96" size="770,552" scrollbarMode="showOnDemand" />
+		<widget source="MovieBackdrop" render="Pixmap" position="814,96" size="366,206" scale="1" alphatest="blend" />
+		<widget source="MoviePoster" render="Pixmap" position="822,106" size="100,150" scale="1" alphatest="blend" />
+		<widget source="MovieTitle" render="Label" position="814,316" size="366,60" font="Regular;26" />
+		<widget source="MovieDetails" render="Label" position="814,382" size="366,54" font="Regular;18" />
+		<widget source="MovieDescription" render="Label" backgroundColor="#101010" scrollText="direction=top, startDelay=3000, endDelay=4000, stepDelay=100, stepSize=1, mode=cached" position="814,448" size="366,164" font="Regular;20" />
+		<widget source="MovieLibraryStatus" render="Label" position="814,618" size="366,30" font="Regular;16" />
+		<widget source="status" render="Label" position="20,656" size="700,28" font="Regular;20" valign="center" />
+		<widget source="MovieSelectionStatus" render="Label" position="740,662" size="440,28" font="Regular;20" halign="right" />
+		<widget source="Title" render="Label" position="20,4" size="900,32" font="Regular;24" noWrap="1" />
+		<panel name="MovieColorButtons" position="20,44" size="1176,40" />
+	</screen>
+<screen name="MoviePlayerAdvanced" resolution="1280,720" position="40,400" size="1200,300" flags="wfNoBorder" backgroundColor="#ff000000" transparent="1" base="MoviePlayer" label="Movie information bar" simpleScreen="MoviePlayerAdvancedSimple">
+		<eLabel position="0,80" size="1200,220" backgroundColor="#18101010" zPosition="-1" />
+		<widget source="MoviePoster" render="Pixmap" position="20,0" size="156,234" scale="1" alphatest="blend" />
+		<widget source="MovieTitle" render="Label" position="196,92" size="824,34" font="Regular;26" noWrap="1" transparent="1" />
+		<widget source="global.CurrentTime" render="Label" position="1040,94" size="140,30" font="Regular;24" halign="right" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<eLabel position="196,136" size="984,1" backgroundColor="#606060" />
+		<widget source="MovieDetails" render="Label" position="196,145" size="504,24" font="Regular;18" foregroundColor="#bbbbbb" noWrap="1" transparent="1" />
+		<eLabel text="Playback Time:" position="720,145" size="136,24" font="Regular;16" foregroundColor="#bbbbbb" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="856,145" size="92,24" font="Regular;18" noWrap="1" transparent="1">
+			<convert type="ServicePosition">Length,ShowHours</convert>
+		</widget>
+		<eLabel text="End time" position="960,145" size="130,24" font="Regular;18" foregroundColor="#bbbbbb" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="1090,145" size="90,24" font="Regular;18" halign="right" noWrap="1" transparent="1">
+			<convert type="ServicePosition">EndTime,ShowNoSeconds</convert>
+		</widget>
+		<widget source="MovieDescription" render="Label" position="196,174" size="984,34" font="Regular;20" backgroundColor="#18101010" scrollText="direction=top, startDelay=3000, endDelay=4000, stepDelay=100, stepSize=1, mode=cached" />
+		<widget source="session.CurrentService" render="Label" position="196,223" size="120,28" font="Regular;22" transparent="1">
+			<convert type="ServicePosition">Position,ShowHours</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Progress" position="336,234" size="704,6" borderWidth="0" backgroundColor="#404040" foregroundColor="#dddddd">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1060,223" size="120,28" font="Regular;22" halign="right" transparent="1">
+			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+		</widget>
+		<widget name="statusicon" position="196,266" size="20,20" alphatest="blend" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
+		<widget name="speed" position="226,263" size="76,28" font="Regular;20" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="312,263" size="238,28" font="Regular;18" noWrap="1" transparent="1">
+			<convert type="TrackInfo">Audio</convert>
+		</widget>
+		<ePixmap pixmap="skin_default/icons/ico_sub_off.png" position="566,266" size="28,20" alphatest="blend" />
+		<widget source="session.CurrentService" render="Label" position="606,263" size="210,28" font="Regular;18" noWrap="1" transparent="1">
+			<convert type="TrackInfo">Subtitle</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="830,263" size="100,28" font="Regular;18" noWrap="1" transparent="1">
+			<convert type="PliExtraInfo">VideoCodec</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="940,263" size="240,28" font="Regular;18" halign="right" noWrap="1" transparent="1">
+			<convert type="PliExtraInfo">ResolutionString</convert>
+		</widget>
+	</screen>
+<screen name="MovieSelectionClassicLeft" resolution="1280,720" position="center,center" size="1200,700" title="Advance Movie List" base="MovieSelection" label="Classic: details on the left (EMC)" libraryScreen="MovieLibraryClassicLeft" flags="wfNoBorder" backgroundColor="#101010" simpleScreen="MovieSelectionClassicLeftSimple">
+		<widget source="global.CurrentTime" render="Label" position="940,4" size="240,32" font="Regular;22" halign="right" valign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<eLabel position="20,95" size="1160,1" backgroundColor="#707070" />
+		<widget name="list" position="410,108" size="770,544" scrollbarMode="showOnDemand" />
+		<widget name="waitingtext" position="410,108" size="770,544" zPosition="4" font="Regular;24" halign="center" valign="center" />
+		<widget name="chosenletter" position="410,108" size="770,544" zPosition="4" font="Regular;60" halign="center" valign="center" transparent="1" />
+		<widget name="DescriptionBorder" position="1198,653" size="1,1" pixmap="skin_default/border_eventinfo.png" alphatest="blend" />
+		<eLabel position="397,108" size="1,544" backgroundColor="#707070" />
+		<widget source="Service" render="Label" position="154,118" size="230,50" font="Regular;20" halign="right">
+			<convert type="MovieInfo">RecordServiceName</convert>
+		</widget>
+		<widget source="Service" render="Label" position="154,188" size="230,30" font="Regular;20" halign="right">
+			<convert type="ServiceTime">Duration</convert>
+			<convert type="ClockToText">AsLength</convert>
+		</widget>
+		<widget source="Service" render="Label" position="154,238" size="230,30" font="Regular;20" halign="right">
+			<convert type="MovieInfo">FileSize</convert>
+		</widget>
+		<widget source="MoviePoster" render="Pixmap" position="20,108" size="120,180" scale="1" alphatest="blend" />
+		<widget source="MovieTitle" render="Label" position="20,300" size="364,58" font="Regular;24" />
+		<widget source="MovieDetails" render="Label" position="20,366" size="364,58" font="Regular;18" />
+		<widget source="MovieDescription" render="Label" backgroundColor="#101010" scrollText="direction=top, startDelay=3000, endDelay=4000, stepDelay=100, stepSize=1, mode=cached" position="20,434" size="364,190" font="Regular;20" />
+		<widget source="MovieLibraryStatus" render="Label" position="20,628" size="364,24" font="Regular;16" />
+		<widget name="movie_sort" pixmaps="skin_default/icons/az.png,skin_default/icons/newtop.png,skin_default/icons/shuffle.png,skin_default/icons/za.png,skin_default/icons/oldtop.png,skin_default/icons/faz.png,skin_default/icons/fza.png" position="20,662" size="35,20" transparent="1" alphatest="on" />
+		<widget name="movie_off" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png" position="65,662" size="35,20" transparent="1" alphatest="on" />
+		<widget source="MovieSelectionStatus" render="Label" position="120,662" size="470,28" font="Regular;20" />
+		<widget name="freeDiskSpace" position="600,662" size="580,28" font="Regular;20" halign="right" />
+		<widget source="Title" render="Label" position="20,4" size="900,32" font="Regular;24" noWrap="1" />
+		<panel name="MovieColorButtons" position="20,44" size="1176,40" />
+	</screen>
+<screen name="MovieLibraryClassicLeft" resolution="1280,720" position="center,center" size="1200,700" title="Advance Movie List" flags="wfNoBorder" backgroundColor="#101010">
+		<widget source="global.CurrentTime" render="Label" position="940,4" size="240,32" font="Regular;22" halign="right" valign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<eLabel position="20,95" size="1160,1" backgroundColor="#707070" />
+		<widget name="list" position="410,108" size="770,544" scrollbarMode="showOnDemand" />
+		<eLabel position="397,108" size="1,544" backgroundColor="#707070" />
+		<widget source="Service" render="Label" position="154,118" size="230,50" font="Regular;20" halign="right">
+			<convert type="MovieInfo">RecordServiceName</convert>
+		</widget>
+		<widget source="Service" render="Label" position="154,188" size="230,30" font="Regular;20" halign="right">
+			<convert type="ServiceTime">Duration</convert>
+			<convert type="ClockToText">AsLength</convert>
+		</widget>
+		<widget source="Service" render="Label" position="154,238" size="230,30" font="Regular;20" halign="right">
+			<convert type="MovieInfo">FileSize</convert>
+		</widget>
+		<widget source="MoviePoster" render="Pixmap" position="20,108" size="120,180" scale="1" alphatest="blend" />
+		<widget source="MovieTitle" render="Label" position="20,300" size="364,58" font="Regular;24" />
+		<widget source="MovieDetails" render="Label" position="20,366" size="364,58" font="Regular;18" />
+		<widget source="MovieDescription" render="Label" backgroundColor="#101010" scrollText="direction=top, startDelay=3000, endDelay=4000, stepDelay=100, stepSize=1, mode=cached" position="20,434" size="364,190" font="Regular;20" />
+		<widget source="MovieLibraryStatus" render="Label" position="20,628" size="364,24" font="Regular;16" />
+		<widget source="status" render="Label" position="20,662" size="700,28" font="Regular;20" />
+		<widget source="MovieSelectionStatus" render="Label" position="740,662" size="440,28" font="Regular;20" halign="right" />
+		<widget source="Title" render="Label" position="20,4" size="900,32" font="Regular;24" noWrap="1" />
+		<panel name="MovieColorButtons" position="20,44" size="1176,40" />
+	</screen>
+<screen name="MovieSelectionClassicBottom" resolution="1280,720" position="center,center" size="1200,700" title="Advance Movie List" base="MovieSelection" label="Classic: details below the list (EMC)" libraryScreen="MovieLibraryClassicBottom" flags="wfNoBorder" backgroundColor="#101010" simpleScreen="MovieSelectionClassicBottomSimple">
+		<widget source="global.CurrentTime" render="Label" position="940,4" size="240,32" font="Regular;22" halign="right" valign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<eLabel position="20,95" size="1160,1" backgroundColor="#707070" />
+		<widget name="list" position="20,108" size="1160,374" scrollbarMode="showOnDemand" />
+		<widget name="waitingtext" position="20,108" size="1160,374" zPosition="4" font="Regular;24" halign="center" valign="center" />
+		<widget name="chosenletter" position="20,108" size="1160,374" zPosition="4" font="Regular;60" halign="center" valign="center" transparent="1" />
+		<widget name="DescriptionBorder" position="1198,653" size="1,1" pixmap="skin_default/border_eventinfo.png" alphatest="blend" />
+		<eLabel position="20,486" size="1160,1" backgroundColor="#707070" />
+		<widget source="MoviePoster" render="Pixmap" position="20,494" size="104,156" scale="1" alphatest="blend" />
+		<widget source="MovieTitle" render="Label" position="140,494" size="1040,30" font="Regular;24" />
+		<widget source="MovieDetails" render="Label" position="140,529" size="1040,26" font="Regular;18" />
+		<widget source="MovieDescription" render="Label" backgroundColor="#101010" scrollText="direction=top, startDelay=3000, endDelay=4000, stepDelay=100, stepSize=1, mode=cached" position="140,560" size="1040,64" font="Regular;20" />
+		<widget source="MovieLibraryStatus" render="Label" position="140,628" size="1040,24" font="Regular;16" />
+		<widget name="movie_sort" pixmaps="skin_default/icons/az.png,skin_default/icons/newtop.png,skin_default/icons/shuffle.png,skin_default/icons/za.png,skin_default/icons/oldtop.png,skin_default/icons/faz.png,skin_default/icons/fza.png" position="20,662" size="35,20" transparent="1" alphatest="on" />
+		<widget name="movie_off" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png" position="65,662" size="35,20" transparent="1" alphatest="on" />
+		<widget source="MovieSelectionStatus" render="Label" position="120,662" size="470,28" font="Regular;20" />
+		<widget name="freeDiskSpace" position="600,662" size="580,28" font="Regular;20" halign="right" />
+		<widget source="Title" render="Label" position="20,4" size="900,32" font="Regular;24" noWrap="1" />
+		<panel name="MovieColorButtons" position="20,44" size="1176,40" />
+	</screen>
+<screen name="MovieLibraryClassicBottom" resolution="1280,720" position="center,center" size="1200,700" title="Advance Movie List" flags="wfNoBorder" backgroundColor="#101010">
+		<widget source="global.CurrentTime" render="Label" position="940,4" size="240,32" font="Regular;22" halign="right" valign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<eLabel position="20,95" size="1160,1" backgroundColor="#707070" />
+		<widget name="list" position="20,108" size="1160,374" scrollbarMode="showOnDemand" />
+		<eLabel position="20,486" size="1160,1" backgroundColor="#707070" />
+		<widget source="MoviePoster" render="Pixmap" position="20,494" size="104,156" scale="1" alphatest="blend" />
+		<widget source="MovieTitle" render="Label" position="140,494" size="1040,30" font="Regular;24" />
+		<widget source="MovieDetails" render="Label" position="140,529" size="1040,26" font="Regular;18" />
+		<widget source="MovieDescription" render="Label" backgroundColor="#101010" scrollText="direction=top, startDelay=3000, endDelay=4000, stepDelay=100, stepSize=1, mode=cached" position="140,560" size="1040,64" font="Regular;20" />
+		<widget source="MovieLibraryStatus" render="Label" position="140,628" size="1040,24" font="Regular;16" />
+		<widget source="status" render="Label" position="20,662" size="700,28" font="Regular;20" />
+		<widget source="MovieSelectionStatus" render="Label" position="740,662" size="440,28" font="Regular;20" halign="right" />
+		<widget source="Title" render="Label" position="20,4" size="900,32" font="Regular;24" noWrap="1" />
+		<panel name="MovieColorButtons" position="20,44" size="1176,40" />
+	</screen>
+<screen name="MovieSelectionClassicLeftPreview" resolution="1280,720" position="center,center" size="1200,700" title="Advance Movie List" base="MovieSelection" label="Classic: left preview (EMC)" libraryScreen="MovieLibraryClassicLeftPreview" flags="wfNoBorder" backgroundColor="#101010" simpleScreen="MovieSelectionClassicLeftPreviewSimple">
+		<widget source="global.CurrentTime" render="Label" position="940,4" size="240,32" font="Regular;22" halign="right" valign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<eLabel position="20,95" size="1160,1" backgroundColor="#707070" />
+		<widget name="list" position="410,108" size="770,544" scrollbarMode="showOnDemand" />
+		<widget name="waitingtext" position="410,108" size="770,544" zPosition="4" font="Regular;24" halign="center" valign="center" />
+		<widget name="chosenletter" position="410,108" size="770,544" zPosition="4" font="Regular;60" halign="center" valign="center" transparent="1" />
+		<widget name="DescriptionBorder" position="1198,653" size="1,1" pixmap="skin_default/border_eventinfo.png" alphatest="blend" />
+		<eLabel position="397,108" size="1,544" backgroundColor="#707070" />
+		<widget source="session.VideoPicture" render="Pig" position="20,108" size="364,205" backgroundColor="#ff000000" />
+		<widget source="MoviePoster" render="Pixmap" position="20,334" size="110,165" scale="1" alphatest="blend" />
+		<widget source="MovieTitle" render="Label" position="144,334" size="240,64" font="Regular;24" />
+		<widget source="MovieDetails" render="Label" position="144,404" size="240,92" font="Regular;18" />
+		<widget source="MovieDescription" render="Label" backgroundColor="#101010" scrollText="direction=top, startDelay=3000, endDelay=4000, stepDelay=100, stepSize=1, mode=cached" position="20,512" size="364,112" font="Regular;20" />
+		<widget source="MovieLibraryStatus" render="Label" position="20,628" size="364,24" font="Regular;16" />
+		<widget name="movie_sort" pixmaps="skin_default/icons/az.png,skin_default/icons/newtop.png,skin_default/icons/shuffle.png,skin_default/icons/za.png,skin_default/icons/oldtop.png,skin_default/icons/faz.png,skin_default/icons/fza.png" position="20,662" size="35,20" transparent="1" alphatest="on" />
+		<widget name="movie_off" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png" position="65,662" size="35,20" transparent="1" alphatest="on" />
+		<widget source="MovieSelectionStatus" render="Label" position="120,662" size="470,28" font="Regular;20" />
+		<widget name="freeDiskSpace" position="600,662" size="580,28" font="Regular;20" halign="right" />
+		<widget source="Title" render="Label" position="20,4" size="900,32" font="Regular;24" noWrap="1" />
+		<panel name="MovieColorButtons" position="20,44" size="1176,40" />
+	</screen>
+<screen name="MovieLibraryClassicLeftPreview" resolution="1280,720" position="center,center" size="1200,700" title="Advance Movie List" flags="wfNoBorder" backgroundColor="#101010">
+		<widget source="global.CurrentTime" render="Label" position="940,4" size="240,32" font="Regular;22" halign="right" valign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<eLabel position="20,95" size="1160,1" backgroundColor="#707070" />
+		<widget name="list" position="410,108" size="770,544" scrollbarMode="showOnDemand" />
+		<eLabel position="397,108" size="1,544" backgroundColor="#707070" />
+		<widget source="session.VideoPicture" render="Pig" position="20,108" size="364,205" backgroundColor="#ff000000" />
+		<widget source="MoviePoster" render="Pixmap" position="20,334" size="110,165" scale="1" alphatest="blend" />
+		<widget source="MovieTitle" render="Label" position="144,334" size="240,64" font="Regular;24" />
+		<widget source="MovieDetails" render="Label" position="144,404" size="240,92" font="Regular;18" />
+		<widget source="MovieDescription" render="Label" backgroundColor="#101010" scrollText="direction=top, startDelay=3000, endDelay=4000, stepDelay=100, stepSize=1, mode=cached" position="20,512" size="364,112" font="Regular;20" />
+		<widget source="MovieLibraryStatus" render="Label" position="20,628" size="364,24" font="Regular;16" />
+		<widget source="status" render="Label" position="20,662" size="700,28" font="Regular;20" />
+		<widget source="MovieSelectionStatus" render="Label" position="740,662" size="440,28" font="Regular;20" halign="right" />
+		<widget source="Title" render="Label" position="20,4" size="900,32" font="Regular;24" noWrap="1" />
+		<panel name="MovieColorButtons" position="20,44" size="1176,40" />
+	</screen>
+<screen name="MovieSelectionClassicBottomPreview" resolution="1280,720" position="center,center" size="1200,700" title="Advance Movie List" base="MovieSelection" label="Classic: bottom preview (EMC)" libraryScreen="MovieLibraryClassicBottomPreview" flags="wfNoBorder" backgroundColor="#101010" simpleScreen="MovieSelectionClassicBottomPreviewSimple">
+		<widget source="global.CurrentTime" render="Label" position="940,4" size="240,32" font="Regular;22" halign="right" valign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<eLabel position="20,95" size="1160,1" backgroundColor="#707070" />
+		<widget name="list" position="20,108" size="1160,374" scrollbarMode="showOnDemand" />
+		<widget name="waitingtext" position="20,108" size="1160,374" zPosition="4" font="Regular;24" halign="center" valign="center" />
+		<widget name="chosenletter" position="20,108" size="1160,374" zPosition="4" font="Regular;60" halign="center" valign="center" transparent="1" />
+		<widget name="DescriptionBorder" position="1198,653" size="1,1" pixmap="skin_default/border_eventinfo.png" alphatest="blend" />
+		<eLabel position="20,486" size="1160,1" backgroundColor="#707070" />
+		<widget source="session.VideoPicture" render="Pig" position="20,494" size="288,162" backgroundColor="#ff000000" />
+		<widget source="MoviePoster" render="Pixmap" position="326,494" size="104,156" scale="1" alphatest="blend" />
+		<widget source="MovieTitle" render="Label" position="446,494" size="734,30" font="Regular;24" />
+		<widget source="MovieDetails" render="Label" position="446,529" size="734,26" font="Regular;18" />
+		<widget source="MovieDescription" render="Label" backgroundColor="#101010" scrollText="direction=top, startDelay=3000, endDelay=4000, stepDelay=100, stepSize=1, mode=cached" position="446,560" size="734,64" font="Regular;20" />
+		<widget source="MovieLibraryStatus" render="Label" position="446,628" size="734,24" font="Regular;16" />
+		<widget name="movie_sort" pixmaps="skin_default/icons/az.png,skin_default/icons/newtop.png,skin_default/icons/shuffle.png,skin_default/icons/za.png,skin_default/icons/oldtop.png,skin_default/icons/faz.png,skin_default/icons/fza.png" position="20,662" size="35,20" transparent="1" alphatest="on" />
+		<widget name="movie_off" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png" position="65,662" size="35,20" transparent="1" alphatest="on" />
+		<widget source="MovieSelectionStatus" render="Label" position="120,662" size="470,28" font="Regular;20" />
+		<widget name="freeDiskSpace" position="600,662" size="580,28" font="Regular;20" halign="right" />
+		<widget source="Title" render="Label" position="20,4" size="900,32" font="Regular;24" noWrap="1" />
+		<panel name="MovieColorButtons" position="20,44" size="1176,40" />
+	</screen>
+<screen name="MovieLibraryClassicBottomPreview" resolution="1280,720" position="center,center" size="1200,700" title="Advance Movie List" flags="wfNoBorder" backgroundColor="#101010">
+		<widget source="global.CurrentTime" render="Label" position="940,4" size="240,32" font="Regular;22" halign="right" valign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<eLabel position="20,95" size="1160,1" backgroundColor="#707070" />
+		<widget name="list" position="20,108" size="1160,374" scrollbarMode="showOnDemand" />
+		<eLabel position="20,486" size="1160,1" backgroundColor="#707070" />
+		<widget source="session.VideoPicture" render="Pig" position="20,494" size="288,162" backgroundColor="#ff000000" />
+		<widget source="MoviePoster" render="Pixmap" position="326,494" size="104,156" scale="1" alphatest="blend" />
+		<widget source="MovieTitle" render="Label" position="446,494" size="734,30" font="Regular;24" />
+		<widget source="MovieDetails" render="Label" position="446,529" size="734,26" font="Regular;18" />
+		<widget source="MovieDescription" render="Label" backgroundColor="#101010" scrollText="direction=top, startDelay=3000, endDelay=4000, stepDelay=100, stepSize=1, mode=cached" position="446,560" size="734,64" font="Regular;20" />
+		<widget source="MovieLibraryStatus" render="Label" position="446,628" size="734,24" font="Regular;16" />
+		<widget source="status" render="Label" position="20,662" size="700,28" font="Regular;20" />
+		<widget source="MovieSelectionStatus" render="Label" position="740,662" size="440,28" font="Regular;20" halign="right" />
+		<widget source="Title" render="Label" position="20,4" size="900,32" font="Regular;24" noWrap="1" />
+		<panel name="MovieColorButtons" position="20,44" size="1176,40" />
+	</screen>
+<screen name="MoviePlayerClassic" resolution="1280,720" position="40,440" size="1200,260" flags="wfNoBorder" backgroundColor="#ff000000" transparent="1" base="MoviePlayer" label="Classic movie information bar (EMC)" simpleScreen="MoviePlayerClassicSimple">
+		<eLabel position="0,80" size="1200,180" backgroundColor="#18101010" zPosition="-1" />
+		<widget source="MoviePoster" render="Pixmap" position="20,0" size="156,234" scale="1" alphatest="blend" />
+		<widget source="MovieTitle" render="Label" position="196,92" size="824,34" font="Regular;26" noWrap="1" transparent="1" />
+		<widget source="global.CurrentTime" render="Label" position="1040,94" size="140,30" font="Regular;24" halign="right" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<eLabel position="196,136" size="984,1" backgroundColor="#606060" />
+		<widget source="MovieDetails" render="Label" position="196,145" size="504,24" font="Regular;18" foregroundColor="#bbbbbb" noWrap="1" transparent="1" />
+		<eLabel text="Playback Time:" position="720,145" size="136,24" font="Regular;16" foregroundColor="#bbbbbb" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="856,145" size="92,24" font="Regular;18" noWrap="1" transparent="1">
+			<convert type="ServicePosition">Length,ShowHours</convert>
+		</widget>
+		<eLabel text="End time" position="960,145" size="130,24" font="Regular;18" foregroundColor="#bbbbbb" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="1090,145" size="90,24" font="Regular;18" halign="right" noWrap="1" transparent="1">
+			<convert type="ServicePosition">EndTime,ShowNoSeconds</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="196,183" size="120,28" font="Regular;22" transparent="1">
+			<convert type="ServicePosition">Position,ShowHours</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Progress" position="336,194" size="704,6" borderWidth="0" backgroundColor="#404040" foregroundColor="#dddddd">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1060,183" size="120,28" font="Regular;22" halign="right" transparent="1">
+			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+		</widget>
+		<widget name="statusicon" position="196,226" size="20,20" alphatest="blend" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
+		<widget name="speed" position="226,223" size="76,28" font="Regular;20" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="312,223" size="238,28" font="Regular;18" noWrap="1" transparent="1">
+			<convert type="TrackInfo">Audio</convert>
+		</widget>
+		<ePixmap pixmap="skin_default/icons/ico_sub_off.png" position="566,226" size="28,20" alphatest="blend" />
+		<widget source="session.CurrentService" render="Label" position="606,223" size="210,28" font="Regular;18" noWrap="1" transparent="1">
+			<convert type="TrackInfo">Subtitle</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="830,223" size="100,28" font="Regular;18" noWrap="1" transparent="1">
+			<convert type="PliExtraInfo">VideoCodec</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="940,223" size="240,28" font="Regular;18" halign="right" noWrap="1" transparent="1">
+			<convert type="PliExtraInfo">ResolutionString</convert>
+		</widget>
+	</screen>
+<screen name="MovieDetailsSimple" resolution="1280,720" position="0,0" size="1280,720" flags="wfNoBorder" title="Advance Movie List" backgroundColor="#101010">
+		<widget source="Title" render="Label" position="60,30" size="1160,32" font="Regular;24" />
+		<eLabel position="60,80" size="1160,1" backgroundColor="#404040" />
+		<widget source="MovieTitle" render="Label" position="60,106" size="1160,90" font="Regular;36" />
+		<widget source="MovieDetails" render="Label" position="60,204" size="1160,30" font="Regular;20" foregroundColor="#bbbbbb" />
+		<widget source="pageTitle" render="Label" position="60,260" size="1160,28" font="Regular;20" foregroundColor="#bbbbbb" />
+		<widget name="details" position="60,304" size="1160,336" font="Regular;23" backgroundColor="#101010" scrollbarMode="showOnDemand" scrollbarWidth="4" scrollbarOffset="16" />
+		<panel name="MovieColorButtons" position="60,672" size="1176,40" />
+	</screen>
+<screen name="MovieSelectionAdvancedSimple" resolution="1280,720" position="center,center" size="1200,700" title="Advance Movie List" flags="wfNoBorder" backgroundColor="#101010">
+		<widget name="list" position="20,96" size="770,552" scrollbarMode="showOnDemand" />
+		<widget name="waitingtext" position="20,96" size="770,552" zPosition="4" font="Regular;24" halign="center" valign="center" />
+		<widget name="chosenletter" position="20,96" size="770,552" zPosition="4" font="Regular;60" halign="center" valign="center" transparent="1" />
+		<widget name="DescriptionBorder" position="800,96" size="1,1" pixmap="skin_default/border_eventinfo.png" alphatest="blend" />
+		<widget source="MovieTitle" render="Label" position="814,108" size="366,90" font="Regular;26" />
+		<widget source="MovieDetails" render="Label" position="814,212" size="366,50" font="Regular;18" />
+		<widget source="MovieDescription" render="Label" backgroundColor="#101010" scrollText="direction=top, startDelay=3000, endDelay=4000, stepDelay=100, stepSize=1, mode=cached" position="814,278" size="366,330" font="Regular;20" />
+		<widget source="MovieLibraryStatus" render="Label" position="814,618" size="366,30" font="Regular;16" />
+		<widget name="movie_sort" pixmaps="skin_default/icons/az.png,skin_default/icons/newtop.png,skin_default/icons/shuffle.png,skin_default/icons/za.png,skin_default/icons/oldtop.png,skin_default/icons/faz.png,skin_default/icons/fza.png" position="20,662" size="35,20" transparent="1" alphatest="on" />
+		<widget name="movie_off" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png" position="65,662" size="35,20" transparent="1" alphatest="on" />
+		<widget name="freeDiskSpace" position="600,656" size="580,32" font="Regular;20" valign="center" halign="right" />
+		<widget source="MovieSelectionStatus" render="Label" position="120,656" size="470,32" font="Regular;20" valign="center" />
+		<widget source="Title" render="Label" position="20,4" size="900,32" font="Regular;24" noWrap="1" />
+		<panel name="MovieColorButtons" position="20,44" size="1176,40" />
+	</screen>
+<screen name="MoviePlayerAdvancedSimple" resolution="1280,720" position="40,480" size="1200,220" flags="wfNoBorder" backgroundColor="#ff000000" transparent="1">
+		<eLabel position="0,0" size="1200,220" backgroundColor="#18101010" zPosition="-1" />
+		<widget source="MovieTitle" render="Label" position="20,12" size="1000,34" font="Regular;26" noWrap="1" transparent="1" />
+		<widget source="global.CurrentTime" render="Label" position="1040,14" size="140,30" font="Regular;24" halign="right" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<eLabel position="20,56" size="1160,1" backgroundColor="#606060" />
+		<widget source="MovieDetails" render="Label" position="20,65" size="680,24" font="Regular;18" foregroundColor="#bbbbbb" noWrap="1" transparent="1" />
+		<eLabel text="Playback Time:" position="720,65" size="136,24" font="Regular;16" foregroundColor="#bbbbbb" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="856,65" size="92,24" font="Regular;18" noWrap="1" transparent="1">
+			<convert type="ServicePosition">Length,ShowHours</convert>
+		</widget>
+		<eLabel text="End time" position="960,65" size="130,24" font="Regular;18" foregroundColor="#bbbbbb" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="1090,65" size="90,24" font="Regular;18" halign="right" noWrap="1" transparent="1">
+			<convert type="ServicePosition">EndTime,ShowNoSeconds</convert>
+		</widget>
+		<widget source="MovieDescription" render="Label" position="20,94" size="1160,34" font="Regular;20" backgroundColor="#18101010" scrollText="direction=top, startDelay=3000, endDelay=4000, stepDelay=100, stepSize=1, mode=cached" />
+		<widget source="session.CurrentService" render="Label" position="20,143" size="120,28" font="Regular;22" transparent="1">
+			<convert type="ServicePosition">Position,ShowHours</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Progress" position="160,154" size="880,6" borderWidth="0" backgroundColor="#404040" foregroundColor="#dddddd">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1060,143" size="120,28" font="Regular;22" halign="right" transparent="1">
+			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+		</widget>
+		<widget name="statusicon" position="20,186" size="20,20" alphatest="blend" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
+		<widget name="speed" position="50,183" size="76,28" font="Regular;20" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="136,183" size="414,28" font="Regular;18" noWrap="1" transparent="1">
+			<convert type="TrackInfo">Audio</convert>
+		</widget>
+		<ePixmap pixmap="skin_default/icons/ico_sub_off.png" position="566,186" size="28,20" alphatest="blend" />
+		<widget source="session.CurrentService" render="Label" position="606,183" size="210,28" font="Regular;18" noWrap="1" transparent="1">
+			<convert type="TrackInfo">Subtitle</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="830,183" size="100,28" font="Regular;18" noWrap="1" transparent="1">
+			<convert type="PliExtraInfo">VideoCodec</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="940,183" size="240,28" font="Regular;18" halign="right" noWrap="1" transparent="1">
+			<convert type="PliExtraInfo">ResolutionString</convert>
+		</widget>
+	</screen>
+<screen name="MovieSelectionClassicLeftSimple" resolution="1280,720" position="center,center" size="1200,700" title="Advance Movie List" flags="wfNoBorder" backgroundColor="#101010">
+		<widget source="global.CurrentTime" render="Label" position="940,4" size="240,32" font="Regular;22" halign="right" valign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<eLabel position="20,95" size="1160,1" backgroundColor="#707070" />
+		<widget name="list" position="410,108" size="770,544" scrollbarMode="showOnDemand" />
+		<widget name="waitingtext" position="410,108" size="770,544" zPosition="4" font="Regular;24" halign="center" valign="center" />
+		<widget name="chosenletter" position="410,108" size="770,544" zPosition="4" font="Regular;60" halign="center" valign="center" transparent="1" />
+		<widget name="DescriptionBorder" position="1198,653" size="1,1" pixmap="skin_default/border_eventinfo.png" alphatest="blend" />
+		<eLabel position="397,108" size="1,544" backgroundColor="#707070" />
+		<widget source="MovieTitle" render="Label" position="20,108" size="364,90" font="Regular;24" />
+		<widget source="MovieDetails" render="Label" position="20,212" size="364,50" font="Regular;18" />
+		<widget source="MovieDescription" render="Label" backgroundColor="#101010" scrollText="direction=top, startDelay=3000, endDelay=4000, stepDelay=100, stepSize=1, mode=cached" position="20,278" size="364,330" font="Regular;20" />
+		<widget source="MovieLibraryStatus" render="Label" position="20,628" size="364,24" font="Regular;16" />
+		<widget name="movie_sort" pixmaps="skin_default/icons/az.png,skin_default/icons/newtop.png,skin_default/icons/shuffle.png,skin_default/icons/za.png,skin_default/icons/oldtop.png,skin_default/icons/faz.png,skin_default/icons/fza.png" position="20,662" size="35,20" transparent="1" alphatest="on" />
+		<widget name="movie_off" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png" position="65,662" size="35,20" transparent="1" alphatest="on" />
+		<widget source="MovieSelectionStatus" render="Label" position="120,662" size="470,28" font="Regular;20" />
+		<widget name="freeDiskSpace" position="600,662" size="580,28" font="Regular;20" halign="right" />
+		<widget source="Title" render="Label" position="20,4" size="900,32" font="Regular;24" noWrap="1" />
+		<panel name="MovieColorButtons" position="20,44" size="1176,40" />
+	</screen>
+<screen name="MovieSelectionClassicBottomSimple" resolution="1280,720" position="center,center" size="1200,700" title="Advance Movie List" flags="wfNoBorder" backgroundColor="#101010">
+		<widget source="global.CurrentTime" render="Label" position="940,4" size="240,32" font="Regular;22" halign="right" valign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<eLabel position="20,95" size="1160,1" backgroundColor="#707070" />
+		<widget name="list" position="20,108" size="1160,374" scrollbarMode="showOnDemand" />
+		<widget name="waitingtext" position="20,108" size="1160,374" zPosition="4" font="Regular;24" halign="center" valign="center" />
+		<widget name="chosenletter" position="20,108" size="1160,374" zPosition="4" font="Regular;60" halign="center" valign="center" transparent="1" />
+		<widget name="DescriptionBorder" position="1198,653" size="1,1" pixmap="skin_default/border_eventinfo.png" alphatest="blend" />
+		<eLabel position="20,486" size="1160,1" backgroundColor="#707070" />
+		<widget source="MovieTitle" render="Label" position="20,494" size="1160,30" font="Regular;24" />
+		<widget source="MovieDetails" render="Label" position="20,529" size="1160,26" font="Regular;18" />
+		<widget source="MovieDescription" render="Label" backgroundColor="#101010" scrollText="direction=top, startDelay=3000, endDelay=4000, stepDelay=100, stepSize=1, mode=cached" position="20,560" size="1160,64" font="Regular;20" />
+		<widget source="MovieLibraryStatus" render="Label" position="140,628" size="1040,24" font="Regular;16" />
+		<widget name="movie_sort" pixmaps="skin_default/icons/az.png,skin_default/icons/newtop.png,skin_default/icons/shuffle.png,skin_default/icons/za.png,skin_default/icons/oldtop.png,skin_default/icons/faz.png,skin_default/icons/fza.png" position="20,662" size="35,20" transparent="1" alphatest="on" />
+		<widget name="movie_off" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png" position="65,662" size="35,20" transparent="1" alphatest="on" />
+		<widget source="MovieSelectionStatus" render="Label" position="120,662" size="470,28" font="Regular;20" />
+		<widget name="freeDiskSpace" position="600,662" size="580,28" font="Regular;20" halign="right" />
+		<widget source="Title" render="Label" position="20,4" size="900,32" font="Regular;24" noWrap="1" />
+		<panel name="MovieColorButtons" position="20,44" size="1176,40" />
+	</screen>
+<screen name="MovieSelectionClassicLeftPreviewSimple" resolution="1280,720" position="center,center" size="1200,700" title="Advance Movie List" flags="wfNoBorder" backgroundColor="#101010">
+		<widget source="global.CurrentTime" render="Label" position="940,4" size="240,32" font="Regular;22" halign="right" valign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<eLabel position="20,95" size="1160,1" backgroundColor="#707070" />
+		<widget name="list" position="410,108" size="770,544" scrollbarMode="showOnDemand" />
+		<widget name="waitingtext" position="410,108" size="770,544" zPosition="4" font="Regular;24" halign="center" valign="center" />
+		<widget name="chosenletter" position="410,108" size="770,544" zPosition="4" font="Regular;60" halign="center" valign="center" transparent="1" />
+		<widget name="DescriptionBorder" position="1198,653" size="1,1" pixmap="skin_default/border_eventinfo.png" alphatest="blend" />
+		<eLabel position="397,108" size="1,544" backgroundColor="#707070" />
+		<widget source="session.VideoPicture" render="Pig" position="20,108" size="364,205" backgroundColor="#ff000000" />
+		<widget source="MovieTitle" render="Label" position="20,334" size="364,64" font="Regular;24" />
+		<widget source="MovieDetails" render="Label" position="20,408" size="364,50" font="Regular;18" />
+		<widget source="MovieDescription" render="Label" backgroundColor="#101010" scrollText="direction=top, startDelay=3000, endDelay=4000, stepDelay=100, stepSize=1, mode=cached" position="20,474" size="364,150" font="Regular;20" />
+		<widget source="MovieLibraryStatus" render="Label" position="20,628" size="364,24" font="Regular;16" />
+		<widget name="movie_sort" pixmaps="skin_default/icons/az.png,skin_default/icons/newtop.png,skin_default/icons/shuffle.png,skin_default/icons/za.png,skin_default/icons/oldtop.png,skin_default/icons/faz.png,skin_default/icons/fza.png" position="20,662" size="35,20" transparent="1" alphatest="on" />
+		<widget name="movie_off" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png" position="65,662" size="35,20" transparent="1" alphatest="on" />
+		<widget source="MovieSelectionStatus" render="Label" position="120,662" size="470,28" font="Regular;20" />
+		<widget name="freeDiskSpace" position="600,662" size="580,28" font="Regular;20" halign="right" />
+		<widget source="Title" render="Label" position="20,4" size="900,32" font="Regular;24" noWrap="1" />
+		<panel name="MovieColorButtons" position="20,44" size="1176,40" />
+	</screen>
+<screen name="MovieSelectionClassicBottomPreviewSimple" resolution="1280,720" position="center,center" size="1200,700" title="Advance Movie List" flags="wfNoBorder" backgroundColor="#101010">
+		<widget source="global.CurrentTime" render="Label" position="940,4" size="240,32" font="Regular;22" halign="right" valign="center">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<eLabel position="20,95" size="1160,1" backgroundColor="#707070" />
+		<widget name="list" position="20,108" size="1160,374" scrollbarMode="showOnDemand" />
+		<widget name="waitingtext" position="20,108" size="1160,374" zPosition="4" font="Regular;24" halign="center" valign="center" />
+		<widget name="chosenletter" position="20,108" size="1160,374" zPosition="4" font="Regular;60" halign="center" valign="center" transparent="1" />
+		<widget name="DescriptionBorder" position="1198,653" size="1,1" pixmap="skin_default/border_eventinfo.png" alphatest="blend" />
+		<eLabel position="20,486" size="1160,1" backgroundColor="#707070" />
+		<widget source="session.VideoPicture" render="Pig" position="20,494" size="288,162" backgroundColor="#ff000000" />
+		<widget source="MovieTitle" render="Label" position="326,494" size="854,30" font="Regular;24" />
+		<widget source="MovieDetails" render="Label" position="326,529" size="854,26" font="Regular;18" />
+		<widget source="MovieDescription" render="Label" backgroundColor="#101010" scrollText="direction=top, startDelay=3000, endDelay=4000, stepDelay=100, stepSize=1, mode=cached" position="326,560" size="854,64" font="Regular;20" />
+		<widget source="MovieLibraryStatus" render="Label" position="446,628" size="734,24" font="Regular;16" />
+		<widget name="movie_sort" pixmaps="skin_default/icons/az.png,skin_default/icons/newtop.png,skin_default/icons/shuffle.png,skin_default/icons/za.png,skin_default/icons/oldtop.png,skin_default/icons/faz.png,skin_default/icons/fza.png" position="20,662" size="35,20" transparent="1" alphatest="on" />
+		<widget name="movie_off" pixmaps="skin_default/icons/ask.png,skin_default/icons/movielist.png,skin_default/icons/quit.png,skin_default/icons/pause.png,skin_default/icons/playlist.png,skin_default/icons/playlistquit.png,skin_default/icons/loop.png" position="65,662" size="35,20" transparent="1" alphatest="on" />
+		<widget source="MovieSelectionStatus" render="Label" position="120,662" size="470,28" font="Regular;20" />
+		<widget name="freeDiskSpace" position="600,662" size="580,28" font="Regular;20" halign="right" />
+		<widget source="Title" render="Label" position="20,4" size="900,32" font="Regular;24" noWrap="1" />
+		<panel name="MovieColorButtons" position="20,44" size="1176,40" />
+	</screen>
+<screen name="MoviePlayerClassicSimple" resolution="1280,720" position="40,520" size="1200,180" flags="wfNoBorder" backgroundColor="#ff000000" transparent="1">
+		<eLabel position="0,0" size="1200,180" backgroundColor="#18101010" zPosition="-1" />
+		<widget source="MovieTitle" render="Label" position="20,12" size="1000,34" font="Regular;26" noWrap="1" transparent="1" />
+		<widget source="global.CurrentTime" render="Label" position="1040,14" size="140,30" font="Regular;24" halign="right" transparent="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<eLabel position="20,56" size="1160,1" backgroundColor="#606060" />
+		<widget source="MovieDetails" render="Label" position="20,65" size="680,24" font="Regular;18" foregroundColor="#bbbbbb" noWrap="1" transparent="1" />
+		<eLabel text="Playback Time:" position="720,65" size="136,24" font="Regular;16" foregroundColor="#bbbbbb" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="856,65" size="92,24" font="Regular;18" noWrap="1" transparent="1">
+			<convert type="ServicePosition">Length,ShowHours</convert>
+		</widget>
+		<eLabel text="End time" position="960,65" size="130,24" font="Regular;18" foregroundColor="#bbbbbb" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="1090,65" size="90,24" font="Regular;18" halign="right" noWrap="1" transparent="1">
+			<convert type="ServicePosition">EndTime,ShowNoSeconds</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="20,103" size="120,28" font="Regular;22" transparent="1">
+			<convert type="ServicePosition">Position,ShowHours</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Progress" position="160,114" size="880,6" borderWidth="0" backgroundColor="#404040" foregroundColor="#dddddd">
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="1060,103" size="120,28" font="Regular;22" halign="right" transparent="1">
+			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
+		</widget>
+		<widget name="statusicon" position="20,146" size="20,20" alphatest="blend" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
+		<widget name="speed" position="50,143" size="76,28" font="Regular;20" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="136,143" size="414,28" font="Regular;18" noWrap="1" transparent="1">
+			<convert type="TrackInfo">Audio</convert>
+		</widget>
+		<ePixmap pixmap="skin_default/icons/ico_sub_off.png" position="566,146" size="28,20" alphatest="blend" />
+		<widget source="session.CurrentService" render="Label" position="606,143" size="210,28" font="Regular;18" noWrap="1" transparent="1">
+			<convert type="TrackInfo">Subtitle</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="830,143" size="100,28" font="Regular;18" noWrap="1" transparent="1">
+			<convert type="PliExtraInfo">VideoCodec</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="940,143" size="240,28" font="Regular;18" halign="right" noWrap="1" transparent="1">
+			<convert type="PliExtraInfo">ResolutionString</convert>
+		</widget>
+	</screen>
 </skin>
