@@ -1,0 +1,65 @@
+<templates>
+	<!-- Default skin styles use 720-line coordinates. Skin styles may override these IDs. -->
+	<template resolution="1280,720" component="movieList" name="compact" fonts="Regular;20,Regular;16" itemHeight="36">
+		<text index="Title" position="8,0" size="e*0.55-16,36" font="0" verticalAlignment="center" wrap="ellipsis" />
+		<text index="Status" position="e*0.55,0" size="e*0.2-8,36" font="1" verticalAlignment="center" wrap="ellipsis" />
+		<text index="Date" position="e*0.75,0" size="e*0.25-8,36" font="1" horizontalAlignment="right" verticalAlignment="center" wrap="ellipsis" />
+	</template>
+	<template resolution="1280,720" component="movieList" name="detailed" fonts="Regular;22,Regular;16" itemHeight="88">
+		<text index="Title" position="8,2" size="e*0.68-16,28" font="0" wrap="ellipsis" />
+		<text index="ServiceName" position="e*0.68,6" size="e*0.32-8,24" font="1" horizontalAlignment="right" wrap="ellipsis" />
+		<text index="Description" position="8,32" size="e-16,24" font="1" wrap="ellipsis" />
+		<text index="Status" position="8,60" size="e*0.45-16,22" font="1" wrap="ellipsis" />
+		<text index="Date" position="e*0.45,60" size="e*0.55-8,22" font="1" horizontalAlignment="right" wrap="ellipsis" />
+		<progress index="Progress" position="8,85" size="e-16,3" />
+	</template>
+	<template resolution="1280,720" component="movieList" name="tiles" fonts="Regular;20,Regular;15" orientation="grid" itemWidth="210" itemHeight="150">
+		<rectangle position="4,4" size="e-8,e-8" borderWidth="1" borderColor="#707070" borderColorSelected="#ffffff" cornerRadius="8" />
+		<text index="Kind" position="12,10" size="e-24,22" font="1" wrap="ellipsis" />
+		<text index="Title" position="12,36" size="e-24,54" font="0" wrap="on" />
+		<text index="Status" position="12,94" size="e-24,22" font="1" wrap="ellipsis" />
+		<text index="Date" position="12,118" size="e-24,22" font="1" wrap="ellipsis" />
+		<progress index="Progress" position="12,143" size="e-24,3" />
+	</template>
+	<template resolution="1280,720" component="movieList" name="tilesLarge" fonts="Regular;24,Regular;16" orientation="grid" itemWidth="280" itemHeight="180">
+		<rectangle position="4,4" size="e-8,e-8" borderWidth="1" borderColor="#707070" borderColorSelected="#ffffff" cornerRadius="8" />
+		<text index="Kind" position="14,12" size="e-28,24" font="1" wrap="ellipsis" />
+		<text index="Title" position="14,42" size="e-28,54" font="0" wrap="on" />
+		<text index="Description" position="14,100" size="e-28,30" font="1" wrap="on" />
+		<text index="Status" position="14,132" size="e-28,20" font="1" wrap="ellipsis" />
+		<text index="Date" position="14,154" size="e-28,20" font="1" wrap="ellipsis" />
+		<progress index="Progress" position="14,175" size="e-28,3" />
+	</template>
+	<template resolution="1280,720" component="movieList" name="posters" fonts="Regular;20,Regular;15" orientation="grid" itemWidth="180" itemHeight="270">
+		<rectangle position="4,4" size="e-8,e-8" borderWidth="1" borderColor="#707070" borderColorSelected="#ffffff" cornerRadius="6" />
+		<text index="Kind" position="14,24" size="e-28,24" font="1" horizontalAlignment="center" />
+		<text index="Title" position="14,64" size="e-28,110" font="0" horizontalAlignment="center" wrap="on" />
+		<pixmap index="Poster" position="10,10" size="e-20,180" scale="centerScaled" alpha="blend" />
+		<text index="Title" position="10,194" size="e-20,44" font="0" wrap="on" />
+		<text index="Status" position="10,240" size="e-20,22" font="1" wrap="ellipsis" />
+		<progress index="Progress" position="10,265" size="e-20,3" />
+	</template>
+	<template resolution="1280,720" component="movieList" name="posterList" fonts="Regular;22,Regular;16" itemHeight="150">
+		<text index="Kind" position="6,56" size="92,48" font="1" horizontalAlignment="center" wrap="on" />
+		<pixmap index="Poster" position="6,4" size="92,138" scale="centerScaled" alpha="blend" />
+		<text index="Title" position="110,4" size="e-120,28" font="0" wrap="ellipsis" />
+		<text index="Description" position="110,38" size="e-120,65" font="1" wrap="on" />
+		<text index="Status" position="110,114" size="e*0.5-120,25" font="1" wrap="ellipsis" />
+		<text index="Date" position="e*0.5,114" size="e*0.5-10,25" font="1" horizontalAlignment="right" wrap="ellipsis" />
+		<progress index="Progress" position="110,145" size="e-120,3" />
+	</template>
+	<template resolution="1280,720" component="movieList" name="classic" fonts="Regular;20,Regular;16" itemHeight="34">
+		<text index="Title" position="8,0" size="e*0.57-16,34" font="0" verticalAlignment="center" wrap="ellipsis" />
+		<progress index="Progress" position="e*0.57,13" size="e*0.1,8" borderWidth="1" />
+		<text index="Status" position="e*0.68,0" size="e*0.13-4,34" font="1" verticalAlignment="center" wrap="ellipsis" />
+		<text index="Date" position="e*0.81,0" size="e*0.19-8,34" font="1" horizontalAlignment="right" verticalAlignment="center" wrap="ellipsis" />
+	</template>
+	<template resolution="1280,720" component="movieList" name="classicExtended" fonts="Regular;20,Regular;16" itemHeight="58">
+		<text index="Title" position="8,0" size="e*0.57-16,30" font="0" verticalAlignment="center" wrap="ellipsis" />
+		<progress index="Progress" position="e*0.57,12" size="e*0.1,8" borderWidth="1" />
+		<text index="Status" position="e*0.68,0" size="e*0.13-4,30" font="1" verticalAlignment="center" wrap="ellipsis" />
+		<text index="Date" position="e*0.81,0" size="e*0.19-8,30" font="1" horizontalAlignment="right" verticalAlignment="center" wrap="ellipsis" />
+		<text index="Description" position="8,30" size="e*0.72-16,25" font="1" wrap="ellipsis" />
+		<text index="ServiceName" position="e*0.72,30" size="e*0.28-8,25" font="1" horizontalAlignment="right" wrap="ellipsis" />
+	</template>
+</templates>
