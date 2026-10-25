@@ -32,22 +32,41 @@
 		<progress index="Progress" position="14,175" size="e-28,3" />
 	</template>
 	<template resolution="1280,720" component="movieList" name="posters" fonts="Regular;20,Regular;15" orientation="grid" itemWidth="180" itemHeight="270">
-		<rectangle position="4,4" size="e-8,e-8" borderWidth="1" borderColor="#707070" borderColorSelected="#ffffff" cornerRadius="6" />
-		<text index="Kind" position="14,24" size="e-28,24" font="1" horizontalAlignment="center" />
-		<text index="Title" position="14,64" size="e-28,110" font="0" horizontalAlignment="center" wrap="on" />
-		<pixmap index="Poster" position="10,10" size="e-20,180" scale="centerScaled" alpha="blend" />
-		<text index="Title" position="10,194" size="e-20,44" font="0" wrap="on" />
-		<text index="Status" position="10,240" size="e-20,22" font="1" wrap="ellipsis" />
-		<progress index="Progress" position="10,265" size="e-20,3" />
+		<mode name="default">
+			<rectangle position="4,4" size="e-8,e-8" borderWidth="1" borderColor="#707070" borderColorSelected="#ffffff" cornerRadius="6" />
+			<text index="Kind" position="14,24" size="e-28,24" font="1" horizontalAlignment="center" />
+			<text index="Title" position="14,64" size="e-28,110" font="0" horizontalAlignment="center" wrap="on" />
+			<pixmap index="Poster" position="10,10" size="e-20,180" scale="centerScaled" alpha="blend" />
+			<text index="Title" position="10,194" size="e-20,44" font="0" wrap="on" />
+			<text index="Status" position="10,240" size="e-20,22" font="1" wrap="ellipsis" />
+			<progress index="Progress" position="10,265" size="e-20,3" />
+		</mode>
+		<mode name="episodes" itemWidth="280" itemHeight="240">
+			<rectangle position="4,4" size="e-8,e-8" borderWidth="1" borderColor="#707070" borderColorSelected="#ffffff" cornerRadius="6" />
+			<pixmap index="Preview" position="10,10" size="e-20,146" scale="centerScaled" alpha="blend" />
+			<text index="Title" position="10,162" size="e-20,48" font="0" wrap="on" />
+			<text index="Status" position="10,212" size="e-20,22" font="1" wrap="ellipsis" />
+			<progress index="Progress" position="10,235" size="e-20,3" />
+		</mode>
 	</template>
 	<template resolution="1280,720" component="movieList" name="posterList" fonts="Regular;22,Regular;16" itemHeight="150">
-		<text index="Kind" position="6,56" size="92,48" font="1" horizontalAlignment="center" wrap="on" />
-		<pixmap index="Poster" position="6,4" size="92,138" scale="centerScaled" alpha="blend" />
-		<text index="Title" position="110,4" size="e-120,28" font="0" wrap="ellipsis" />
-		<text index="Description" position="110,38" size="e-120,65" font="1" wrap="on" />
-		<text index="Status" position="110,114" size="e*0.5-120,25" font="1" wrap="ellipsis" />
-		<text index="Date" position="e*0.5,114" size="e*0.5-10,25" font="1" horizontalAlignment="right" wrap="ellipsis" />
-		<progress index="Progress" position="110,145" size="e-120,3" />
+		<mode name="default">
+			<text index="Kind" position="6,56" size="92,48" font="1" horizontalAlignment="center" wrap="on" />
+			<pixmap index="Poster" position="6,4" size="92,138" scale="centerScaled" alpha="blend" />
+			<text index="Title" position="110,4" size="e-120,28" font="0" wrap="ellipsis" />
+			<text index="Description" position="110,38" size="e-120,65" font="1" wrap="on" />
+			<text index="Status" position="110,114" size="e*0.5-120,25" font="1" wrap="ellipsis" />
+			<text index="Date" position="e*0.5,114" size="e*0.5-10,25" font="1" horizontalAlignment="right" wrap="ellipsis" />
+			<progress index="Progress" position="110,145" size="e-120,3" />
+		</mode>
+		<mode name="episodes" itemHeight="150">
+			<pixmap index="Preview" position="6,8" size="208,117" scale="centerScaled" alpha="blend" />
+			<text index="Title" position="230,4" size="e-240,28" font="0" wrap="ellipsis" />
+			<text index="Description" position="230,38" size="e-240,65" font="1" wrap="on" />
+			<text index="Status" position="6,128" size="208,22" font="1" wrap="ellipsis" />
+			<text index="Date" position="230,114" size="e-240,25" font="1" horizontalAlignment="right" wrap="ellipsis" />
+			<progress index="Progress" position="230,145" size="e-240,3" />
+		</mode>
 	</template>
 	<template resolution="1280,720" component="movieList" name="classic" fonts="Regular;20,Regular;16" itemHeight="34">
 		<text index="Title" position="8,0" size="e*0.57-16,34" font="0" verticalAlignment="center" wrap="ellipsis" />
